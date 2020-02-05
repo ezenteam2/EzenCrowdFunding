@@ -1,0 +1,29 @@
+body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.kb_main{
+    padding-left:15%;
+    padding-right:15%;
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+}
+
+
+#tableDiv{
+    text-align: center;
+    width:80%;
+}
+
+table{
+    width:100%;
+}
+
+.numTh{
+    padding:1%;
+}
