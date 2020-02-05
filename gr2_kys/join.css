@@ -1,0 +1,16 @@
+#root{
+    text-align: center;
+
+}
+
+#text{
+    margin-right: 10px;
+}
+
+.phone{
+    width:40px;
+}
+
+#id{
+    ime-mode:disabled;
+}
