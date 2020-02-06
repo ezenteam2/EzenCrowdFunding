@@ -10,7 +10,7 @@ function send404Message(response){
 function onRequest(request, response){
     if(request.method == 'GET' && request.url =='/'){
         response.writeHead(200, {"Content-Type":"text/html"});
-        fs.createReadStream("./index.html").pipe(response);
+        fs.createReadStream("../page/user_w_hj_make_reward.html").pipe(response);
     } else {
         send404Message(response);
     }
