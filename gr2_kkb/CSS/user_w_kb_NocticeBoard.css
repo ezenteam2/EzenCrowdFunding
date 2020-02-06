@@ -7,7 +7,7 @@ body{
 .kb_main{
     padding-left:15%;
     padding-right:15%;
-    text-align: center;
+    
 }
 
 #title{
@@ -16,14 +16,20 @@ body{
 
 
 #tableDiv{
-    text-align: center;
-    width:80%;
-}
-
-table{
     width:100%;
 }
 
-.numTh{
+table{
+
+    text-align: center;
+    margin-left:15%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+th, td{
+    width:15%;
     padding:1%;
+    border-top: 1px dotted black;
 }
