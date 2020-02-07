@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>등록페이지</title>
     <link rel="stylesheet" href="./user_w_hj_make_reward.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
     <div class="make_reward">
@@ -31,16 +32,29 @@
                     <div class="title_length_indicator">0/40</div>
                     <label for="project_target_fund" style="width:100%;"><h1>목표 금액을 적어주세요</h1>
                         <p>최소 100,000원 이상이어야 합니다.</p></label>
-                    <input type="text" name="project_target_fund" id="project_target_fund" required>
+                    <input type="text" name="project_target_fund" id="project_target_fund" required
+                        style="width:40% !important;">
                     <div style="margin-left:10px;
                     padding-top:5px;
                     font-size:20px;">원</div>
                     <div class="right_price_indicator" style="width:100%; margin-top:-20px;
                     color:red; font-weight: bold;"> </div>
                     <label for="project_target_data" style="width:100%;"><h1>프로젝트의 진행 기간을 적어주세요</h1></label>
+                    <input type="text" id="dateDiffIndicator"  disabled style="width:20% !important;
+                     text-align: right; font-size:20px; padding-right:10px;">
+                    <span style="padding-top:10px;">일 남음</span>
+                    <input type="text" id="datePicker" style="padding-left:10px;
+                    width:20% !important; margin-left:3%;
+                    background: url(./calendar.png) no-repeat;
+                    background-position: 95%;
+                    font-size:20px;
+                    padding-right:10px;
+                    cursor:default;">
                     <label for="project_thumbnail" style="width:100%;"><h1>프로젝트의 대표 이미지를 등록해주세요</h1></label>
-                    <label for="project_key_words"><h1>프로젝트 키워드를 적어주세요</h1></label>
-                    <input type="text" name="project_key_words" id="project_key_words" required>
+                    <div class="image_drop_box"></div>
+                    <label for="project_key_words" style="width:100%;"><h1>프로젝트 키워드를 적어주세요</h1></label>
+                    <input type="text" name="project_key_words" id="project_key_words"
+                    style="width:30% !important;">
                 </div>
 
             </form>
@@ -48,5 +62,39 @@
     </div>
     
     <script src="./user_w_hj_make_reward.js"></script>
+    <!-- 데이트 피커 부분-->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- -->
+    <script>
+        //데이트 피커 부분
+        const today=new Date();
+        const todayArray=[today.getFullYear(), today.getMonth(), today.getDate()];
+        const todayFormat=new Date(todayArray[0], todayArray[1], todayArray[2]);
+        
+        $('#datePicker').datepicker({
+            dateFormat: "yy.mm.dd",
+            changeMonth: true,
+            changeYear: true
+        });
+        $('#datePicker').change(event=>{
+            const selectDate=event.target.value.split('.');
+            const targetDayFormat=new Date(selectDate[0], selectDate[1]-1, selectDate[2]);
+            const diff=targetDayFormat-todayFormat;
+            const dayDiff=diff/24/3600/1000;
+            dayDiffHandle(dayDiff);
+        })
+
+        function dayDiffHandle(dayDiff){
+            const dateDiffIndicator=document.getElementById('dateDiffIndicator');
+            if(dayDiff<0){
+                alert('프로젝트 종료일이 올바르지 않습니다.');
+                dateDiffIndicator.value=0;
+            } else {
+                dateDiffIndicator.value=dayDiff;
+            }
+        }
+    </script>
+
 </body>
 </html>
