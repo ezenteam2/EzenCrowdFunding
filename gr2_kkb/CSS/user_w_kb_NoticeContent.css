@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+main{
+    padding-left:15%;
+    padding-right:15%;
+    text-align:center;
+}
+
+#kb_Notice_title{
+    text-align: left;
+    font-size:15pt;
+    margin-top:5%;
+}
