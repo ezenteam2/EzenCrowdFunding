@@ -79,6 +79,8 @@
           function handleCloseIcon(){
               const img = document.getElementById('thumbnail');
               img.src="./upload.png";
+              const tmp = document.querySelector('input[type=file]');
+              tmp.value=null;
               deleteDiv.classList.add('none');
           }
 
