@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="findid.css">
 </head>
 <body>
     <div class="mainTool">
@@ -16,15 +16,38 @@
                 id="logo">
             </a>
             <br>
-            <h3>로그인</h3><br>
-                <input type="text" class="text"
-                    placeholder="아이디">
-                <br><br>
-                <input type="password" class="text"
-                    placeholder="비밀번호">
-                <br><br>
-            <input type="button" 
-            class="loginBtn" value="로그인">
+            <h3>아이디찾기</h3><br>
+        <table 
+                text-align="left">
+            <tr><td>
+            <label>이름</label></td>
+            <td>
+            <input type="text" id="inputName"
+            placeholder="이름입력" ></td></tr>
+            
+            <tr><td>
+            <label>핸드폰번호</label></td>
+            <td>
+            <select>
+                <option>--통신사--</option>
+                <option>SKT</option>
+                <option>KT</option>
+                <option>LG U+</option>
+            </select>
+            <input type="text" id="inputNum"
+            placeholder="-빼고 입력">
+            <input type="button" value="인증번호 받기">
+            </td></tr>
+            <tr><td>
+            <label>인증번호</label></td>
+            <td>
+            <input type="text" placeholder="인증번호 입력"
+            id="inputCode">
+            </td></tr>
+        </table>
+            <br><br>
+            <input type="button" value="아이디찾기"
+            class="findid">
         </div>
     
         <div class="right">
