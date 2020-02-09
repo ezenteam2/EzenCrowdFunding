@@ -2,7 +2,24 @@
 
 #root{
     text-align: center;
+    width:800px;
+    height:auto;
+    border-collapse: collapse;
+    border:1px solid black;
+}
 
+#leftTd{
+width:200px;
+border-collapse: collapse;
+border:1px solid black;
+text-align:center;
+}
+
+#rightTd{
+width:600px;
+border-collapse: collapse;
+border: 1px solid black;
+text-align: justify;
 }
 
 #text{
@@ -17,17 +34,18 @@
     ime-mode:disabled;
 }
 td{
-    height:70px;
-  
+    height:50px;
+
 }
 #submit{
-    
     width:160px;
     height:60px;
     background-color: #dc7f0d;
-
 }
 
+#subBtn{
+    margin-left: 600px;
+}
 .box{
     width:200px;
     height:200px;
@@ -35,6 +53,5 @@ td{
     background-color: blueviolet;
 }
 
-.frofile{
-    overflow:hidden;
-}
+
+
