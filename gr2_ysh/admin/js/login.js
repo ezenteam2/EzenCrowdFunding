@@ -1,5 +1,3 @@
-var correctId='ezenteam2';
-var correctPassword='1234';
 var redirectTime = "1500";
 var redirectURL = "./index.html";
 function login_process() {
