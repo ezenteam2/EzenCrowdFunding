@@ -3,10 +3,15 @@ const storyInformation = document.querySelector('.story_information');
 const rewardInformation = document.querySelector('.reward_information');
 const makerInformation = document.querySelector('.maker_information');
 const loadingPage = document.querySelector('.loading_page');
+const leftMenu = document.querySelectorAll('.navi_menu_list>li');
 
 const pages=[basicInformation, storyInformation, rewardInformation, makerInformation];
 
 function pageTo1(event){
+    leftMenu.forEach(li=>{
+        li.style.color='black';
+    })
+    leftMenu[0].style.color='red';
     loading();
     setTimeout(()=>{
         basicInformation.classList.remove('none');
@@ -14,6 +19,10 @@ function pageTo1(event){
 }
 
 function pageTo2(event){
+    leftMenu.forEach(li=>{
+        li.style.color='black';
+    })
+    leftMenu[1].style.color='red';
     loading();
     setTimeout(()=>{
         storyInformation.classList.remove('none');
@@ -21,6 +30,10 @@ function pageTo2(event){
 }
 
 function pageTo3(event){
+    leftMenu.forEach(li=>{
+        li.style.color='black';
+    })
+    leftMenu[2].style.color='red';
     loading();
     setTimeout(()=>{
         rewardInformation.classList.remove('none');
@@ -28,6 +41,10 @@ function pageTo3(event){
 }
 
 function pageTo4(event){
+    leftMenu.forEach(li=>{
+        li.style.color='black';
+    })
+    leftMenu[3].style.color='red';
     loading();
     setTimeout(()=>{
         makerInformation.classList.remove('none');
