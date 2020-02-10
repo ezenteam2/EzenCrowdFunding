@@ -1,6 +1,6 @@
 .mainTool{
     width:100%;
-    height:1000px;
+    height:100%;
     box-sizing: border-box;
     
     }
@@ -57,13 +57,15 @@
         margin-right:60px;
     }
     
+  
     #findBtn{
-        cursor: pointer;
-        width:100px;
-        height:100px;
-        margin-right:60px;
-    
-    }
+    cursor: pointer;
+    width:100px;
+    height:50px;
+    margin-right:60px;
+    background-color:#dc7f0d;
+}
+
     
     #btn{
         width:100px;
