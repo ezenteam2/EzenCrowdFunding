@@ -59,9 +59,9 @@ padding-top: 200px;
 #findBtn{
     cursor: pointer;
     width:100px;
-    height:100px;
+    height:50px;
     margin-right:60px;
-
+    background-color:#dc7f0d;
 }
 
 #btn{

@@ -6,20 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>등록페이지</title>
     <link rel="stylesheet" href="./user_w_hj_make_reward.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
     <div class="make_reward">
         <div class="column_left">
             <div class="navi_menu">
-                <div class="navi_menu_title">
+                <div class="navi_menu_title" style="cursor:default;">
                     프로젝트 만들기
                 </div>
                 <ol class="navi_menu_list">
-                    <li>기본정보</li>
-                    <li>스토리</li>
-                    <li>리워드</li>
-                    <li>제작자/부가정보</li>
+                    <li onclick="pageTo1()" style="cursor:pointer; color:red;">기본정보</li>
+                    <li onclick="pageTo2()" style="cursor:pointer;">스토리</li>
+                    <li onclick="pageTo3()" style="cursor:pointer;">리워드</li>
+                    <li onclick="pageTo4()" style="cursor:pointer;">제작자/부가정보</li>
                 </ol>
             </div>
         </div>
@@ -65,52 +64,81 @@
 
 
                     <label for="project_key_words" style="width:100%;"><h1>프로젝트 키워드를 적어주세요</h1></label>
-                    <div class="keyword_bar" style="width:70% !important;">
+                    <div class="keyword_bar" style="width:70% !important; margin-bottom: 30px;">
                         <input type="text" name="project_key_words" id="project_key_words">
                     </div>
+
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo2()">다음단계</span>
+                    </div>
                 </div>
+                <div class="story_information none">
+                    <label style="width:100%;" for=""><h1>프로젝트 소개영상과 이미지를 등록해주세요</h1>
+                    <p>영상과 이미지를 함께 등록할 경우, 영상이 먼저 보여집니다.</p></label>
+
+                    <label style="width:100%;" for=""><h2>동영상 주소를 적어주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h2>이미지를 등록해주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h1>프로젝트 스토리를 적어주세요</h1>
+                    <p>프로젝트를 시작하기 위해 필요한 내용이 없다면 승인이 되지 않습니다.</p></label>
+
+                    <label style="width:100%;" for=""><h1>환불 및 교환 정책을 적어주세요</h1>
+                    <p>스토리 맨 아래에 노출됩니다.</p></label>
+
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo3()">다음단계</span>
+                    </div>
+                </div>
+
+                <div class="reward_information none">
+                    <label style="width:100%;" for=""><h1>프로젝트 리워드를 구성해주세요</h1>
+                    <p>프로젝트 시작을 위해서는 최소 1개 이상의 리워드가 있어야 합니다. 배송이 필요한 리워드는 배송비가 포함된 가격을
+                        적어주세요</p>
+                    </label>
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo4()">다음단계</span>
+                    </div>
+                </div>
+
+                <div class="maker_information none">
+                    <label style="width:100%;" for=""><h1>계좌 정보를 입력해주세요</h1>
+                    <p>프로젝트 종료 후 입금받으실 계좌를 입력해주세요</p></label>
+
+                    <label style="width:100%;" for=""><h2>거래은행을 선택해주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h2>계좌번호를 적어주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h2>예금주명을 적어주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h2>통장 사본 이미지를 올려주세요</h2></label>
+
+                    <label style="width:100%;" for=""><h1>세금계산서 정보를 입력해주세요</h1></label>
+
+                    <label style="width:100%;" for=""><h1>사업자등록증 사본 이미지를 올려주세요</h1></label>
+
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;">저장하기</span>
+                    </div>
+                </div>
+                <div class="loading_page none"></div>
 
             </form>
         </div>
     </div>
-    
+    <!-- jquery-->
+    <script src="./jquery1-12-4.js"></script>
+    <script src="./jquery-ui.js"></script>
+    <!-- -->
     <script src="./indicator.js"></script>
+    <script src="./date-picker.js"></script>
     <script src="./thumbnail.js"></script>
     <script src="./keyword-hashtag.js"></script>
-
-    <!-- 데이트 피커를 위한 jquery 임포트-->
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- -->
-    <script>
-        //데이트 피커 스크립트
-        const today=new Date();
-        const todayArray=[today.getFullYear(), today.getMonth(), today.getDate()];
-        const todayFormat=new Date(todayArray[0], todayArray[1], todayArray[2]);
-
-        $('#datePicker').datepicker({
-            dateFormat: "yy.mm.dd",
-            changeMonth: true,
-            changeYear: true
-        });
-        $('#datePicker').change(event=>{
-            const selectDate=event.target.value.split('.');
-            const targetDayFormat=new Date(selectDate[0], selectDate[1]-1, selectDate[2]);
-            const diff=targetDayFormat-todayFormat;
-            const dayDiff=diff/24/3600/1000;
-            dayDiffHandle(dayDiff);
-        })
-
-        function dayDiffHandle(dayDiff){
-            const dateDiffIndicator=document.getElementById('dateDiffIndicator');
-            if(dayDiff<0){
-                alert('프로젝트 종료일이 올바르지 않습니다.');
-                dateDiffIndicator.value=0;
-            } else {
-                dateDiffIndicator.value=dayDiff;
-            }
-        }
-    </script>
+    <script src="./page-move.js"></script>
 
 </body>
 </html>
