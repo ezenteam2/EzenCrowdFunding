@@ -1,3 +1,4 @@
+{
 const basicInformation = document.querySelector('.basic_information');
 const storyInformation = document.querySelector('.story_information');
 const rewardInformation = document.querySelector('.reward_information');
@@ -59,4 +60,6 @@ function loading(){
     setTimeout(()=>{
         loadingPage.classList.add('none')
     }, 500);
+}
+
 }

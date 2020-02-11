@@ -1,3 +1,4 @@
+{
 const keywordTextInput=document.getElementById('project_key_words');
 const keywordBar=document.querySelector('.keyword_bar');
 
@@ -60,3 +61,4 @@ function handleKeyUp(event){
 
 keywordTextInput.addEventListener('keyup', handleKeyUp);
 keywordBar.addEventListener('click', focusToTextBar);
+}

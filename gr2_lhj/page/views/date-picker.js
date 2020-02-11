@@ -1,3 +1,4 @@
+ {
  //데이트 피커 스크립트
  const today=new Date();
  const todayArray=[today.getFullYear(), today.getMonth(), today.getDate()];
@@ -25,3 +26,4 @@
          dateDiffIndicator.value=dayDiff;
      }
  }
+}
