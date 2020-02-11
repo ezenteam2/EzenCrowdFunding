@@ -1,3 +1,4 @@
+{
 const insertVideo = document.getElementById('insert_video');
 const videoWrap = document.querySelector('.video_wrap')
 
@@ -28,3 +29,5 @@ function makeVideoLink(event){
 
 
 insertVideo.addEventListener('keyup', makeVideoLink);
+
+}

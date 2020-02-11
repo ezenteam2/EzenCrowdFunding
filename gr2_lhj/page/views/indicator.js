@@ -1,3 +1,4 @@
+{
 const titleLengthIndicator = document.querySelector('.title_length_indicator');
 const projectTitle = document.getElementById("project_title");
 const rightPriceIndicator = document.querySelector('.right_price_indicator');
@@ -33,3 +34,5 @@ function onDrop(event){
 
 projectTitle.addEventListener("keyup", handleTitleLength);
 projectTargetFund.addEventListener("keyup", handleTargetFund);
+
+}
