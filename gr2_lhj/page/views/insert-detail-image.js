@@ -84,7 +84,6 @@ function previewFile(file, callback){
         deleteDivs[Cnt].classList.remove('none');
         deleteDivs[Cnt].lastElementChild.innerHTML=file.name;
         callback();
-        console.log(detailImg);
     } 
     } else{
     alert("그림파일은 jpg, png형식만 가능합니다.")
