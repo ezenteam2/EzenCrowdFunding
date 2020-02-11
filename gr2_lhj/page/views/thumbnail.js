@@ -1,3 +1,4 @@
+{
 const dropArea=document.querySelector('.thumbnail_drop_box');
 const closeIcon=document.querySelector('.close_icon');
 const deleteDiv=document.querySelector('.delete');
@@ -62,3 +63,5 @@ dropArea.addEventListener('drop', handleDrop);
 dropArea.addEventListener('mouseenter',handleMouseIn);
 dropArea.addEventListener('mouseleave',handleMouseOut);
 closeIcon.addEventListener('click', clickCloseIcon);
+
+}
