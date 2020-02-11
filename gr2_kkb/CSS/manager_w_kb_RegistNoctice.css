@@ -22,10 +22,10 @@ main{
 }
 
 #inputTitle{
-    width:500px;
+    width:70%;
     height:40px;
     border:2px solid black;
-    margin-left:7%;
+    margin-left:8%;
 }
 
 #kb_ContentInput_div{
