@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="div01"></div>
+
+</body>
+
+<script type = "text/javascript">
+
+/*
+# JS의 객체
+	1. 	기본 OOP(Object Oriented Programm - 객체지향 프로그램)에 대한 이해
+	2. 	JS에는 어떤 형식으로 객체를 선언하고 사용하는가
+	3. 	객체가 가지고 있는 속성, 메서드
+	4. 	DOM(documetn Object Model)
+	5.	동적 event(ex) 클릭, 마우스오버, 마우스 아웃, 키보드 클릭)를 통해
+		JS의 객체와 DOM을 효과적으로 활용 및 처리하여 동적 화면 구성
+ */
+ 
+	var p1;				//변수 선언
+	p1 = {};			//객체 생성(stack, heap)
+/*
+	# JS의 객체 선언
+	1. json	
+*/
+/*
+  	p1.name = "홍길동";	//속성 선언
+	p1.age = 25;
+	
+	var p2 = {name:"신길동", age:27};
+	console.log("#p1 객체 : "+p1);
+	console.log("이름 : "+p1.name);
+	console.log("나이 : "+p1.age);
+	console.log("#p2 객체 : "+p2);
+	console.log("이름 : "+p2.name);
+	console.log("나이 : "+p2.age);
+*/
+
+/*
+	ex) 객체의 선언과 할당을 위해 2가지 방법으로, 도서의 이름과 가격, console.log & div 안에 출력
+ */
+	var book01 = {};
+	book01.title = "원피스";
+	book01.author = "오다";
+	
+	var book02 = {title:" 드래곤볼", author:"토리야마"};
+	
+	console.log("book01 객체 " + book01);
+	console.log("TITLE : " + book01.title);
+	console.log("AUTHOR : " + book01.author);
+	document.querySelector("#div01").innerHTML += "book02 객체 : " + book02 + "<br>";
+	document.querySelector("#div01").innerHTML += "TITLE : " + book02.title + "<br>";
+	document.querySelector("#div01").innerHTML += "AUTHOR : " + book02.author + "<br>";
+	
+</script>
+
+</html>

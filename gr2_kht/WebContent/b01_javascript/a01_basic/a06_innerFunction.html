@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+	td{text-align:center;font-size:30px;width:25%;}
+	#show{text-align:right; height:30px;}
+
+</style>
+</head>
+
+<body>
+
+	<h1>시작</h1>
+	<h2>시작</h2>
+	<h3>시작</h3>
+	
+	<div></div>
+	<table width="200" height ="300" border>
+		<tr><td colspan="4" id="show"></td></tr>
+		<tr><td onclick="calStr(this.innerHTML)">1</td>
+			<td onclick="calStr(this.innerHTML)">2</td>
+			<td onclick="calStr(this.innerHTML)">3</td>
+			<td onclick="calStr(this.innerHTML)">+</td>
+		</tr>
+		<!-- 	onclick= : 	클릭 시
+				calStr	 :	특정함수 호출
+				this.innerHTML : calStr함수에 매개변수로 현재 td가 가지고 있는 label인 "1"을 전송		
+		-->
+		<tr><td onclick="calStr(this.innerHTML)">4</td>
+			<td onclick="calStr(this.innerHTML)">5</td>
+			<td onclick="calStr(this.innerHTML)">6</td>
+			<td onclick="calStr(this.innerHTML)">-</td>
+		</tr>
+		<tr><td onclick="calStr(this.innerHTML)">7</td>
+			<td onclick="calStr(this.innerHTML)">8</td>
+			<td onclick="calStr(this.innerHTML)">9</td>
+			<td onclick="calStr(this.innerHTML)">*</td>
+		</tr>
+		<tr><td onclick="calStr(this.innerHTML)"></td>
+			<td onclick="calStr(this.innerHTML)">0</td>
+			<td onclick="calStr(this.innerHTML)">/</td>
+			<td onclick="calStr(this.innerHTML)">=</td>
+		</tr>
+	</table>
+
+</body>
+
+<script type = "text/javascript">
+
+/*
+# 내장 함수
+	1. 자바스크립트에서 자체 제공하는 기본 내장 함수
+	2. encodeURIComponent()
+		- 인코딩 : 파일을 저장, 불러오기, 전송시, 1byte 이상의 데이터는 정상적인 처리가 되지 않기 때문에
+				2byte 이상의 데이터(한글, 특수문자)는 전송과정 전에 1byte로 변환하는 과정이 필요
+				이 과정이 인코딩
+		- 디코딩 : 인코딩의 반대 과정
+		- web 프로그래밍의 경우 서버에 데이터를 전송할 때 인코딩하고, 데이터를 전송받은 서버는 디코딩 과정을 거침
+			ex) 서버 - (인코딩) -> 데이터 전송 -> (디코딩) -> - 클라이언트
+			
+
+ */
+
+	var show = "안녕하세요";
+	var enShow = encodeURIComponent(show);
+	var deShow = decodeURIComponent(enShow);
+	document.querySelector("h1").innerHTML=show;
+	document.querySelector("h2").innerHTML=enShow + "(인코딩 후)";
+	document.querySelector("h3").innerHTML=deShow + "(인코딩 후)";
+ 
+/*	
+	3. eval("문자열") : 문자열로 된 code를 실행
+	
+*/
+
+/*
+	var code = "var greet='안녕'; alert(greet);";	//코드 형식의 문자열일 뿐, 실행은 되지 않음
+	eval(code);										//코드 형식의 문자를 실제로 실행 시켜주는 함수
+*/
+
+	function calStr(data){
+		//alert(data);
+		if(data=="="){
+			var calData=eval(document.querySelector("#show").innerHTML);
+			document.querySelector("#show").innerHTML=calData;
+		}else{
+			document.querySelector("#show").innerHTML+=data;
+			//+= : 데이터 누적처리
+			//id가 show인 곳에서 받은 매개변수들이 +=에 의해 누적처리
+		}
+	}
+
+/*
+	4. isNaN() :	숫자형 문자열의 여부를 확인하여 boolean값으로 표현
+				  	데이터가 숫자형이 아닐 때 true
+ */
+ 	var data01 = prompt("tnwkgud epdlxjdml duqn ghkrdls");
+	alert("tntwkguddml duqn : " + isNaN(data01));
+	if( isNaN(data01) ) {
+		alert("tntwkguddl dkslqslek");
+	}else{
+		alert("tntwkguddlqslek");
+	}
+	
+ </script>
+
+</html>

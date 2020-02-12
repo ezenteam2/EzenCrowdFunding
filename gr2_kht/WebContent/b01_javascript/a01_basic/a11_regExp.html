@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+</body>
+
+<script type = "text/javascript">
+
+/*
+# 정규 표현식
+	1. 자바스크립트 기본 내장 객체
+	2. 문자열 패턴을 검사할 때, 사용
+	3. 정규 표현식 객체는 두 가지 방법으로 생성 가능
+		1) 객체 생성
+		2) /문자열/
+*/
+
+	var regExp1 = new RegExp("text");	// 1)객체 생성
+	var regExp2 = /text/;				// 2) /문자열/
+
+/*
+	4. 사용 메서드
+		1) test()			: 정규 표현식과 일치하는 문자열이 있으면 true, 아니면 false를 리턴
+		2) exec()			: 정규 표현식과 일치하는 문자열을 리턴
+		3) match(regExp)	: 정규 표현식과 일치하는 부분 리턴
+		4) replace(regExp, 대체할문자)	: 정규 표현식과 일치하는 부분을 새로운 문자여롤 바꿈
+		5) search(regExp)	: 정규 표현식과 일치하는 부분의 위치를 리턴
+		6) split(regExp)	: 정규 표현식을 기준으로 문자열을 잘라 배열을 리턴
+*/
+	var regExp3 = /script/;
+	var str = "Javascript jQuery Ajax";
+	document.write("<h2>regExp3.test(str) : "+regExp3.test(str)+"</h2>");
+	document.write("<h2>regExp3.exec(str) : "+regExp3.exec(str)+"</h2>");
+	
+	var array01 = str.split(regExp3);
+	array01.push("PHP");
+	document.write("<h2>"+array01+"</h2>");
+	
+/*
+# replace() 메서드 사용
+	1. 문자열.replace(정규식표현, 일치하는옵션)
+	2. 옵션 설정
+		1) $&	: 일치하는 문자열
+		2) $`	: 일치하는 부분의 앞부분 문자열 	(숫자키1 옆의 강조 따옴표)
+		3) $'	: 일치하는 부분의 뒷부분 문자열	(엔터키 옆의 작은 따옴표)
+		4) $1, $2, $3	: 그룹 지정
+*/
+
+	var regExp4 = /a/;
+	var regExp5 = /j/g;								
+	// /g : global 	- 같은 내용을 문자열 전체에 한번에 적용
+	// /i : ignore	- 대소문자 구분 없이 비교
+	// /m : multi	- 여러줄의 검사 시행
+
+	var str3 = 'Javascript jquery ajax';
+	var rst = str3.replace(regExp4,'+$&+');
+	document.write("<h2>str3.replace(regExp4,'+$&+') : "+rst+"</h2>");
+//	ex1) j를 검색해서 앞뒤에 ★ 추가 
+	var rst02 = str3.replace(regExp5,'★$&★');
+	document.write("<h2>str3.replace(regExp5,'★$&★') : "+rst02+"</h2>");
+	var regExp6 = /(a)(v)(a)/;
+	var rst03 = str3.replace(regExp6,'★$1=$2=$3★');
+	document.write("<h2>str3.replace(regExp6,'★$1=$2=$3★') : "+rst03+"</h2>");
+	
+/*
+	^ABC : 맨 앞 문자가 ABC일 때 처리
+	ABC$ : 맨 뒷 문자가 ABC일 때 처리
+*/
+
+</script>
+
+</html>

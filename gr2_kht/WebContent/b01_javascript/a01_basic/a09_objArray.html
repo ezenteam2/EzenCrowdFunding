@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="tab01"></div>
+
+</body>
+
+<script type = "text/javascript">
+
+	var fruit = {name:"사과", price:3000};			//
+
+	var flist = [];									//
+
+	flist.push(fruit);								//
+
+	flist[1] = {name:"바나나", price:2000};			//
+	flist[2] = {name:"자몽", price:8000};
+
+	document.write(flist.length);					//
+
+	var tab01 = document.querySelector("#tab01");	//
+	tab01.width="300pt";
+	tab01.height="300pt";
+	
+	var tab01 = "<tr><td>과일이름</td><td>가격</td></tr>";
+	
+	for (var cnt in flist) {
+		show += "<tr><td>"+fruit.name+"</td><td>"+fruit.price"</td></tr>";
+	};
+	
+	show += </table>
+
+</script>
+
+</html>

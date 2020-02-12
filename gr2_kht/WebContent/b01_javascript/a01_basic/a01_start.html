@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 
+# javascript란
+	1. 웹 브라우저에서 많이 사용하는 front end단 프로그래밍 언어
+	2. 네스케이프사가 썬 마이크로시스템과 함께 자바스크립트라는 이름을 붙이고 발전
+	3. 작동
+		1) html 페이지의 각 태그는 웹 브라우저에 의해 순차적으로 실행
+		2) 웹 브라우저는 head 태그를 먼저 읽은 후 body 태그를 읽는다
+			- script 태그를 head에 넣으면 body 태그 실행 전 실행
+			- body 태그에 넣으면 head 태그 실행 후 실행
+		3) script 태그를 head 태그 안에 넣어야 코드를 살펴보기 편리한 이점을 가짐
+	4. 웹 애플리케이션의 장점
+		1) 웹 브라우저가 돌아가는 데스크탑, 노트북, 스마트 폰 등 모든 장치에서 사용 가능
+		2) html5가 도입됨에 따라 웹 상에서 플래시나 실버라이트의 도움 없이 게임 등의 복잡한 프로그램 제작 가능
+	5. 자바스크립트의 종류
+		1) 	유럽 컴퓨터 제조 협회 (European Computer Manufacturer's Association)는
+			자바스크립트를 ECMAScript라는 이름으로 표준화 함
+			ex) ecma6, ecma7 ....
+		2) 구글 크롬에서 자바스크립트를 이용하여 최신 웹 브라우저 프로그램 지원중
+	
+# 표현식
+	1. 값을 만들어내는 간단한 코드
+		ex) 123, 10+20+30, '안녕'
+ -->
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+<script type = "text/javascript">
+
+	console.log("화면이 아닌 debug 모드에서 출력 처리 된다.(f12)");
+	var name = "홍길동";
+	var age = 25;
+	console.log("이름은 " + name + ", 나이는 "+age);
+	
+// ex) 변수 num01, num02를 지정하고 할당한후, 4칙 연산 내용의 결과 출력
+
+	var num01 = 5;
+	var num02 = 10;
+	console.log("num01 + num02 =" + (num01+num02));
+	console.log("num01 - num02 =" + (num01-num02));
+	console.log("num01 * num02 =" + (num01*num02));
+	console.log("num01 / num02 =" + (num01/num02));
+	console.log(`${num01} / ${num02}
+					= $(num01/num02})`);
+	//  `  es6(2015) 이 후 지원되는 브라우저
+	// ${변수명}]
+	
+/*
+	3. 키워드?
+		1) 자바스크립트가 처음 만들어질 때 정해진 특별한 의미가 있는 단어
+			ex) break, else, true, try
+		2) 변수명으로 사용할 수 없다.
+	4. 식별자 (변수명)
+		1) 자바스크립트에서 이름을 붙일 때 사용
+		2) 식별자는 변수명과 함수명, 객체명으로 사용
+		3) 식별자 생성 규칙
+			- 키워드 사용할 수 없음
+			- 숫자로 시작할 수 없음	ex) var 01num;(x) / var num01;(o)
+			- 특수문자는 _,$aks gjdyd
+			- 공백 포함 불가
+			- 모든 언어 사용 가능
+		4) 관례(가독성을 위해 편의상)
+			- 모든 언어 사용 가능하나 영어 알파벳 사용 권장
+			- input, out 등 의미 있는 단어 사용
+			- 생성자 함수(객체)의 이름은 항상 대문자로 시작
+				function Person(){}	var p01 = new person();
+			- 변수, 인스턴스, 함수, 메서드의 이름은 항상 소문자로 시작
+				ex) var num01, var p2 = new Person();
+					function setName(){},
+			- 여러 단어로 이루어진 식별자는 각 단어의 첫 글자를 대문자로
+				ex) var callName, var setAge = function(){};
+	5. 자바스크립트의 데이터 타입
+		1) 숫자형(number)
+		2) 문자열형(string)
+		3) 논리형(boolean)
+		4) 함수형(function)
+		5) 객체형(object) - 배열포함
+ */
+
+	var num03 = 25;
+	var num04 = 17.5;
+	console.log(typeof(num03)+" : "+num03);
+	var name2 = "홍길동";
+	console.log(typeof(name02)+" : "+name02);
+	var isGreater = num03 >= num04;
+	var call = function(){
+		console.log("#함수호출");
+	};
+	call();
+	console.log(typeof(call));
+	var p01 = {name:"홍길동",age:25, show:function(){
+		console.log("이름 : " + this.name);
+		console.log("나이 : " + this.age);
+	}};
+	console.log(typeof(p01));
+	p01.show();
+	
+/*
+	6. 주석
+	// 한줄 주석
+	/* 범위 주석
+ */
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
