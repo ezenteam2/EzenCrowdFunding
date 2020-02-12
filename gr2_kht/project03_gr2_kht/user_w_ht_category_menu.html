@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>잠이 오냐 지금?</title>
+<script src="http://false9.wckorea.gethompy.com/js/jquery-1.8.3.min.js"></script>
 <style>
 
 #div004_ht{
@@ -36,11 +37,11 @@
 	margin:10px;
 	}
 
-iframe{
+/*
+#div009{
 	width:1750px;
-	height:1000px;
 	}
-
+*/
 </style>
 
 </head>
@@ -49,8 +50,8 @@ iframe{
 
 	<div id="div004_ht">
 
-		<div id="div005_ht">IT</div>
-		<div id="div005_ht">IT</div>
+		<div id="div005_ht" href="javascript:void(0);" onclick="btnclick('user_w_ht_projects_list.html')">IT</div>
+		<div id="div005_ht" href="javascript:void(0);" onclick="btnclick('user_w_ht_projects_list2.html')">가전</div>
 		<div id="div005_ht">IT</div>
 		<div id="div005_ht">IT</div>
 		<div id="div005_ht">IT</div>
@@ -62,13 +63,31 @@ iframe{
 	
 
 	
-	<p style="text-align:center;">
-	<iframe src="user_w_ht_category_main.html" align="middle"></iframe> 
-	</p>
+	
+	
+	<div id="list_page" style="width:1700px;background-color:red;margin:0 auto;margin-top:20px;">
+	<?php include('user_w_ht_category_main.html'); ?>
+	</div>
+
+	
 	
 
 </body>
 <script type = "text/javascript">
+
+function btnclick(_url){
+	$.ajax({
+			url : _url,
+			type : 'post',
+			success: function(data) {
+				$('#list_page').html(data);
+			},
+		error: function() {
+			$('#list_page').text('페이지 점검중 입니다.');
+		}
+	});
+	}
+
 
 </script>
 </html>
