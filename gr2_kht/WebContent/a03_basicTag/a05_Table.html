@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+	td{text-align:center;}
+	/*	부분적으로 다른 css 적용
+		아이디로 tab으로 설정된 td의 정렬을 다르게 설정
+	*/
+	#tab td{text-align:left;}
+	#tabtab td{text-align:right;}
+	
+	table{border-collapse:collapse;}
+		
+</style>
+<script type = "text/javascript">
+
+</script>
+</head>
+
+<!-- 
+# 테이블 태그
+	1. 화면에 가로(행)/세로(열)의 표 형식으로 데이터를 출력할때 효과적인 정렬 방식으로 사용 됨
+	2. 테이블 태그 구성 요소
+		1) table : 테이블의 최상위로 표를 구성하는 tag
+		2) border : 테이블의 테두리
+		2) tr : (table row) 테이블의 행단위 설정
+			- tr th : table head 테이블의 title 설정
+			- tr td : table data 테이블에 입력 되는 실제 데이터
+	3. 예제
+		<table border>
+			<tr><th>이름</th><td>쓰레기</td></tr>
+			<tr><th>나이</th><td>서른마흔다서쨜</td></tr>
+			<tr><th>지역</th><td>신촌</td></tr>
+		</table>
+	4. 속성 <태그 속성 = 속성값>
+		1) table
+			- align = left|right|center	- 전체 화면 대비 테이블의 위치 정렬
+		 	- border = "숫자"	- 테이블 외곽선 굵기 설정
+		 	- cellspacing		- 셀간의 간격
+		 	- cellpadding		- 셀과 글자 사이의 간격
+		 	- thead				- 하위에 tr, td 들어가면서 타이틀 구현
+		 	- tbody				- 하위에 tr, td 들어가면서 데이터 구현
+		 	- tfoot				- 하위에 tr, td 들어가면서 주로 하단 처리 사용
+		 	- caption			- 표의 제목
+		 	- colgroup			- 컬럼의 특징을 나타내는 기능 처리 하위 요소로 col, width를 이용하여 폭 설정 
+		2) tr/td 공통
+			- colspan	- column span 컬럼을 확대 처리, 열단위 cell병합
+				ex) colspan = "2" 컬럼 단위로 2개의 cell을 병합
+			- rowspan	- row span 행단위로 cell 병합
+		3) 전체 공통 속성
+			- width = "절대크기|상대크기(%)"
+			- height = "절대크기|상대크기(%)"
+									** 상대크기 : 현재 tag가 포함된 상위 tag의 해당 비율로 셀 크기 할당
+		4) td 안의 문자열에 대한 cell 단위의 정렬 - style로 text-align:center|right|left로 처리
+			**기본 속성으로는 정렬 속성을 지원하지 않음
+		5) 하위 tag에 지정한 속성이 우선적으로 적용
+		6) 테이블 구분 라인을 1라인으로 처리 - border-collapse
+			css의 style 속성으로 지정
+			태그에 inline style 선언
+			
+			
+				
+		
+ -->
+
+<body>
+	<h1>테이블 기본 시작</h1>
+	<table style = "border-collapse:collapse" width = "50%" border = "10" cellspacing = "10" cellpadding = "10">
+		<tr><th width = "20%">이름</th>	<td width = "30%">쓰레기</td>			</tr>
+		<tr><th>나이</th>	<td>서른마흔다서쨜</td>		</tr>
+		<tr><th>지역</th>	<td>신촌</td>			</tr>
+	</table>
+
+<!--
+ex)	no		이름		국어		영어		수학
+ 	1		씨엘		80		70		70
+ 	2		산다라박	100		100		100
+	3		박봄		10		90		25
+ 
+ -->
+	
+	
+	<br><br><br>
+	<h1>테이블 예제</h1>
+	<table id = tab border align = "center">
+		<tr><th>no</th>	<th>NAME</th>	<th>KOREAN</th>	<th>ENGLISH</th>	<th>MATH</th>	</tr>
+		<tr><td>1</td>	<td>쿤</td>		<td>100</td>	<td>100</td>		<td>100</td>	</tr>
+		<tr><td>2</td>	<td>밤</td>		<td>20</td>		<td>15</td>			<td>95</td>		</tr>
+		<tr><td>3</td>	<td>라크</td>	<td>10</td>		<td>5</td>			<td>15</td>		</tr>
+	</table>
+	
+	<br><br><br>
+	<h1>테이블 셀 병합</h1>
+	<table border width = "300" align = "center">
+		<tr><th colspan = 5>no</th></tr>
+		<tr><td rowspan = 3>1</td>	<td>쿤</td>		<td>100</td>	<td>100</td>		<td>100</td>	</tr>
+		<tr>						<td>밤</td>		<td>20</td>		<td>15</td>			<td>95</td>		</tr>
+		<tr>						<td>라크</td>	<td>10</td>		<td>5</td>			<td>15</td>		</tr>
+	</table>
+
+	<br><br><br>
+	<h1>테이블 셀 병합 예제1</h1>
+	<table border width = "300" align = "center">
+		<tr><td>대분류</td>				<td>중분류</td>					<td>소분류</td>	</tr>
+		<tr><td rowspan = 2>요구사항</td>	<td rowspan = 2>요구분석</td>		<td>면담</td>	</tr>
+		<tr>															<td>서류검토</td>	</tr>
+		<tr><td rowspan = 2>화면설계</td>	<td>화면 flow</td>				<td>담당자</td>	</tr>
+		<tr>							<td colspan = 2>화면설계서</td>					</tr>
+		<tr><td rowspan = 2>구현</td>	<td>디자인</td>					<td>웹디자인</td>	</tr>
+		<tr>							<td colspan = 2>개발</td>						</tr>
+	</table>
+	
+	
+	<br><br><br>
+	<h1>테이블 셀 병합 예제2</h1>
+	<table border align = "center" width = 600>
+		<tr><td colspan = 3 align = "center">상단</td>																								</tr>
+		<tr><td align = "left" width = "33%">왼쪽</td>	<td align = "center" width = "33%">중앙</td>	<td align = "right" width = "33%">오른쪽</td>	</tr>
+		<tr>																																		</tr>
+		<tr><td colspan = 3 align = "center">하단</td>																								</tr>
+	</table>
+	
+	<br><br><br>
+	<h1>테이블 셀 병합 예제3</h1>
+	<table border width = 500>
+	<tr style="background-color : blue"><td colspan = 3 align = "center">오늘의 수입 지출</td>																				</tr>
+	<tr><td align = "center">내용</td>						<td align = "center">수입</td>			<td align = "center">지출</td>		</tr>
+	<tr><td align = "center">월급</td>						<td>1,000,000</td>						<td></td>							</tr>
+	<tr><td align = "center">점심값</td>						<td></td>								<td>5,000</td>						</tr>
+	<tr><td align = "center">부모님 선물</td>					<td></td>								<td>30,000</td>						</tr>
+	<tr><td rowspan = 3 align = "center">총계</td>			<td align = "center">수입</td>			<td align = "center">지출</td>		</tr>
+	<tr>													<td>1,000,000</td>						<td>35,000</td>						</tr>
+	<tr>													<td align = "center">남은 돈</td>			<td>965,000</td>					</tr>
+	</table>
+	
+	<br><br><br>
+	<h1>테이블 셀 병합 예제3</h1>
+	<table border width = 500>
+	<tr><td colspan = 5>장바구니 현황</td>																		</tr>
+	<tr><td>no</td>						<td>물건명</td>	<td>가격</td>	<td>갯수</td>	<td>합계</td>		</tr>
+	<tr><td>1</td>						<td id = "tab">사과</td>	<td>3000</td>	<td>2</td>		<td>6000</td>		</tr>
+	<tr><td>2</td>						<td>바나나</td>	<td>4000</td>	<td>3</td>		<td>12000</td>		</tr>
+	<tr><td>3</td>						<td>딸기</td>	<td>12000</td>	<td>3</td>		<td>36000</td>		</tr>
+	<tr><td colspan = 4>총비용</th>														<td>54000</td>		</tr>
+	</table>														
+</body>
+</html>
