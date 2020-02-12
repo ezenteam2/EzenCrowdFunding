@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+
+<script type = "text/javascript">
+
+/*
+
+# 함수
+	1. 형식
+		1) 익명 / 변수형 함수	-> 반드시 정의한 후에 호출하여야 함
+			var 함수 = function(매개변수1, 매개변수2...){
+				--처리할 프로세스--
+				return 리턴할 값;
+			};
+			함수(); // 호출
+			
+		2) 선언적 함수			-> 함수가 정의 되기 전에, 호출하여 메모리에 로드부터 할 수 있음
+			함수명();
+			function(매개변수1, 매개변수2...){
+				--처리할 프로세스--
+				return 리턴할 값;
+			};
+
+
+*/
+
+//	1. 변수형 함수
+
+/*
+	var num01 = prompt("첫 번째 숫자 입력하셈", "");
+	var num02 = prompt("두 번째 숫자 입력하셈", "");
+		
+	var plus = function(num01, num02){						// 변수 plus에 변수형 함수 선언, 할당될 데이터 변수 - num01, num02
+		
+		var sum = parseInt(num01) + parseInt(num02);
+		console.log(`${num01} + ${num02} = ${sum}`);		// f12를 통해 출력될 내용 console.log(`${변수명} ${변수명*변수명}`)
+															// #{}안에 변수명을 넣거나, 변수간 연산 가능
+															//
+		return sum;		// return - 이 함수가 호출 되는 곳에 전달할 데이터
+						// 선언된 함수를 처리한 이후, return 값을 호출하는 곳에 전달
+	};
+	
+	var data = plus(num01, num02);		//data라는 변수에 함수 plus에서 return된 값을 처리
+	document.write(`<h2>${num01} + ${num02} = ${plus(num01,num02)}</h2>`);
+*/
+
+
+/*
+	ex) 함수 boy - 물건명, 가격, 갯수를 매개변수로 함
+		console에는 @@@ 물건을 @@개 구매하여 @@원 입니다.
+		return 값을 가격 *갯수로 정의
+ */
+
+ /*
+	var proName = prompt("뭐 샀어여?", "-");
+	var price = prompt("한개 얼마?", "-");
+	var num = prompt("몇개 사싐?", "-");
+
+ 
+	var buy = function(proName, price, num){
+		var sum01 = parseInt(price) * parseInt(num);
+		console.log(`${proName}을 ${num}개 구입하여 ${sum01}원 내세여`);
+		return sum01;
+	};
+	
+	document.write(`<h2>물건명 : ${proName}</h2>`);
+	document.write(`<h2>가격 : ${price}</h2>`);
+	document.write(`<h2>갯수 : ${num}</h2>`);
+	document.write(`<h2>총비용 : ${buy(proName, price, num)}</h2>`);
+ */
+ 
+	function buy2(mart){
+		var proName = prompt("뭐 샀어여?", "-");
+		var price = prompt("한개 얼마?", "-");
+		var num = prompt("몇개 사싐?", "-");
+		document.write(`<h2>물건명 : ${proName}</h2>`);
+		document.write(`<h2>가격 : ${price}</h2>`);
+		document.write(`<h2>갯수 : ${num}</h2>`);
+	}
+ 	buy2("행복마트");
+	
+ 
+</script>
+</head>
+
+<body>
+
+	<h1>시작</h1>
+	마트명 : <input type="text" onclick="buy2(this.value)" value="츨거운마트"/>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<!-- 
+
+# div 박스 속성 설정
+	1. margin 	: 테두리와 다른 태그 사이의 테두리 바깥쪽 여백
+	2. border 	: 테두리
+	3. padding 	: 테두리와 글자 사이의 테두리 안쪽 여백
+	4. width 	: 글자를 감싸는 영역의 가로 크기
+	5. height 	: 글자를 감싸는 영역의 세로 크기
+
+# margin, padding 접미어
+	1. left, right, top, bottom
+		xxx-방향 : 해당 방향이나 위치의 설정값만 변경
+
+# margin, padding 매개값 설정
+	margin 	: 위, 오른쪽, 아래쪽, 왼쪽
+	padding	: 위 아래 양 옆
+
+# border
+	1. border : 굵기 형태 색상
+	2. border-width : 굵기
+	3. border-style : 형태
+	4. border-color : 색상
+	5. border-radius : 모서리의 굴곡 설정
+		1)	1개의 값 : 4모서리에 동일하게 굴곡 설정
+		2)	4개의 값 : 각 모서리의 굴곡을 다르게 설정
+		
+# display 속성
+	1. 태그가 화면에 보이는 방식 지정
+	2. 속성값
+		none: 화면에 보이지 않음
+		block : 블록 박스형식
+		inline : 인라인 박스 형식
+		inline-block : 블록과 인라인 박스의 중간단계
+
+1. list-style:none; : list type을 없앰
+2. float : inline 형식으로 변경
+
+ -->
+
+<style>
+
+	/*
+	div{width:300px;height:200px;background-color:#F75656;
+	color:#000000; margin:50px; border:20px solid #7CEC70;
+	padding:20px; border-radius:50px;text-align:center;}
+	*/
+	
+	td{font-size:2em;}
+	td:nth-child(2n){background-color:#F75656;}
+	
+	/*
+	li{list-style:none;
+	float:left;
+	padding:15px;}
+	*/
+	
+	li:first-child{border-radius:10px 0 0 10px;}
+	li:last-child{border-radius:0 10px 10px 0;}
+	li:nth-child(2n){background-color:#F75656;}
+	li:nth-child(2n+1){background-color:#7CEC70;}
+	
+	a{text-decoration:none;color:#F1E656}
+	/* 하이퍼 텍스트 기본 밑줄 처리 없앰 */
+	
+	.sample{background-color:#F1E656;}
+	#box1{display:none;}
+	#box2{display:block;}
+	#box3{display:inline;width:100px;height:100px;background-color:#7CEC70;}
+	#box4{display:inline-block;width:100px;height:100px;background-color:#7CEC70;}
+	/* 
+	inline			: 크기를 설정하더라도 앞에 나열된 객체의 크기와 동일하게 출력 
+	inline-block	: 설정한 box의 크기만큼 할당을 받아 그 크기만큼 출력
+	*/
+	
+</style>
+<script type = "text/javascript">
+
+</script>
+</head>
+
+<body>
+	
+	<h1>박스 속성</h1>
+	<div>하이루?
+	</div>
+	
+	<table style="border:solid 10px;padding:20px;border-collapse:collapse">
+	<tr><td>1번</td><td>2번</td><td>3번</td><td>4번</td><td>5번</td><td>6번</td><td>7번</td></tr>
+	</table>
+	
+	<ul>
+	<li><a href="#">일번째</a></li>
+	<li><a href="#">이번째</a></li>
+	<li><a href="#">삼번째</a></li>
+	<li><a href="#">사번째</a></li>
+	<li><a href="#">오번째</a></li>
+	<li><a href="#">육번째</a></li>
+	<li><a href="#">칠번째</a></li>
+	</ul>
+	
+	<h1>DISPLAY 속성</h1>
+	<div class="sample">
+		<span>box1</span>
+		<div id="box1">box1</div>
+		<span>box1</span>
+	</div>
+	
+	<br><br>
+	
+	<div class="sample">
+		<span>box2</span>
+		<div id="box2">box2</div>
+		<span>box2</span>
+	</div>
+	
+	<br><br>
+	
+	<div class="sample">
+		<span>box3</span>
+		<div id="box3">box3</div>
+		<span>box3</span>
+	</div>
+	
+	<br><br>
+	
+	<div class="sample">
+		<span>box4</span>
+		<div id="box4">box4</div>
+		<span>box4</span>
+	</div>
+
+</body>
+</html>

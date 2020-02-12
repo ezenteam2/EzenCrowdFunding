@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+	table{border-collapse:collapse;}
+</style>
+<script type = "text/javascript">
+
+function call() {
+	document.querySelector("[name=id]").value = "입력되었습니다"
+	document.querySelectorAll("[name = gender]")[1].checked = true;
+	document.querySelectorAll("[name = introduction]").value = "내용 입력 \n 오홀홀홀로롤롤로 \n 방갑긔";
+	document.querySelectorAll("[name = fruits]")[0].checked = true;
+	document.querySelectorAll("[name = fruits]")[1].checked = true;
+}
+
+</script>
+</head>
+
+<!-- table 안에 넣고 정렬 정리하기 -->
+<!--
+
+# submit 버튼 클릭시, 서버에 전달되는 데이터
+	01_start.html?id=himan&pass7777
+	form 하위의 name의 값과, value 값이 key=value 형식으로
+	서버에 있는 페이지에 전달한다
+
+
+# form 태그
+	1. method 속성의 방식으로 action 속성의 페이지에 데이터를 전달
+		form action = "전송위치" method = "post|get"
+		ex) action = "a01_gogo.html" method = "post"
+		form 하위에 있는 type으로 submit 버튼을 클릭시, form 시작 태그와 form 마지막 태그 사이에 있는 모든 요소데이터는 key=value 형식으로 넘어감
+		action 값이 없는 경우, default로 현재페이지에 데이터 전달
+		method 값이 없는 경우, default로 get방식으로 데이터 전달
+	2. method 방식
+		1) get :	url (uniform resource location)에 페이지와 요청값(key=value)이 출력되며 전송됨
+					보안(x), 전송데이터가 작을 때
+		2) post :	url 페이지만 보이고, 요청값을 내부안에서 전송 처리
+					보안(o), 전송데이터가 많을 때
+	3. form 하위 데이터 전송 처리하는 요소 tag
+		1) input
+			- type에 따른 분류	- text		: 기본 데이터 입력 요소 객체						ex) input type = "text"
+							- button	: 버튼 모양으로 value 값으로 label을 볼 수 있음		ex) input type = "button"
+							- checkbox	: check할 수 있는 모양의 요소 객체					ex) input type = "checkbox"
+							- file		: 파일을 선택하고 전송할 수 있는 uif를 가진 요소			ex) input type = "file"
+							- hidden	: 보이지 않는 요청값을 전송할 때						ex) input type = "hidden"
+							- image		: 이미지의 value값을 전송할 때						ex) input type = "image"
+							- password	: 입력 시 값을 표시하지 않게 할 때					ex) input type = "password"
+							- radio		: 여러 항목 중 단일 선택, name 값을 동일, 한 개만 선택	ex) input type = "radio"
+							- reset		: form 하위에 있는 모든 요소 객체를 초기화			ex) input type = "reset"
+							- submit	: form 하위에 있는 모든 요소객체를 서버에 전송			ex) input type = "submit"
+		2) textarea	- 문단의 데이터를 입력할 때, 처리하는 요소 객체
+			- rows = "" 크기 설정
+			- cols = "" 크기 설정
+		3) select
+			- 여러 항목의 데이터 중 하나를 선택하는 박스
+			- option value 로 설정
+				- 기본적으로 단일 선택
+				- multiple 속성으로 다중 선택 가능
+					select multiple = "mutiple"
+				- 옵션 그룹 선택 - optgroup
+					option 부분을 optgroup과 속성 label로 묶어서 처리
+						optgroup label = "그룹1"
+							option
+							option
+						optgroup label = "그룹2"
+							option
+							option
+		4) fieldset / legend (양식)
+	
+ -->
+
+<body>
+
+	<h1 align = "center">S T A R T</h1>
+	<form action="z01_show.jsp">
+	
+		<fieldset>
+			<legend>로그인</legend>
+			아이디 	:<input type = "text" name = "id02"/><br>
+			패스워드 	:<input type = "text" name = "pass02"/><br>
+			<input type="submit" value="submit">
+		</fieldset>
+	</form>
+	
+	<br><br>
+
+	<form>	
+		<input type = "hidden" name = "civilNum" value = "881234-123412"/>
+		<!-- 
+		화면에 출력되진 않지만, 데이터를 전송해야 하는 경우		
+		 -->
+	<table border = "1" cellpadding = "5" align = "center" width = "1000">
+	<tr><th align = "center" colspan = "2">로그인</th>															</tr>
+		<!-- 
+		width - 최상위, height - 최우측 셀에 지정하면 나머지는 자동으로 똑같이 설정 됨
+		 -->
+	<tr><td>아이디</td>		<td><input type = "text" name = "id" placeholder = "ID를 입력하세요"/></td>				</tr>
+							<!--
+							placeholder - 기본으로 보여지고, 실제 값을 가지는 것을 아니고,
+							내용이 입력되기 시작하면 사라짐 
+							 -->
+	<tr><td>패스워드</td>		<td><input type = "password" name = "pass"/></td>									</tr>
+	<tr><td>체크박스</td>		<td><input type = "checkbox" name = "fruits" value = "사과"/>사과	
+							<input type = "checkbox" name = "fruits" value = "자몽"/>자몽	
+							<input type = "checkbox" name = "fruits" value = "리치"/>리치</td>					</tr>
+							<!-- 
+							여러 선택지 중 다중 선택 가능, check 한 값만 전송
+							같은 타입의 데이터를 하나의 변수에 저장하는 것 : 배열
+							check 타입은 보통 서버에서 배열로 입력 됨							
+							 -->
+							<!-- 
+							check 박스의 경우 checked
+							select, radio 의 경우 selected
+							default로 선택되는 값 설정
+							 -->
+	<tr><td align = "center" colspan = "2"><input type = "button" onclick = "call()" value = "버튼이긔콸콸"/></td>	</tr>
+	<tr><td>단일선택</td>		<td><input type = "radio" name = "gender" value = "남자" checked/>남자	
+							<input type = "radio" name = "gender" value = "여자"/>여자</td>						</tr>	
+							<!-- 
+							선택지 중 한 가지 항목만 선택 가능
+							check한 항목의 value값만 전송							
+							 -->
+	<tr><td>파일전송</td>		<td><input type = "file" name = "inputFile" value = "파일을 등록하세요"/></td>			</tr>
+	<tr><td>사진전송</td>		<td><input type = "image" name = "inputImg" value = "이미지를 등록하세요"/></td>			</tr>
+	<tr><td>textarea</td>	<td><textarea rows = "5" cols = "30" name = "introduction">자기 소개를 입력하세여
+							
+							#### 이전 글 내용 ####
+							</textarea></td>																	</tr>
+							<!--
+							textarea의 시작과 끝으로 하되, 줄바꿈을 \n로 처리
+							 -->
+	<tr><td>select</td>		<td>
+							<!--  value를 생략하면 label 값이 value값으로 설정된다 -->
+							<select name = "location">
+								<option value = "AREA01">서울/경기</option>
+								<option value = "AREA02">대전</option>
+								<option value = "AREA03">대구</option>
+								<option value = "AREA04">부산</option>
+								<option value = "AREA05">찍고</option>
+								<option value = "AREA06">아하</option>
+							</select>		
+							</td>																				</tr>
+	<tr><td>선호 음식</td>		<td>
+							<select multiple = "multiple" name = "food">
+							<!-- 
+							ctrl을 이용하여 다중 선택 가능
+							 -->
+								<option value = "김밥">김밥</option>
+								<option value = "떡볶이">떡볶이</option>
+								<option value = "라면">라면</option>
+								<option value = "라볶이">라볶이</option>
+								<option value = "어묵">어묵</option>
+								<option value = "핥핥">핥핥</option>
+							</select>		
+							</td>																				</tr>
+	<tr><td>선호 과목</td>		<td>
+							<select name = "subject">
+								<optgroup label = "프론트엔드">
+									<option>html</option>
+									<option>css</option>
+									<option>javascript</option>
+									<option>jquery</option>
+								</optgroup>
+								<optgroup label = "백엔드">
+									<option>java</option>
+									<option>jsp</option>
+									<option>database</option>
+									<option>mybatis</option>
+									<option>spring</option>
+								</optgroup>
+							</select>		
+							</td>																				</tr>
+	<tr><td align = "center" colspan = "2"><input type = "submit" value = "로그인"/></td>							</tr>
+	<tr><td align = "center" colspan = "2"><input type = "button" value = "버튼이긔"/></td>						</tr>
+	<tr><td align = "center" colspan = "2"><input type = "reset" value = "처음으로 돌아가자"/></td>					</tr>
+	</table>
+	</form>
+	
+	<h2>확장된 입력 요소</h2>
+	<input type="color"/><br><br><br><br>
+	<input type="email"/><br><br><br><br>
+	<input type="tel"/><br><br><br><br>
+	<input type="range"/><br><br><br><br>
+	<input type="date"/><br><br><br><br>
+	<input type="month"/><br><br><br><br>
+	<input type="time"/><br><br><br><br>
+	<input type="week"/><br><br><br><br>
+	
+	
+</body>
+</html>

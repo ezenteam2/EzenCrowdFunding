@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+
+<!-- 
+# 선택자
+	1. css를 공통적으로 선언하고, 해당 속성에 의해서 화면에 적용케하는 요소객체의 선택을 말함
+	2. 기본 형식
+		h1		{color	:	red;}
+		(선택자)	스타일속성		적용값
+	3. 속성 선택자
+		[속성 = 속성값 ]
+			cf) 태그 속성1="속성1값" 속성2="속성2값" -> 태그와 연관된 속성
+			ex) <input type="text" name="name01" value="himan">
+					-> type, name, value 모두 tag input의 속성
+					
+					**	일반적으로 id는 페이지 내에서 1개만 사용
+						class를 여러개 사용함
+	4. 후손 선택자
+		- 상위" "계층level상관없는하위
+			ex)	#tab01 td{color:red;}
+				id값으로 tab01이라는 table의 하위에 있는 td의 글자색은 red
+		- 상위 > 하위
+			부모계층관게에 있는 하위 요소객체에 대한 선택
+			ex)	p > h1{background-color:#FFFFCC}
+				p 태그 바로 밑에 있는 h1이 있는 요소객체는 모두다#FFFFCC 색상
+ -->
+
+
+<style>
+
+	h1{	background-color:#FFFFCC;
+		color:#FFCCFF;
+		border:20px #FF6666; }
+	*{	background-color:#CCFFFF;}
+	h2{	background-color:#336699;}
+	#ch01{ background-color:#99CC33;}
+	.cls01{ background-color:#FFCCFF; color:#CC0099;}
+	input[type=button]{background-color:#99CCCC;}
+	[type=text]{background-color:#993333; color:#FFFFFF;}
+	#tab01 td{color:red;}
+	tr > th{background-color:#FFFFCC}
+	table{border-collapse:collapse;}
+
+</style>
+
+<script type = "text/javascript">
+	function callWin(){
+		alert("윈도우 창 열기");
+		window.open("a01_basicExp.html","","width=700,height=300")
+	}
+	
+	var cnt=0;
+	function changeDiv(){
+		var div=document.querySelector("#div01");
+		if(cnt%2==0){
+		div.style.visibility="hidden";
+			cnt++;
+		} else {
+			div.style.visibility="visible";
+			cnt=0;
+		}
+		
+	}
+
+</script>
+</head>
+
+<body>
+
+
+
+	<h1>CSS를 싲가해봅싀다</h1>
+	<h2>태그에 적용</h2>
+	<h3 id="ch01">id에 적용</h3>
+	<h4 class="cls01">클래스에 적용</h4>
+	<input type="button" name="name01" value="ㅋㅋㅋ" style="width:100px; height:60px"><br>
+	<input type="text" name="name02" value="입력!"><br>
+	
+	<table id="tab01," border=3 width = 500 height = 300>
+		<tr><th>물건명</th>	<th>가격</th>	</tr>
+		<tr><td>너는</td>	<td>1000</td>	</tr>
+		<tr><td>무엇을</td>	<td>2000</td>	</tr>
+		<tr><td>샀니</td>	<td>3000</td>	</tr>
+	</table>
+	
+	<p>
+		<h1>p 아래에 h1은 이렇게 처리댐</h1>
+		<h2>방가방가햄토리</h2>
+		<div id="div01">
+			<h1>p 아래 div 아래에 있는 h1은 어떻게 될까여?</h1>
+		</div>
+	</p>
+	<h2 onclick="changeDiv()">div 나와랏! 꺼져랏!</h2>
+	<div style="position:absolute;top:500px;left:100px;width:100px;height:100px;background-color:pink;">위치조절</div>	
+	<h3>화면 안에 다른 프레임을 호출</h3>
+	<a href="a01_basicExp.html" target="frame01">a01_basicExp.html</a><br>
+	<a href="a03_selector.html" target="frame01">a03_selector.html</a><br>
+	<a href="../a04_formTag/a01_start.html" target="frame01">../a04_formTag/a01_start.html</a><br>
+	<a href="javascript:callWin();">윈도우창 띄우기</a><br>
+	<br><br>
+	<iframe src="a01_basicExp.html" name="frame01" width="700" height="300"></iframe>
+	<br><br>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+<script type = "text/javascript">
+
+//선언적 함수 선언
+	function call(msg){
+	alert(msg);
+	};
+	
+	function call2(obj){
+		//obj click한 객체를 받음
+		//속성 변경
+		//obj.innerHTML : 전달되어 온 객체의 label 변경처리
+		obj.innerHTML="클릭!!!!!!!!!!!";
+		obj.style.backgroundColor="#dc7f0d";
+	};
+	function call3(msg){
+		alert(msg);
+	}
+	function call4(obj){
+		obj.style.backgroundColor="yellow";
+		obj.style.color="blue";
+	}
+	/*
+	# 함수구조
+	function 함수명(매개변수1, 매개변수2){
+		처리할 내용
+		return 리턴할 값;
+	}
+	1. 가변인자 함수를 지원하고 있다.
+		1) 매개변수가 선언되어 있지 않더라도, 키워드 arguments로
+		배열로 매개변수를 받을 수 있다.
+	 */
+	function callParams(){
+	    for(var idx=0;idx<arguments.length;idx++){
+			document.write(`<h2>${arguments[idx]}</h2>`)
+	    }
+	}
+</script>
+</head>
+
+<body>
+
+
+	<h2 onclick="callParams('홍길동')">매개변수1개</h2>
+	<h2 onclick="callParams('홍길동',25)">매개변수2개</h2>
+	<h2 onclick="callParams('홍길동',27,'서울신림')">매개변수3개</h2>
+    <h1 onclick="call('하이엿')">클릭해보센</h1>
+	<!-- 
+	this : 현재 클릭한 객체 h1의 모든 내용을 전달
+	-->
+	<h1 onclick="call2(this)">객체 전달</h1>
+    <h2 onclick="call3('Hello js World')">인사 한번 해보실래요?</h2>
+    <h3 onclick="call4(this)">change!! World!!</h3>
+    <!-- 
+    ex1) h2를 클릭했을 때, Hello js World라고  alert창으로 출력되게
+    함수를 정의하고  호출하세요.
+    ex2) h3를 클릭했을 때, 배경색상을 노랑색으로 글자색상으로 파랑색으로
+    출력하게 함수를 정의하고 호출하세요.
+     -->
+
+
+</body>
+</html>
