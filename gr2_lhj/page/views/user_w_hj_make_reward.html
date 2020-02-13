@@ -146,11 +146,21 @@
                     <p>프로젝트 종료 후 입금받으실 계좌를 입력해주세요</p></label>
 
                     <label style="width:100%;" for=""><h2>거래은행을 선택해주세요</h2></label>
-
+                    <div class="custom-select" style="width:30%;">
+                        <select>
+                          <option value="0">은행을 선택해주세요</option>
+                          <option value="1">국민은행</option>
+                          <option value="2">신한은행</option>
+                          <option value="3">농협</option>
+                          <option value="4">기업은행</option>
+                          <option value="5">산업은행</option>
+                          <option value="6">우리은행</option>
+                        </select>
+                      </div>
                     <label style="width:100%;" for=""><h2>계좌번호를 적어주세요</h2></label>
-
+                    <input style="width:40%;" type="text" name="계좌번호" id="bank_account_number">
                     <label style="width:100%;" for=""><h2>예금주명을 적어주세요</h2></label>
-
+                    <input style="width:200px;" type="text" name="예금주명" id="bank_account_owner">
                     <label style="width:100%;" for=""><h2>통장 사본 이미지를 올려주세요</h2></label>
 
                     <label style="width:100%;" for=""><h1>세금계산서 정보를 입력해주세요</h1></label>
@@ -179,7 +189,9 @@
     <script src="./insert-video.js"></script>
     <script src="./insert-detail-image.js"></script>
     <script src="./preview-reward.js"></script>
+    <script src="./select-bank.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

@@ -1,9 +1,9 @@
 {
 const dropArea=document.querySelector('.thumbnail_drop_box');
-const closeIcon=document.querySelector('.close_icon');
-const deleteDiv=document.querySelector('.delete');
+const closeIcon=document.querySelector('.thumbnail_drop_box .close_icon');
+const deleteDiv=document.querySelector('.thumbnail_drop_box .delete');
 const thumbnailImage=document.getElementById('thumbnail');
-const _input = document.querySelector('input[type=file]');
+const _input = document.querySelector('.thumbnail_drop_box input[type=file]');
 
 function preventDefaults(event){
     event.preventDefault();
@@ -16,7 +16,7 @@ function previewFile(file){
     if(file.type==='image/jpeg'||file.type==='image/png'){
         reader.onloadend=function(){
             const thumbImg = thumbnailImage;
-            const thumbnailFileName=document.querySelector('.thumbnail_file_name');
+            const thumbnailFileName=document.querySelector('.thumbnail_drop_box .thumbnail_file_name');
             thumbImg.classList.remove('none');
             thumbImg.src = reader.result;
             thumbImg.width='200';
