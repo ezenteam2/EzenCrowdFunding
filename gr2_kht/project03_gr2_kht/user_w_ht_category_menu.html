@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>잠이 오냐 지금?</title>
-<script src="http://false9.wckorea.gethompy.com/js/jquery-1.8.3.min.js"></script>
 <style>
 
 #div004_ht{
@@ -50,13 +49,13 @@
 
 	<div id="div004_ht">
 
-		<div id="div005_ht" href="javascript:void(0);" onclick="btnclick('user_w_ht_projects_list.html')">IT</div>
-		<div id="div005_ht" href="javascript:void(0);" onclick="btnclick('user_w_ht_projects_list2.html')">가전</div>
-		<div id="div005_ht">IT</div>
-		<div id="div005_ht">IT</div>
-		<div id="div005_ht">IT</div>
-		<div id="div005_ht">IT</div>
-		<div id="div005_ht">IT</div>
+		<div id="div005_ht" onclick="changeIframeUrl('user_w_ht_projects_list.html')">IT</div>
+		<div id="div005_ht" onclick="changeIframeUrl('user_w_ht_projects_list2.html')">가전</div>
+		<div id="div005_ht">가구</div>
+		<div id="div005_ht">패션</div>
+		<div id="div005_ht">뷰티</div>
+		<div id="div005_ht">푸드</div>
+		<div id="div005_ht">여행</div>
 
 	</div>
 	
@@ -65,28 +64,19 @@
 	
 	
 	
-	<div id="list_page" style="width:1700px;background-color:red;margin:0 auto;margin-top:20px;">
-	<?php include('user_w_ht_category_main.html'); ?>
-	</div>
-
+	<p style="text-align:center;">
+	<iframe src="user_w_ht_category_main.html" align="middle" style="width:1750px; height:800px;" id="main_frame" name="main_frame"></iframe> 
+	</p>
 	
 	
 
 </body>
 <script type = "text/javascript">
 
-function btnclick(_url){
-	$.ajax({
-			url : _url,
-			type : 'post',
-			success: function(data) {
-				$('#list_page').html(data);
-			},
-		error: function() {
-			$('#list_page').text('페이지 점검중 입니다.');
-		}
-	});
+function changeIframeUrl(url){
+	  document.getElementById("main_frame").src = url;	
 	}
+
 
 
 </script>
