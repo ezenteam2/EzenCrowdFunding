@@ -69,3 +69,11 @@ main{
     padding:1%;
     background-color: #dc7f0d;
 }
+
+#inputContent:hover{
+    background-color:#F6F6F6;
+}
+
+#inputTitle:hover{
+    background-color:#F6F6F6;
+}
