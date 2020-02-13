@@ -15,34 +15,22 @@ main{
     margin-top:17%;
 }
 
-table{
-    width:100%;
-    border-top:1px dotted black;
-}
 
-th{
-    padding-left:4%;
-    padding-right:4%;
-    padding-top:2.5%;
-    padding-bottom:2.5%;
-    border-bottom:2px double black;
-    font-size:12pt;
-}
-td{
-    padding-left:3%;
-    padding-right:3%;
-    padding-top:2%;
-    padding-bottom: 2%;
-    border-bottom: 1px dotted black;
-}
 
 button{
     width:60px;
     height:30px;
     background-color:#dc7f0d;
+    border:0;
+    border-radius: 10px;
+    color:white;
 }
 
 #kb_BtnDiv{
     text-align: right;
     margin-right:4.5%;
+}
+
+#kb_pagination{
+    margin-left:45%;
 }

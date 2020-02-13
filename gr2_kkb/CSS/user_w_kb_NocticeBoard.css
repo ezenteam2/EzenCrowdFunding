@@ -8,7 +8,7 @@ body{
 .kb_main{
     padding-left:15%;
     padding-right:15%;
-    
+    margin-top:2%;
 }
 
 #title{
@@ -19,25 +19,11 @@ body{
 
 #tableDiv{
     width:100%;
+    margin-top:4%;
 }
 
-table{
 
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 3%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 
-}
-
-th, td{
-    width:15%;
-    padding:1%;
-    border-top: 1px dotted black;
-}
-
-#kb_pageNum_div{
-    text-align: center;
-    margin-top: 2%;
+#kb_pagination{
+    margin-left:45%;
 }
