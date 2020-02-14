@@ -1,0 +1,379 @@
+@import './jquery-ui.css';
+
+.none{
+    display:none !important;
+}
+
+.make_reward{
+    display:flex;
+    width:100%;
+    min-height: 500px;
+    border:solid;
+}
+
+.make_reward>.column_left{
+    width:20%;
+    border-right:solid gray 1px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.column_left>.navi_menu{
+    width:100%;
+    position: relative;
+    left:5%;
+    top:20%;
+}
+
+.column_left>.navi_menu>.navi_menu_title{
+    font-size:30px;
+}
+
+.column_left>.navi_menu>.navi_menu_list>li{
+    margin-bottom: 10px;
+    font-size:20px;
+    margin-left:30px;
+}
+
+.make_reward>.column_right{
+    width:60%;
+    position: relative;
+    display:flex;
+    flex-wrap:wrap;
+    left:10%;
+}
+
+.make_reward>.column_right>form.basic_form{
+    width:100%;
+}
+
+.column_right .basic_form>.basic_information{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basic_information>.title_length_indicator{
+    margin-left:10px;
+    padding-top:5px;
+    font-size:20px;
+}
+
+.make_reward>.column_right input[type=text]{
+    width:70%;
+    border:solid 1px;
+    height:30px;
+    margin:5px 0 22px 0;
+}
+
+.thumbnail_drop_box{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin-left: 10px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid 2px;
+}
+
+.thumbnail_drop_box>div.delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.thumbnail_drop_box img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.thumbnail_drop_box .thumbnail_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
+.keyword_bar{
+    border:solid;
+    background-color: #f6f9fc;
+    display:flex;
+    flex-wrap: wrap;
+    cursor: text;
+}
+
+.keyword_bar span{
+    margin-right:4px;
+    margin-left: 3px;
+    margin-top:5px;
+    margin-bottom: 3px;
+
+    border-radius: 10px;
+    padding-left:6px;
+    color:white;
+    background-color: #dc7f0d;
+    line-height: 25px;
+    height:25px;
+    
+}
+
+.remove_keyword_button:after{
+    content:'X';
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    font-size:13px;
+    padding-left:6px;
+    padding-right: 6px;
+    cursor: pointer !important;
+}
+
+#project_key_words{
+    background: transparent;
+    margin-top:-3px;
+    font-size:16px;
+    border:none;
+    width:auto;
+    box-sizing: inherit;
+    width:20%;
+    height: 30px;
+    margin:0 0 0 0;
+    outline: none;
+}
+
+.column_right .basic_form>.story_information{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image_wrap{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.image_wrap .image_box{
+    position: relative;
+    width:200px;
+    height:200px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+.image_wrap .image_box img{
+    position: absolute;
+}
+
+.image_wrap .image_box input{
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+}
+
+.detail_img_delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.detail_img_delete img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.detail_img_delete .detail_img_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
+.preview_container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.preview_container .preview{
+    border:solid gray;
+    padding-left:15px;
+    width:150px;
+    margin-right:5px;
+    margin-bottom: 5px;
+}
+
+.preview_container .preview .indicator{
+    background-color: #fc2bac;
+    padding:10px;
+    color:white;
+    font-weight: bold;
+    width:70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.preview_container .preview h4{
+    color:gray;
+    margin-top:7px;
+    margin-bottom: 2px;
+}
+
+.preview_container .preview .title{
+    font-weight: 800;
+    color:#291722;
+}
+
+.preview_container .preview p{
+    color:gray;
+}
+
+.preview_container .preview .edit{
+    margin-right:20px;
+    line-height:20px;
+    cursor: pointer;
+}
+
+.preview_container .preview .delete{
+    cursor: pointer;
+}
+
+.preview_container .preview .edit:before{
+    content:"";
+    background:url('./repair.png') no-repeat;
+    display:inline-block;
+    width:20px;
+    height:20px;
+}
+
+.preview_container .preview .delete:before{
+    content:"";
+    background:url('./delete.png') no-repeat;
+    display: inline-block;
+    width:20px;
+    height:20px;
+}
+
+
+.column_right .basic_form>.maker_information{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+
+*/
+/* The container must be positioned relative: */
+.maker_information .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .maker_information .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .maker_information .select-selected {
+    background-color: #dc7f0d;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .maker_information .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .maker_information .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .maker_information .select-items {
+    position: absolute;
+    background-color: #dc7f0d;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .maker_information .select-hide {
+    display: none;
+  }
+  
+  .maker_information .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+/* 
+ */
+
+body{
+    background-color: #f6f9fc;
+    font-family:sans-serif;
+}
+
+.loading_page {
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #000000;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 0.5s linear infinite; /* Safari */
+    animation: spin 0.5s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }

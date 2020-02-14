@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+	<h1 id="header">일곱개의 대죄</h1>
+	
+	<h2 id="h201">계획1</h2>
+	<h2 id="h202">계획2</h2>
+	<h2 id="h203">계획3</h2>
+	
+	<div></div>
+
+</body>
+
+<script type = "text/javascript">
+
+/*
+# 문서 객체 모델 DOM - Document Object Model
+	- 웹 브라우저가 HTML 페이지를 인식하는 방식을 의미
+	- document 객체와 관련된 객체 집합
+	- dom 사용시 html 페이지에 태그를 추가, 수정, 삭제 가능
+	- 태그 - html 페이지에 존재하는 html이나 body 태그
+	- 문서 객체 - 태그를 자바스크립트에서 이용할 수 있는 객체로 만드는 것
+
+# 문서 객체 가져오기
+	1. 	document.querySelector("#header")			//id는 화면에 1개만 있기에 단일
+		document.querySelectorAll(".클래스명")		//All은 배열
+		document.querySelectorAll("태그명")
+		document.getElementById("header")			//id는 화면에 1개만 있기에 단일
+		document.getElementByTagName("header")
+		document.getElementByClassName("header")
+		document.getElementByName("header")
+ */
+
+ 	var header = document.getElementById("header");
+ 	alert("데이터 : "+header.innerHTML);
+ 	alert("변경");
+ 	header.innerHTML="tag 내용 변경";
+ 	header.align="center";
+ 	header.style.backgroundColor="#FFDAD7";
+ 
+/*
+ 	var h2tag01 = document.getElementById("h201");
+ 	h2tag01.innerHTML="첫 번째 계획";
+
+ 	var h2tag02 = document.getElementById("h202");
+ 	h2tag02.innerHTML="두 번째 계획";
+
+ 	var h2tag03 = document.getElementById("h203");
+ 	h2tag03.innerHTML="세 번째 계획";
+*/
+ 	
+ 	
+ 	var h2Array = document.querySelectorAll("h2");
+ 	//동일한 tag가 여러개일 때, 배열 객체로 형성
+ 	h2Array[0].innerHTML = "첫 번째 계획";
+ 	h2Array[1].innerHTML = "두 번째 계획";
+ 	h2Array[2].innerHTML = "세 번째 계획";
+
+/*
+# DOM 객체의 종류
+	1. 텍스트 노드를 갖는 문서 객체		ex) h1~h6, td
+	2. 텍스트 노드를 갖지 않는 문서 객체	ex) img
+	3. 객체 생성 메서드
+		1) createElement("태그명")
+		2) createTextNode("텍스트명")
+	4. 계층 구조에 의한 할당 처리 메서드
+		1) 상위객체.appendChild(하위 객체)
+ */
+ 
+	var h1 = document.createElement("h1");		//객체 생성
+	var txt = document.createTextNode("하잇!");	//객체 생성
+	var img = document.createElement("img");
+	h1.appendChild(txt);						//객체를 게층구제 의해 할당처리
+	h1.align = "center";
+	h1.style.backgroundColor="#FFDAD7";			//속성 설정
+	img.src="배경img.jpg";
+	
+	document.body.appendChild(h1);				//body DOM객체에 추가
+	
+	h1.appendChild(h2Array[0]);
+	document.body.appendChild(h1);
+	document.body.appendChild(img);
+	
+//	ex) textnode 객체1과 non-textnode 객체2fmf 화면에 추가 처리
+
+	var div = document.createElement("div");
+	var txt02 = document.createTextNode("DIV지롱");
+	div.appendChild(txt02);
+	div.style.backgroundColor="#FFDAD7";
+	document.body.appendChild(div);
+ 	
+	var table = document.createElement("table");
+	var tr = document.createElement("tr");
+	var td = document.createElement("td");
+	var txt03 = document.createTextNode("TD지롱");
+	
+	table.appendChild(tr);
+	tr.appendChild(td);
+	td.appendChild(txt03);
+	
+	table.width="100px";
+	table.height="100px";
+	table.border="solid";
+		
+	document.body.appendChild(table);
+	
+	
+	var ui = document.createElement("ul");
+	for (var cnt=1; cnt<=5; cnt++) {
+		var li = document.createElement("li");
+		var txt04 = document.createTextNode(cnt + "번째 핫핫");
+		li.appendChild(txt04);
+		ui.appendChild(li);
+	}
+	document.body.appendChild(ui);
+	
+/*
+# .innerHTML을 통한 화면 구성
+	-	DOM 객체 지정(document.getElementById, document.querySelector, document.querySelectorAll)하여
+		들어갈 화면구성 tag를 해당 객체에 innerHTML로 처리할 수 있음
+ */
+ 
+	var div01 = document.querySelector("div");
+	div01.innerHTML="<h2>HIIIIIIIII!!!!(innerHTML)</h2>";
+	div01.style.backgroundColor="#FFDAD7";
+	
+	
+</script>
+
+</html>

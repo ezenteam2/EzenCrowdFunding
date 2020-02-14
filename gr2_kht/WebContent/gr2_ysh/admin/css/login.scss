@@ -1,0 +1,127 @@
+@mixin boxDeco($duration,$delay,$size,$left) {
+    background-color:white;
+    width : $size;
+    height : $size;
+    position : absolute;
+    top:720px;
+    left : $left;
+    opacity : 0.3;
+    animation-name: movingBox;
+    animation-duration: $duration;
+    animation-iteration-count : infinite;
+    animation-delay: $delay;
+}
+@mixin loginFormDesign{
+    margin-bottom : 10px;
+    border-radius: 3px;
+    width : 250px;
+    height : 40px;
+    border : 0.5px solid white;
+    font-weight: bold;            
+}
+.header{
+    background-color: white;
+    height : 200px;
+}
+.title{
+    position : absolute;
+    top : 285px;
+    left : 858px;
+    color : white;
+    font-size : 40px;
+}
+.form{
+    position : absolute;
+    top : 410px;
+    left : 820px;
+    &__user-info{
+        @include loginFormDesign();        
+        background:rgba(255, 255, 255, 0.2);
+        display : block;
+        color : white;
+        font-size : 15px;
+        text-align: center;        
+        &::placeholder{
+            color : white;
+            text-align: center;
+            font-weight: normal;            
+        }
+        &:focus{
+            transform : scaleX(1.2);
+            transition : 300ms;
+            text-align : center;
+            background: white;
+            color : orange;
+            outline : none;
+            &::placeholder{
+                color : transparent;                  
+            }           
+            &:hover{
+                background: white;
+            }  
+        }
+        &:hover{
+            background : rgba(255, 255, 255, 0.5);
+            transition : 200ms;
+        }
+    }
+    &__login{
+        @include loginFormDesign();        
+        background : white;
+        color : orange;
+        font-size : 18px;
+        cursor : pointer;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background : #F2F2F2;
+            transition : 200ms;
+        }
+    }
+    .title--next-step{
+        display: none;
+        transition : 2s;
+    }
+}
+.background{
+    background:linear-gradient(70deg,orange,#FFBB33);
+    height : 500px;
+    margin : 0px -8px 0px -8px;
+    &__box{
+        &--first{
+            @include boxDeco(25s,0s,40px,10%);   
+        }
+        &--second{
+            @include boxDeco(17s,2s,80px,20%);   
+        }    
+        &--third{
+            @include boxDeco(25s,4s,40px,25%);   
+        }
+        &--fourth{
+            @include boxDeco(22s,0s,60px,40%);   
+        }
+        &--fifth{
+            @include boxDeco(25s,0s,40px,70%);   
+        }
+        &--sixth{
+            @include boxDeco(25s,3s,120px,80%);   
+        }
+        &--seventh{
+            @include boxDeco(25s,7s,160px,32%);   
+        }
+        &--eighth{
+            @include boxDeco(40s,15s,20px,55%);   
+        }   
+        &--ninth{
+            @include boxDeco(40s,2s,40px,25%);   
+        }
+        &--tenth{
+            @include boxDeco(25s,11s,160px,80%);   
+        }                         
+    }
+}
+@keyframes movingBox {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-720px) rotate(360deg); }
+}
