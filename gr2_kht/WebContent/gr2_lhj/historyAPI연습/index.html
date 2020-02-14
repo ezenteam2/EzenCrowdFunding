@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>History API</title>
+    <style>
+        .container{
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        .content1{
+            width:100%;
+            height:700px;
+            background-color: red;
+        }
+
+        .content2{
+            width:100%;
+            height:700px;
+            background-color: pink;
+        }
+
+        .loading_page {
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin-top: -30px;
+            margin-left: -30px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #000000;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: spin 0.5s linear infinite; /* Safari */
+            animation: spin 0.5s linear infinite;
+            }
+
+            /* Safari */
+            @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+            }
+		}
+    </style>
+</head>
+<body>
+<div id="state"></div>
+<button id="pushState">pushState</button>
+<button id="replaceState">replaceState</button>
+<input type="text" name="" id="">
+<button id="page1">page1</button>
+<button id="page2">page2</button>
+<div class="container">
+    <div class="content1">page1</div>
+    <div class="content2">page2</div>
+    <div class="loading_page"></div>
+</div>
+
+<script>
+  document.querySelector('#pushState').addEventListener('click', function () {
+    history.pushState({ data: 'pushpush' }, 'title을 pushState로', './pushpush')
+  });
+  document.querySelector('#replaceState').addEventListener('click', function () {
+    history.replaceState({ data: 'replace' }, 'title을 replaceState로', './replace');
+  });
+  window.addEventListener('popstate', function () {
+    console.log('popstate', history.state);
+    document.querySelector('#state').innerHTML = JSON.stringify(history.state);
+  });
+
+  function goPage1(){
+      const content1=document.querySelector("div.content1");
+      loader();
+      setTimeout(()=>{content1.hidden=false;},500);
+      history.pushState({data:'page1'}, '', '/page1');
+  }
+
+  function goPage2(){
+      const content2=document.querySelector("div.content2");
+      const content1=document.querySelector("div.content1");
+      loader();
+      setTimeout(()=>{content2.hidden=false;},500);
+      history.pushState({data:'page2'}, '', '/page2');
+  }
+
+  function loader(){
+    const content2=document.querySelector("div.content2");
+    const content1=document.querySelector("div.content1");
+    const loadingPage=document.querySelector(".loading_page");
+    loadingPage.hidden=false;
+    content1.hidden=true;
+    content2.hidden=true;
+    setTimeout(()=>{loadingPage.hidden=true},500);
+  }
+  const btn1=document.getElementById("page1");
+  const btn2=document.getElementById("page2");
+  btn1.addEventListener('click', goPage1);
+  btn2.addEventListener('click', goPage2);
+  const loadingPage=document.querySelector(".loading_page");
+loadingPage.hidden=true;
+</script>
+</body>
+</html>
