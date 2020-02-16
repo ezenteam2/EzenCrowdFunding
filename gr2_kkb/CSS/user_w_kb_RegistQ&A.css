@@ -1,0 +1,82 @@
+ body{
+     margin:0;
+     padding:0;
+     background-color: #f6f9fc;
+ }
+
+ main{
+     padding-right:30%;
+     padding-left:30%;
+ }
+
+ #kb_title{
+     text-align:center;
+     margin-top:15%;
+ }
+
+ #kb_title_Label{
+     font-size:20pt;
+     font-weight: 700;
+ }
+
+ #kb_title_Div{
+     margin-top:5%;
+ }
+
+ #kb_input_title{
+     width:70%;
+     height:40px;
+     border-radius: 7px;
+     margin-left:10.2%;
+ }
+
+ #kb_Content_Div{
+    margin-top:2%;
+    position: relative;
+    width:100%;
+    height:220px;
+    padding:15px;
+    display: flex;
+    flex-direction: row;
+ }
+
+ #kb_Content_Label{
+    font-size:20pt;
+    font-weight:700;
+    width:15%;
+    height:100%;
+    padding-top:80px;
+    margin-left:-2%;
+ }
+ #kb_Input_Content{
+    flex-grow: 1;
+    position: relative;
+    margin-left:-12%;
+}
+
+#inputContent{
+    width:70%;
+    height:200px;
+    margin-left:16%;
+    border-radius:7px;
+}
+
+#kb_Regist_Div{
+    text-align:center;
+}
+
+#kb_Regist_Btn{
+    width: 150px;
+    height:40px;
+    background-color:#dc7f0d;
+    border:0;
+    color:white;
+    border-radius:7px;
+}
+
+#inputContent:hover{
+    background-color:#F6F6F6;
+}
+#kb_input_title:hover{
+    background-color: #F6F6F6;
+}
