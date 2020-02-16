@@ -50,6 +50,16 @@ img{
 	margin-bottom:10px;
 	}
 
+#good{
+	width:200px;
+	height:70px;
+	border:solid;
+	margin:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:10px;
+	}
+
 
 </style>
 
@@ -61,17 +71,16 @@ img{
 		<div id='div002_ht' onclick="location.href='user_w_ht_projects_list.html'">IT</div>
 
 		<div>
-			<select id="select01_ht" name = "세부카테고리">
-				<option value = "projecttype01">진행중인 프로젝트</option>
-				<option value = "projecttype01">베스트 프로젝트</option>
-				<option value = "projecttype01">다가올 프로젝트</option>
-				<option value = "projecttype01">지나간 프로젝트</option>
+			<select id="select01_ht" onchange="categoryChange(this)">
+				<option>------------</option>
+				<option value="a">진행중 프로젝트</option>
+				<option value="b">베스트 프로젝트</option>
+				<option value="c">다가올 프로젝트</option>
+				<option value="d">지나간 프로젝트</option>
 			</select>
-			<select id="select01_ht" name = "세부카테고리">
-				<option value = "projecttype01">진행중인 프로젝트</option>
-				<option value = "projecttype01">베스트 프로젝트</option>
-				<option value = "projecttype01">다가올 프로젝트</option>
-				<option value = "projecttype01">지나간 프로젝트</option>
+			
+			<select id="good">
+				<option>------------</option>
 			</select>
 		</div>
 		
@@ -171,6 +180,31 @@ img{
 </body>
 
 <script type = "text/javascript">
+
+
+function categoryChange(f) {
+	var good_a = ["진행중 프로젝트"];
+	var good_b = ["조회수순", "투자 금액순"];
+	var good_c = ["다가올 프로젝트"];
+	var good_d = ["전체", "아까운 프로젝트"];
+	var target = document.getElementById("good");
+
+	if(f.value == "a") var e = good_a;
+	else if(f.value == "b") var e = good_b;
+	else if(f.value == "c") var e = good_c;
+	else if(f.value == "d") var e = good_d;
+
+	target.options.length = 0;
+
+	for (x in e) {
+		var opt = document.createElement("option");
+		opt.value = e[x];
+		opt.innerHTML = e[x];
+		target.appendChild(opt);
+	}	
+}
+
+
 
 </script>
 
