@@ -34,7 +34,9 @@ padding-top: 200px;
     width:300px;
     height:50px;
     background-color: #dc7f0d;
-    border-radius: 10%;
+    border:none;
+    color:white;
+    font-weight: bold;
 }
 
 .text{
@@ -56,16 +58,20 @@ padding-top: 200px;
     margin-right:60px;
 }
 
-#findBtn{
+.findBtn{
     cursor: pointer;
     width:100px;
     height:50px;
     margin-right:60px;
     background-color:#dc7f0d;
+    border:none;
+    color:white;
+    font-weight: bold;
 }
 
 #btn{
     width:100px;
     height: 100px;
+
 }
 
