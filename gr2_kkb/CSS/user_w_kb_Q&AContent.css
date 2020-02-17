@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
+body{
+    margin:0;
+    padding:0;
+    background-color:#f6f9fc;
+}
+
+
+#QnA_title{
+    font-family: 'Jua', sans-serif;
+}

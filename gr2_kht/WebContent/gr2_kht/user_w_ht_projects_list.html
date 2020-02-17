@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>잠이 오냐 지금?</title>
+<style>
+
+.div001_ht{
+	background-color:yellow;
+	display:inline-block;
+	margin:20px;
+	}
+	
+.div002_ht{
+	background-color:pink;
+	display:flex;
+	align-items:center;
+	padding-left:20px;
+	width:200px;
+	height:70px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:10px;
+	float:left;
+	cursor:pointer;
+	}	
+	
+.div003_ht{
+	background-color:blue;
+	width:350px;
+	height:350px;
+	float:left;
+	margin:20px;
+	padding:10px;
+	cursor:pointer;
+	}
+	
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+#select01_ht{
+	width:200px;
+	height:70px;
+	border:solid;
+	margin:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:10px;
+	}
+
+#good{
+	width:200px;
+	height:70px;
+	border:solid;
+	margin:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:10px;
+	}
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div class='div001_ht'>
+		<div class='div002_ht' onclick="location.href='user_w_ht_projects_list.html'">IT</div>
+
+		<div>
+			<select id="select01_ht" onchange="categoryChange(this)">
+				<option>------------</option>
+				<option value="a">진행중 프로젝트</option>
+				<option value="b">베스트 프로젝트</option>
+				<option value="c">다가올 프로젝트</option>
+				<option value="d">지나간 프로젝트</option>
+			</select>
+			
+			<select id="good">
+				<option>------------</option>
+			</select>
+		</div>
+		
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+
+	<br>
+
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+	
+	<br>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
+			<img style="text-align:center;" src="ht_img_01.jpg">
+			제목<br>
+			<hr><br>
+			75%<br>
+			275,000/1,000,000		
+		</div>
+
+	<br>
+
+	</div>
+</body>
+
+<script type = "text/javascript">
+
+
+function categoryChange(f) {
+	var good_a = ["진행중 프로젝트 전체"];
+	var good_b = ["조회수순", "투자 금액순"];
+	var good_c = ["다가올 프로젝트 전체", "유망 프로젝트"];
+	var good_d = ["지나간 프로젝트 전체", "아까운 프로젝트"];
+	var target = document.getElementById("good");
+
+	if(f.value == "a") var e = good_a;
+	else if(f.value == "b") var e = good_b;
+	else if(f.value == "c") var e = good_c;
+	else if(f.value == "d") var e = good_d;
+
+	target.options.length = 0;
+
+	for (var idx in e) {
+		var opt = document.createElement("option");
+		opt.value = e[idx];
+		opt.innerHTML = e[idx];
+		target.appendChild(opt);
+	}	
+}
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding:0;
+     background-color:#f6f9fc;
+}
+
+#kb_title{
+    text-align:center;
+    font-size:20pt;
+    margin-top:5%;
+}
+
+#kb_main{
+    padding-right:15%;
+    padding-left:15%;
+    text-align:center;
+    margin-top:2.5%;
+}
+
+#kb_Regist_btn{
+    width:80px;
+    height:40px;
+    margin-right:2%;
+    background-color: #dc7f0d;
+    border:0px;
+    color:white;
+    border-radius: 10px;
+}
+
+#kb_pagination{
+    margin-left:45%;
+}

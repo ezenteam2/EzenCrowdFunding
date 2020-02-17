@@ -347,6 +347,80 @@
 /* 
  */
 
+ .account_copy{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin-left: 10px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid 2px;
+}
+
+.account_copy>div.delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.account_copy img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.account_copy .thumbnail_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
+.business_registration{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin-left: 10px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid 2px;
+}
+
+.business_registration>div.delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.business_registration img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.business_registration .thumbnail_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
 body{
     background-color: #f6f9fc;
     font-family:sans-serif;
