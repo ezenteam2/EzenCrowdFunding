@@ -5,7 +5,7 @@
 <title>잠이 오냐 지금?</title>
 <style>
 
-#div004_ht{
+.div004_ht{
 	display:flex;
 	background-color:yellow;
 	justify-content:center;
@@ -15,47 +15,84 @@
 	margin:0 auto;
 	}
 
-#div005_ht{
+.cate_container{
+	margin:7px;
+	}
+
+.cate_img{
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	background-color:#dc7f0d;
 	border-radius:70%;
-	width:110px;
-	height:110px;
+	border-none;
+	width:90px;
+	height:90px;
 	float:left;
-	margin:20px;
-	padding:10px;
-	opacity:0.7;
+	margin:10px;
+	cursor:pointer;
 	}
 
-#select01_ht{
+.select01_ht{
 	width:200px;
 	height:70px;
 	border:solid;
 	margin:10px;
 	}
 
-/*
-#div009{
-	width:1750px;
-	}
-*/
 </style>
 
 </head>
 
 <body>
 
-	<div id="div004_ht">
+	<div class="div004_ht">
 
-		<div id="div005_ht" onclick="changeIframeUrl('user_w_ht_projects_list.html')">IT</div>
-		<div id="div005_ht" onclick="changeIframeUrl('user_w_ht_projects_list2.html')">가전</div>
-		<div id="div005_ht">가구</div>
-		<div id="div005_ht">패션</div>
-		<div id="div005_ht">뷰티</div>
-		<div id="div005_ht">푸드</div>
-		<div id="div005_ht">여행</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_it.jpg">
+			<div style="text-align:center;">IT</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list2.html')">
+			<img class="cate_img" src="img/cate_electrical.jpg">
+			<div style="text-align:center;">가전</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_furniture.jpg">
+			<div style="text-align:center;">가구</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list2.html')">
+			<img class="cate_img" src="img/cate_fashion.jpg">
+			<div style="text-align:center;">패션</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_beauty.jpg">
+			<div style="text-align:center;">뷰티</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list2.html')">
+			<img class="cate_img" src="img/cate_food.jpg">
+			<div style="text-align:center;">음식</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_travel.jpg">
+			<div style="text-align:center;">여행</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list2.html')">
+			<img class="cate_img" src="img/cate_leisure.jpg">
+			<div style="text-align:center;">레저</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_pet.jpg">
+			<div style="text-align:center;">반려동물</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list2.html')">
+			<img class="cate_img" src="img/cate_album.jpg">
+			<div style="text-align:center;">음반</div>
+		</div>
+		<div class="cate_container" onclick = "changeIframeUrl('user_w_ht_projects_list.html')">
+			<img class="cate_img" src="img/cate_movie.jpg">
+			<div style="text-align:center;">영화</div>
+		</div>
+
 
 	</div>
 	
