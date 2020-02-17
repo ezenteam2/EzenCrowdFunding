@@ -15,6 +15,7 @@
         reader.readAsDataURL(file);
         if(file.type==='image/jpeg'||file.type==='image/png'){
             reader.onloadend=function(){
+                console.log('이건가');
                 const thumbImg = thumbnailImage;
                 const thumbnailFileName=document.querySelector('.account_copy .thumbnail_file_name');
                 thumbImg.classList.remove('none');
