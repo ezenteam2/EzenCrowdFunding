@@ -1,7 +1,5 @@
 const listTable=document.querySelector('#list-table tbody');
-const form = document.querySelector('#add-category-form');
-
-console.dir(listTable);
+const addForm = document.querySelector('#add-category-form');
 
 let categoryList=[
     {name:'테크, 가전', priority:1},
@@ -21,10 +19,25 @@ let categoryList=[
     {name:'출판', priority:15},
 ]
 
-fun
 
+function handlePush(){
+    for(let i=categoryList.length-1; i>0; i--){
+        if(categoryList[i].priority<=categoryList[i-1].priority){
+            categoryList[i-1].priority++;
+            [categoryList[i], categoryList[i-1]] = [categoryList[i-1], categoryList[i]];
+        } else{
+            break;
+        }
+    }
+}
+
+function handleDelete(li){
+    for(let idx=li; idx<categoryList.length; idx++){
+        categoryList[idx].priority--;
+    }
+    categoryList.splice(li,1);
+}
 function sort(){
-    handleEqual();
     for(let i=0; i<categoryList.length; i++){
         for(let j=i+1; j<categoryList.length; j++){
             if(categoryList[i].priority>categoryList[j].priority){
@@ -41,7 +54,7 @@ function deleteOldList(){
     }
 }
 
-function makeList(){
+function updateList(){
     sort();
     deleteOldList();
     categoryList.forEach(el=>{
@@ -55,26 +68,44 @@ function makeList(){
         btn.innerHTML='삭제';
         btn.classList.add('btn');
         btn.classList.add('btn-primary');
+        btn.onclick=clickDeleteBtn;
         lastTd.appendChild(btn);
         tr.appendChild(firstTd);
         tr.appendChild(secondTd);
         tr.appendChild(lastTd);
         listTable.appendChild(tr);
     })
+    console.log(categoryList);
 }
 
-function addNewList(){
-    let name=form.children[0].value;
-    let priority=Number(form.children[1].value);
-    if(name){
+function addSubmit(){
+    let name=addForm.children[0].value;
+    let priority=Number(addForm.children[1].value);
+    if(name&&priority){
+        if(priority>categoryList.length){
+            priority=categoryList.length+1;
+        }
+        addForm.children[0].value=null;
+        addForm.children[1].value=null;
         categoryList.push({name, priority})
-        makeList();
+        handlePush();
+        updateList();
     }
     
 }
 
 function clickAddBtn(){
-    form.hidden=!form.hidden;
+    addForm.hidden=!addForm.hidden;
+}
+
+function clickDeleteBtn(event){
+    let priorityNum=Number(event.target.parentNode.parentNode.children[0].innerHTML);
+    for (let li in categoryList){
+        if(categoryList[li].priority===priorityNum){
+            handleDelete(li);
+            updateList();
+        }
+    }
 }
 
 function preventDefault(event){
@@ -87,4 +118,5 @@ buttons.forEach(el=>{
     el.addEventListener('click', preventDefault);
 })
 
-makeList();
+updateList();
+addForm.hidden=true;
