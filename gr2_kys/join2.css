@@ -18,7 +18,8 @@ td{
 
 #join{
     text-align: left;
-    margin:auto;
+    margin: 0 auto;
+
 }
 
 #year{
@@ -36,7 +37,7 @@ td{
     height:40px;
 }
 
-#gender{
+.gender{
     width:500px;
     height:40px;
 }
@@ -63,7 +64,8 @@ td{
     font-size:large;
 }
 
-font{
+.font{
     font-size:  x-large;
     font-family: monospace;
+    display: block;
 }
