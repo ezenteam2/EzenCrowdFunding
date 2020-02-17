@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="join2.css">
     
 </head>
+
 <body>
         <div id="img">
         <a href="">
@@ -78,7 +79,8 @@
             <tr><td>
             <input type="text" id="phoneNum" placeholder="전화번호 입력"
                 maxlength="11">                
-            <input type="button" id="numBtn" value="인증번호받기">
+            <input type="button" id="numBtn" value="인증번호받기"
+            onclick="btn01();">
         </td></tr>
         <tr><td>
             <a href="login.html">
@@ -86,5 +88,10 @@
             </a>
         </td></tr>
         </table>
+        <script>
+            function btn01(){
+                alert("인증번호가 발송되었습니다.");
+            }
+        </script>
 </body>
 </html>
