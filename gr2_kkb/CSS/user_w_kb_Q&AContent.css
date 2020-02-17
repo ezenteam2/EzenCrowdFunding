@@ -4,8 +4,111 @@ body{
     padding:0;
     background-color:#f6f9fc;
 }
+#kb_main{
+    padding-left:15%;
+    padding-right:15%;
+}
+#QnA_Title_Div{
+    width:100%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    padding-left:1%;
+    border:solid;
+}
 
+#QnA_Writer_Div{
+    width:100%;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:1%;
+    border:solid;
+}
+
+#QnA_Content_Div{
+    width:100%;
+    height:200px;
+    font-family: 'Jua', sans-serif;
+    font-size:15pt;
+    padding-left:1%;
+    border-bottom:solid;
+}
 
 #QnA_title{
     font-family: 'Jua', sans-serif;
+}
+
+#Qna_Writer{
+    font-family: 'Jua', sans-serif;
+    width:30%;
+    font-weight: bold;
+}
+
+#QnA_Writer_Date{
+    width:70%;
+    margin-left:85%;
+    font-family: 'Jua', sans-serif;
+    font-weight: bold;
+}
+#QnA_middle_Div{
+    vertical-align: middle;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:2%;
+    margin-top:2%;
+}
+
+#QnA_Reply_Writer_Div{
+    width:100%;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:1%;
+    border:solid;
+}
+
+#QnA_Reply_Writer{
+    font-family: 'Jua', sans-serif;
+    width:30%;
+    font-weight: bold;
+}
+
+#QnA_Reply_Date{
+    width:70%;
+    margin-left:85%;
+    font-family: 'Jua', sans-serif;
+    font-weight: bold;
+}
+
+.QnA_Reply_Bold{
+    font-weight: bold;
+}
+
+#QnA_Reply_Vertical_Div{
+    font-size:15pt;
+    font-family: 'Jua', sans-serif;
+    vertical-align: middle;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:2%;
+    margin-top:2%;
+}
+
+#QnA_Reply_content_Div{
+    width:100%;
+    height:150px;
+    font-size:15pt;
+    padding-left:1%;
+    border-bottom:1px solid;
+}
+
+#kb_Move_List_Btn_Div{
+    text-align:center;
+}
+
+#Move_Regist_Btn{
+    width:150px;
+    height:40px;
+    background-color: #dc7f0d;
+    color:white;
+    border:0;
+    border-radius:5px;
 }
