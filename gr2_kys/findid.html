@@ -35,8 +35,9 @@
                 <option>LG U+</option>
             </select>
             <input type="text" id="inputNum"
-            placeholder="-빼고 입력">
-            <input type="button" value="인증번호 받기">
+            placeholder="-빼고 입력"><br>
+            <input type="button" onclick="btn01();" value="인증번호 받기"
+            style="margin-left: 200px;">
             </td></tr>
             <tr><td>
             <label>인증번호</label></td>
@@ -75,5 +76,10 @@
         </div>
     
     </div>
+    <script>
+        function btn01(){
+            alert("인증번호가 발송되었습니다.");
+        }
+    </script>
 </body>
 </html>
