@@ -79,7 +79,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid 2px;
+    border:solid 1px gray;
+    border-radius: 5px;
 }
 
 .thumbnail_drop_box>div.delete{
@@ -108,7 +109,7 @@
 }
 
 .keyword_bar{
-    border:solid;
+    border:solid 1px gray;
     background-color: #f6f9fc;
     display:flex;
     flex-wrap: wrap;
@@ -172,7 +173,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid;
+    border:solid 1px gray;
+    border-radius:5px;
     margin-right:5px;
     margin-bottom:5px;
 }
@@ -361,7 +363,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid 2px;
+    border:solid 1px gray;
+    border-radius: 5px;
 }
 
 .account_copy>div.delete{
@@ -398,7 +401,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid 2px;
+    border:solid 1px gray;
+    border-radius: 5px;
 }
 
 .business_registration>div.delete{
