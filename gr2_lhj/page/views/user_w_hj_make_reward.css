@@ -7,8 +7,7 @@
 .make_reward{
     display:flex;
     width:100%;
-    height: 1500px;
-    border:solid;
+    height: 1300px;
 }
 
 .make_reward>.column_left{
@@ -16,6 +15,8 @@
     border-right:solid gray 1px;
     display:flex;
     flex-wrap: wrap;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .column_left>.navi_menu{
@@ -23,16 +24,20 @@
     position: relative;
     left:5%;
     top:20%;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 .column_left>.navi_menu>.navi_menu_title{
     font-size:30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .column_left>.navi_menu>.navi_menu_list>li{
     margin-bottom: 10px;
     font-size:20px;
     margin-left:30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .make_reward>.column_right{
@@ -422,8 +427,8 @@
 }
 
 body{
-    background-color: #f6f9fc;
-    font-family:sans-serif;
+    background-color: #fafafa;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .loading_page {
