@@ -1,0 +1,91 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  color: white;
+  background-color: #fafafa;
+}
+
+body .menu {
+  margin: -8px 0 0 -8px;
+  background-color: #3f4a59;
+  width: 300px;
+}
+
+body .menu--sub {
+  background-color: #3f4a59;
+  height: 920px;
+}
+
+body .menu__title {
+  background-color: orange;
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+body .menu__category {
+  padding-left: 50px;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+body .menu__category:hover {
+  background-color: #0B243B;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .menu__inner {
+  padding: 10px 0 10px 70px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body .menu__inner:hover {
+  background-color: #0B243B;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.admin-info {
+  width: 1920px;
+  height: 62px;
+  border-bottom: 1px solid black;
+  margin-left: -10px;
+}
+
+.admin-info__toggle {
+  height: 25px;
+  cursor: pointer;
+  margin: 10px 0 0 20px;
+}
+
+.admin-info__profile {
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 120px;
+}
+
+.admin-info__admin-name {
+  font-size: 18px;
+  color: black;
+  position: absolute;
+  right: 50px;
+  top: 4px;
+}
+
+.article {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 1560px;
+}
+/*# sourceMappingURL=index.css.map */
