@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>네 믿음은 네 생각이 된다 . 네 생각은  네 말이 된다. 네 말은 네 행동이 된다 네행동은 네 습관이된다 . 네 습관은 네 가치가 된다 . 네 가치는 네 운명이 된다 – 간디</title>
+<style>
+
+</style>
+<script type="text/javascript">
+/*
+# 이벤트란 
+1. 대상 DOM객체에 특정한 이벤트 타입을 설정하고, 이 이벤트 타입에
+의해서 이벤트가 발생했을 때, 처리할 이벤트핸들러(이벤트처리함수)
+를 수행시켜주는 js기능을 말한다.
+2. 이벤트 수행 process
+ 	1) window라는 js의 대상 객체 브라우저가 수행시킬 때, 대상 객체.
+ 	2) 객체.onload
+ 		load : 이벤트 타입 - 로딩
+ 		on : 해당 이벤트가 수행시. 공통적으로 js에서 이벤트 수행
+ 			의 의미로 사용된다.
+ 	3) 이벤트 = 함수
+ 		이벤트가 발생했을 때, 처리할 내용을 기술하는 함수로,
+ 		이벤트 핸들러라고 한다.
+ 		- 익명함수로 처리
+ 		- 선언된 함수로 처리
+ */
+// 익명 함수 처리
+window.onload = function(){
+ 	// 브라우저가 로딩되었을 때, 처리할 내용.
+ 	//alert("안녕하세요 이벤트 처리 되었습니다!");
+ 	// DOM 객체 선언.
+ 	var h1Obj = document.querySelector("h1");
+ 	// click 이벤트 처리.
+ 	// onclick = 함수..
+ 	/*
+ 	h1Obj.onclick = function(){
+ 		alert("클릭클릭!!");
+ 	}
+ 	*/
+ 	h1Obj.onclick = callEvent;
+ 	var btn = document.querySelector("#btn");
+ 	btn.onclick = function(){
+ 		h1Obj.innerHTML="버튼을 클릭하셨군요!";
+ 	};
+ 	
+};
+function callEvent(){
+	alert("사용자정의 함수 핸들러 호출!");
+}
+//  ex) input type="button" value="수행!!" id="btn"을 선언하고
+//    해당 버튼을 통해서 정의된 h1의 타이틀이 변경되게 하세요.
+//    버튼을 클릭하셨군요!
+// 정의된 함수 처리.
+/*
+window.onload=call; // window.onload=call();(X)
+function call(){
+	
+}
+*/
+</script>
+</head>
+<body>
+    <h1>시작</h1>
+    <input type="button" value="수행!" id="btn"/>
+    
+</body>
+<script type="text/javascript">
+		
+</script>
+</html>

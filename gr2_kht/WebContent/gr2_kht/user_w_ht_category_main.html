@@ -2,17 +2,32 @@
 <html>
 <head>
 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
 <title>잠이 오냐 지금?</title>
 <style>
 
+body{
+font-family: 'Nanum Gothic', sans-serif;
+  font-weight:700;
+  background-color:#fafafa;
+}
+
+* {
+  	font-family: 'Nanum Gothic', sans-serif;
+	}
+
+
 .div001_ht{
-	background-color:yellow;
-	display:inline-block;
 	margin:20px;
+	background-color:#dc7f0d;
 	}
 	
 .div002_ht{
-	background-color:pink;
+	
+	background-color:#dc7f0d;
 	display:flex;
 	align-items:center;
 	padding-left:20px;
@@ -23,9 +38,11 @@
 	margin-top:20px;
 	margin-bottom:10px;
 	cursor:pointer;
+	
 	}	
 	
 .div003_ht{
+	
 	background-color:blue;
 	width:350px;
 	height:350px;
@@ -33,14 +50,16 @@
 	margin:20px;
 	padding:10px;
 	cursor:pointer;
+	
 	}
 
+/*
 img{
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	}
-
+*/
 </style>
 
 </head>
@@ -49,103 +68,167 @@ img{
 
 
 
-	<div class='div001_ht'>
-		<div class='div002_ht' onclick="location.href='user_w_ht_projects_list.html'">IT</div>
-		<div class='div003_ht' onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
+<!-- 추천 프로젝트-->
+	<div class="recommend">
+			<p class="projects__recommend--title">IT</p>
+				
+		    <div class="projects__recommend">
+			    <div class="projects__recommend--separate">
+			        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+			        <table class="projects__recommend recommend__caption">
+			            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+			            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+			            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+			        </table>
+			        <div class ="projects__recommend--hidden"></div>
+			    </div>
+			    <div class="projects__recommend--separate">
+			        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+			        <table class="projects__recommend recommend__caption">
+			            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+			            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+			            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+			        </table>
+			        <div class ="projects__recommend--hidden"></div>
+			    </div>
+			    <div class="projects__recommend--separate">  
+			    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+			    <table class="projects__recommend recommend__caption">
+			        <tr class="recommend__caption--first"><td colspan="3">유럽의 엄격한 안전 표준을 충족한 프랑스 방향제</td></tr>
+			        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			        <tr class="recommend__caption--micro"><td class="micro--td">3,708,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">124%&nbsp;&nbsp;D-15</td></tr>
+			        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			        <tr><td colspan="3">세계에서 가장 아름다운 여행지에서 영감을 받아 탄생한  imao parfums® 은 
+			            각 여행지만의 독특한 풍경을 고스란히 담고 있어 당장이라도 미지의 세계로 떠나고 싶은 욕망을 불러 일으킵니다. 
+			            imao parfums® 에 일상에 지친 당신을 위한 자유를 담아봅니다. 
+			            당신의 자유를 진심을 다해 응원합니다.</tr>
+			    </table>
+			    <div class ="projects__recommend--hidden"></div>
+			    </div>
+			    <div class="projects__recommend--separate">        
+			    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+			    <table class="projects__recommend recommend__caption">
+			        <tr class="recommend__caption--first"><td colspan="3">그동안 먹기만 했던 미역! 아쿠아토는 피부에 담았습니다</td></tr>
+			        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			        <tr class="recommend__caption--micro"><td class="micro--td">665,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">133%&nbsp;&nbsp;D-13</td></tr>
+			        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+			        <tr><td colspan="3"><br>아쿠아토의 모든 제품에는 아쿠아토의 기술력으로 미역귀에서 추출한 후코이단과 멍게껍질에서 추출한 글라이코 사미노글리칸 성분이 포함되어, 바다 속 미역의 회복하려고 하는치유력, 멍게의 보습력이 어려운 피부에도 직접적으로 전달해드리고 있습니다.</tr>
+			    </table>
+			    <div class ="projects__recommend--hidden"></div>
+			    </div>
+		    </div>
+		    
+		    <div style="top:-300px;position:relative;">
+			    <p class="projects__recommend--title">가전</p>
+			    <div class="projects__recommend">
+				    <div class="projects__recommend--separate">
+				        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+				        <table class="projects__recommend recommend__caption">
+				            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+				        </table>
+				        <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">
+				        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+				        <table class="projects__recommend recommend__caption">
+				            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+				        </table>
+				        <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">  
+				    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+				    <table class="projects__recommend recommend__caption">
+				        <tr class="recommend__caption--first"><td colspan="3">유럽의 엄격한 안전 표준을 충족한 프랑스 방향제</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr class="recommend__caption--micro"><td class="micro--td">3,708,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">124%&nbsp;&nbsp;D-15</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr><td colspan="3">세계에서 가장 아름다운 여행지에서 영감을 받아 탄생한  imao parfums® 은 
+				            각 여행지만의 독특한 풍경을 고스란히 담고 있어 당장이라도 미지의 세계로 떠나고 싶은 욕망을 불러 일으킵니다. 
+				            imao parfums® 에 일상에 지친 당신을 위한 자유를 담아봅니다. 
+				            당신의 자유를 진심을 다해 응원합니다.</tr>
+				    </table>
+				    <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">        
+				    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+				    <table class="projects__recommend recommend__caption">
+				        <tr class="recommend__caption--first"><td colspan="3">그동안 먹기만 했던 미역! 아쿠아토는 피부에 담았습니다</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr class="recommend__caption--micro"><td class="micro--td">665,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">133%&nbsp;&nbsp;D-13</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr><td colspan="3"><br>아쿠아토의 모든 제품에는 아쿠아토의 기술력으로 미역귀에서 추출한 후코이단과 멍게껍질에서 추출한 글라이코 사미노글리칸 성분이 포함되어, 바다 속 미역의 회복하려고 하는치유력, 멍게의 보습력이 어려운 피부에도 직접적으로 전달해드리고 있습니다.</tr>
+				    </table>
+				    <div class ="projects__recommend--hidden"></div>
+				    </div>
+			    </div>
+		    </div>
+		    
+		    
+			<div style="top:-300px;position:relative;">
+			    <p class="projects__recommend--title">가구</p>
+			    <div class="projects__recommend">
+				    <div class="projects__recommend--separate">
+				        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+				        <table class="projects__recommend recommend__caption">
+				            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+				        </table>
+				        <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">
+				        <img class="projects__recommend recommend__img" src="ht_img_01.jpg" alt="">
+				        <table class="projects__recommend recommend__caption">
+				            <tr class="recommend__caption--first"><td colspan="3">눈앞에서 직접 연주하는 듯한 생생함&lt;메탈로VINCENT&gt;</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr class="recommend__caption--micro"><td class="micro--td">5,400,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">108%&nbsp;&nbsp;D-5</td></tr>
+				            <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				            <tr><td colspan="3">하우징이 풀메탈로 제작되어 음의 섬세함과 칼칼함이 생동감이 넘치며, 기존 우드 스피커에서 들을 수 없는 음을 구현하므로 새로운 세계의 음을 청음 할 수 있습니다. 통메탈 내경에 자작링을 보강함으로써 금속스피커의 특성과 wood 스피커의 웅장함을 가장 잘 재현하는 메탈로의 최상위 버전입니다.</tr>
+				        </table>
+				        <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">  
+				    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+				    <table class="projects__recommend recommend__caption">
+				        <tr class="recommend__caption--first"><td colspan="3">유럽의 엄격한 안전 표준을 충족한 프랑스 방향제</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr class="recommend__caption--micro"><td class="micro--td">3,708,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">124%&nbsp;&nbsp;D-15</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr><td colspan="3">세계에서 가장 아름다운 여행지에서 영감을 받아 탄생한  imao parfums® 은 
+				            각 여행지만의 독특한 풍경을 고스란히 담고 있어 당장이라도 미지의 세계로 떠나고 싶은 욕망을 불러 일으킵니다. 
+				            imao parfums® 에 일상에 지친 당신을 위한 자유를 담아봅니다. 
+				            당신의 자유를 진심을 다해 응원합니다.</tr>
+				    </table>
+				    <div class ="projects__recommend--hidden"></div>
+				    </div>
+				    <div class="projects__recommend--separate">        
+				    <img class="projects__recommend recommend__img"src="ht_img_01.jpg" alt="">
+				    <table class="projects__recommend recommend__caption">
+				        <tr class="recommend__caption--first"><td colspan="3">그동안 먹기만 했던 미역! 아쿠아토는 피부에 담았습니다</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr class="recommend__caption--micro"><td class="micro--td">665,000원 펀딩</td><td class="micro--td"></td><td class="micro--td">133%&nbsp;&nbsp;D-13</td></tr>
+				        <tr class="recommend__caption--white-space"><td colspan="3"></tr>
+				        <tr><td colspan="3"><br>아쿠아토의 모든 제품에는 아쿠아토의 기술력으로 미역귀에서 추출한 후코이단과 멍게껍질에서 추출한 글라이코 사미노글리칸 성분이 포함되어, 바다 속 미역의 회복하려고 하는치유력, 멍게의 보습력이 어려운 피부에도 직접적으로 전달해드리고 있습니다.</tr>
+				    </table>
+				    <div class ="projects__recommend--hidden"></div>
+				    </div>
+			    </div>
+			</div>
 	</div>
-
-	<div class='div001_ht'>
-		<div class='div002_ht' onclick="location.href='user_w_ht_projects_list.html'">IT</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-	</div>
-
-	<div class='div001_ht'>
-		<div class='div002_ht' onclick="location.href='user_w_ht_projects_list.html'">IT</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-		<div class='div003_ht'  onclick="location.href='user_w_ht_projects_detail.html'">
-			<img style="text-align:center;" src="ht_img_01.jpg">
-			제목<br>
-			<hr><br>
-			75%<br>
-			275,000/1,000,000		
-		</div>
-	</div>
-	
-
 </body>
 
 <script type = "text/javascript">

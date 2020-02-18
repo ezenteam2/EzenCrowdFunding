@@ -22,8 +22,6 @@ body{
     margin-top:4%;
 }
 
-
-
-#kb_pagination{
-    margin-left:45%;
+td{
+    text-align:center;  
 }
