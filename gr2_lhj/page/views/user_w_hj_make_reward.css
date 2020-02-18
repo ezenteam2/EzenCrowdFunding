@@ -439,7 +439,7 @@ body{
 .loading_page {
     position: absolute;
     left:50%;
-    top:50%;
+    top:30%;
     margin-top: -30px;
     margin-left: -30px;
     border: 16px solid #f3f3f3;
