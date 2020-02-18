@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>네 믿음은 네 생각이 된다 . 네 생각은  네 말이 된다. 네 말은 네 행동이 된다 네행동은 네 습관이된다 . 네 습관은 네 가치가 된다 . 네 가치는 네 운명이 된다 – 간디</title>
+<style>
+
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+/*
+# 이벤트의 종류
+1. onclick : 클릭시
+2. ondblclick : 더블 클릭시
+3. onmouseover : 마우스를 해당 대상 객체 위로 지나갈 때.
+4. onmouseout : 마우스를 해당 대상 객체에서 벗어 났을 때.
+4. onkeyup : 대상 객체에 keyboard로 입력했을 때.
+ */			
+		var h1Obj = document.querySelector("h1");
+		h1Obj.onclick=function(){
+			this.innerHTML="클릭하였습니다!";
+		};
+		h1Obj.ondblclick=function(){
+			this.innerHTML="더블 클릭하였습니다!";
+		}
+		h1Obj.onmouseover=function(){
+			this.style.backgroundColor="yellow";
+		}
+		h1Obj.onmouseout=function(){
+			this.style.backgroundColor="pink";
+		}	
+		// 여기서 this는 window 화면 전체 객체를 의미한다.
+		this.onkeyup=function(){
+			// keyboard의 코드값을 확인할 수 있다.
+			document.querySelector("h2").innerHTML = event.keyCode;
+			
+		}
+		
+		
+	};	
+</script>
+</head>
+<body>
+    <h1>여러가지 이벤트 적용!!</h1>
+    <h2></h2>
+    <table width="300pt" height="300pt" border>
+    	<tr><td></td><td></td><td></td></tr>
+    	<tr><td></td><td></td><td></td></tr>
+    	<tr><td></td><td></td><td></td></tr>
+    </table>
+    
+</body>
+</html>
