@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
 body{
     margin:0;
     padding:0;
@@ -11,17 +12,13 @@ main{
 }
 
 #kb_Notice_title{
-    text-align: left;
-    height:40px;
-    font-size:24pt;
-    margin-top:5%;
-    border-bottom: 1px solid black;
-    border-top : 1px solid black;
-    padding:1%;
+    font-family:'Jua', sans-serif;
+    text-align:left;
+    font-size:20pt;
 }
 #kb_Notice_Writer{
     width:100%;
-    height:50px;
+    height:70px;
     border-bottom: 0.5px solid black;
 }
 
@@ -31,6 +28,9 @@ main{
     float:left;
     width:30%;
     margin-left: 3%;
+    margin-top:1%;
+    font-family:'Jua', sans-serif;
+    text-align:left;
 }
 
 #kb_logo{
@@ -40,14 +40,20 @@ main{
 
 #kb_Date{
     width:70%;
+    float:right;
     text-align:right;
     margin-left:18%;
+    margin-top:-2.5%;
+    font-size:16pt;
+    font-family:'Jua', sans-serif;
 }
 
 #kb_Notice_Contents{
     margin-top:5%;
     text-align: left;
     margin-left: 2%;
+    font-family:'Jua', sans-serif;
+    font-size:14pt;
 }
 
 #kb_NoticeList{
@@ -55,6 +61,7 @@ main{
     background-color: #EAEAEA;
     margin-top:10%;
     text-align: left;
+    font-family:'Jua', sans-serif;
 }
 
 #kb_Notice_footerTitle{
@@ -75,5 +82,19 @@ main{
     height:40px;
     background-color:#dc7f0d;
     margin-left:40%;
+    color:white;
+    border:0;
+    border-radius: 5px;
 }
 
+#kb_Noctice_Title_Div{
+    width:100%;
+    height:80px;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    padding-left:1%;
+    border:solid;
+    margin-top:2%;
+    background-color: #dc7f0d;
+    color:white;
+}
