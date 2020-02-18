@@ -227,28 +227,36 @@ a{
     bottom : 760px;
     left : -200px;
 }
+
+/* footer */
 .footer{
     display : flex;
-    &__alert{
-        background-color: #2E2E2E;
-        color : white;
-        font-size : 15px;
-        line-height: 30px;
-        margin-bottom : -30px;
-        height : 100px;
-    }
-}
-.company-info__customer{
-    list-style : none;
-    display: flex;
-    font-size : 12px;
-    &--li{
-        &:nth-child(1){
-            font-size: 15px;
-            text-align: center;
+    flex-direction: column;
+    font-size : 15px;
+    &__customer{
+        display: flex;
+        flex-direction: row;
+        &--tr1{
             font-weight: bold;
-            position : relative;
-            bottom : 20px;
+            text-align: center;
         }
+        &--tr2{
+            font-size : 13px;
+        }
+        &--table1{
+            margin : 10px 0 0 380px;
+        }
+        &--table2{
+            margin : 10px 0 0 450px;
+            font-size : 13px;
+            margin-left : 150px;
+        }
+    }
+    &__alert{
+        height : 50px;
+        background-color: #3f4a59;
+        color : white;
+        font-size: 12px;
+        padding : 30px 0 0 380px;
     }
 }
