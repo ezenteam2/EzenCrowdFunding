@@ -3,48 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <title>잠이 오냐 지금?</title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <style>
 
-#div006_ht{
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:700;
+  	}
+
+.div006_ht{
 	display:inline-block;
-	background-color:blue;
-	width:800px;
-	height:650px;
+	width:750px;
+	height:610px;
 	float:left;
+	padding:20px;
+	text-align:center;
 	}
 	
-#div007_ht{
+.div007_ht{
 	display:inline-block;
-	background-color:red;
-	width:900px;
+	width:910px;
 	height:650px;
 	}
 
-#div008_ht{
+.div008_ht{
 	width:800px;
 	height:45px;
 	margin:5px;
 	background-color:white;
 	}
+	
+.div009_ht{
+	width:1200px;
+	font-size:30px;"
+	}
 
-#btn001_ht{
-	width:360px;
-	height:45px;
+.div010_ht{
+	margin-left:1210px;
+	position:absolute;
+	width:400px;
+	height:1000px;
+	background-color:yellow;
+	margin-top:10px;}
+
+.btn001_ht{
+	width:300px;
+	height:40px;
 	border:none;
 	background-color:#dc7f0d;
 	color:white;
 	font-weight:bold;
-	margin-right:20px;
-	margin-left:20px;
+	font-size:20px;
+	margin-right:10px;
+	margin-left:10px;
 	margin-top:2px;
 	margin-bottom:2px;
 	}
 
-#img001_ht{
+.img001_ht{
 	width:100px;
 	height:100px;
-	border-radius:30%;
+	border-radius:50%;
 	margin:10px;
+	vertical-align:bottom;
+	}
+
+.img002_ht{
+	width:130px;
+	height:130px;
+	border-radius:20%;
+	margin:10px;}
+
+.img003_ht{
+	display:block;
+	margin:0 auto;
+	margin-bottom:30px;}
+
+.td001{
+	font-size:20px;
+	color:#14148C;
+	text-align:right;
+	height:60px;
+	}
+	
+.td002{
+	padding-left:40px;
+	font-size:35px;
 	}
 
 </style>
@@ -53,54 +98,118 @@
 
 <body>
 
-	<div id="div006_ht">
-	<img src="ht_img_03.jpg">
-		<div style="background-color:yellow;">
-		프로젝트 세부 이미지
+<div style="padding-left:150px;">
+	<div class="div006_ht">
+	<img src="ht_img_03.jpg" width="100%">
+		<div>
+		<img class="img002_ht" src="img/project_detail01.jpg">
+		<img class="img002_ht" src="img/project_detail02.jpg">
+		<img class="img002_ht" src="img/project_detail03.jpg">
+		<img class="img002_ht" src="img/project_detail04.jpg">
 		</div>
 	</div>
 	
-	<div id="div007_ht">
-	
-		<div id="div008_ht">프로젝트 카테고리</div>
-		<div id="div008_ht">프로젝트이름</div>
-		<div id="div008_ht">업체명</div>
-		<div id="div008_ht">펀딩 목표 금액</div>
-		<div id="div008_ht">현재 펀딩 받은 금액</div>
-		<div id="div008_ht">프로젝트 종료까지 남은 일 수</div>
-		<div id="div008_ht">프로젝트 키워드</div>
-		<div id="div008_ht">문의가능 번호</div>
-		<div id="div008_ht">사업자 등록 번호</div>
-		<div id="div008_ht">프로젝트 투자 옵션</div>
-		<input type="button" id="btn001_ht" value="투자하기"><br>
-		<input type="button" id="btn001_ht" value="관심프로젝트 등록 버튼">
-		<input type="button" id="btn001_ht" value="프로젝트 신고하기 버튼" onclick="window.open('user_w_ht_report.html')">
+	<div class="div007_ht">
+
+		<table style="margin:auto;margin-top:10px;">
+		<tr>	<td class="td001" width="250px">카테고리</td>
+				<td class="td002" width="650px">가전</td>
+		</tr>
+		<tr>	<td class="td001">이름</td>
+				<td class="td002">신개념 무릎 보호대</td>
+		</tr>
+		<tr>	<td class="td001">업체명</td>
+				<td class="td002">이젠정형외과</td>
+		</tr>
+		<tr>	<td class="td001">펀딩 목표 금액</td>
+				<td class="td002">100000000</td>
+		</tr>
+		<tr>	<td class="td001">현재 펀딩 받은 금액</td>
+				<td class="td002">17777</td>
+		</tr>
+		<tr>	<td class="td001">남은 펀딩 일수</td>
+				<td class="td002">15일</td>
+		</tr>
+		<tr>	<td class="td001">프로젝트 키워드</td>
+				<td class="td002">#무릎보호</td>
+		</tr>
+		<tr>	<td class="td001">문의가능 번호</td>
+				<td class="td002">010-2535-6869</td>
+		</tr>
+		<tr>	<td class="td001">사업자 등록 번호</td>
+				<td class="td002">836-85-00750</td>
+		</tr>
+		<tr><td colspan="2" style="text-align:center;height:90px;">
+		<input type="button" class="btn001_ht" value="관심프로젝트 등록 버튼">
+		<input type="button" class="btn001_ht" value="프로젝트 신고하기 버튼" onclick="window.open('user_w_ht_report.html')"></td></tr>
+		</table>
+
 	
 	</div>
 	
-	<div style="width:1700px;background-color:orange;">
-	프로젝트 세부 동영상
+	<div class="div010_ht">
+	<p style="margin:10px;font-size:40px;">프로젝트 옵션</p>
+	</div>
+
+
+	<div class="div009_ht" style="background-color:green;">
+	<p style="margin:10px;font-size:40px;">프로젝트 스토리</p>
+	
+	<img class="img003_ht" src="img/project_content_detail01.gif"><br>
+	<img class="img003_ht" src="img/project_content_detail02.png"><br>
+	<br>
+	지친 일상을 끝내고 집에 돌아오면 해맑게 우리를 맞이하는 존재가 있습니다.  <br>
+	바로 반려동물이죠!   그 중에서도 강아지는 사람을 좋아하고, 무한한 사랑을 주는 존재로 많은 사람들이 좋아합니다.<br><br><br>
+	그러나, 다양한 이유로 반려동물을 키우지 못하는 사람들이 많습니다.<br><br><br><br>
+	<img class="img003_ht" src="img/project_content_detail03.png"><br>
+
+	<br>
+	대만의 목공예 핸드메이드 장인 뮤펀은 원래 대만견 시리즈를 기획 하였으나,  저희 폭스아이디어와 아이디어를 공유하며 한국 서포터분들을 위해 더욱 의미있는 프로젝트를 만들기로 했습니다.<br>
+	<br>
+	<br>
+	그래서 특!별!히!<br>
+	진돗개의 특징인 말린 꼬리를 추가로 제작한 한국 맞춤형 진돗개 시리즈를 와디즈에서 소개합니다! <br>
+	<br>
+	* 꼬리 2가지 타입 모두 동봉 (곧게뻗은 꼬리 / 귀엽게 말린 꼬리)	<br>
+
+	<img class="img003_ht" src="img/project_content_detail04.png">
+	
 	</div>
 	
-	<div style="width:1700px;background-color:green;">
-	프로젝트 세부 내용
+		
+	<div style="width:1200px;background-color:orange;">
+	<p style="margin:10px;font-size:40px;">프로젝트 동영상</p>
+	<p style="text-align:center">
+	<iframe width="1000px" height="600px" src="https://www.youtube.com/embed/k9_XH1YibcY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+	</iframe>
+	</p>
 	</div>
 	
-	<div style="width:1700px;background-color:blue;">
-	환불 정책
+	
+	<div style="width:1200px;font-size:25px;background-color:blue;">
+
+		<p style="margin:10px;font-size:40px;">환불 정책</p>
+		<ul>
+			<li>프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 7일 이내 전액 반환 됩니다.</li>
+			<li>배송중 용기가 파손되거나 내용물이 흘러 음용이 불가할 경우 서포터님과 커뮤니케이션후 교환 가능합니다.</li>
+			<li>물과 원두의 잔류물이외 다른 물질이 첨가되었다면 역시 서포터님과 커뮤니케이션후 교환 가능합니다.</li>
+			<li>즉석제조식품의 특성상 단순 교환 및 반환은 불가능하오니 미리 양해를 구합니다.</li>
+			<li>이외에 다른사항은 와디즈의 운영 정책 규정에 따릅니다.</li>
+		</ul>
+
 	</div>
 	
-	<div style="width:1700px;background-color:navy;">
-	
-	<img id="img001_ht" src="ht_img_05.jpg">
-	<input type="Text" style="width:1000px;height:100px;border:none;margin:10px;">
+
+	<div style="width:1200px;background-color:navy;">
+	<img class="img001_ht" src="ht_img_05.jpg">
+	<input type="Text" style="width:700px;height:100px;border:none;margin:10px;">
 	<input type="submit" style="width:100px;height:100px;border:none;background-color:#dc7f0d;color:white;">
 	</div>
 	
-	<div style="width:1700px;background-color:purple;">
+	<div style="width:1200px;background-color:purple;">
 	등록된 질문 및 답변내용
 	</div>
-	
+</div>	
 </body>
 <script type = "text/javascript">
 
