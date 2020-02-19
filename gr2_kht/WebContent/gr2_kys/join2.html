@@ -8,31 +8,31 @@
     <link rel="stylesheet" type="text/css" href="join2.css">
     
 </head>
+
 <body>
         <div id="img">
         <a href="">
             <img src="logo.png" class="mainLogo">
             </a></div><br>
         <table id="join">
-            <tr><td>
-            <font>아이디</font><br>
+            <tr><td><span class="font" >아이디</span>
             <input type="text" id="textBox" placeholder="아이디입력">
         </td></tr>
         <tr><td>
-            <font>비밀번호</font><br>
+            <span class="font">비밀번호</span>
             <input type="password" id="textBox" placeholder="비밀번호입력">
         </td>
         </tr>
         <tr><td>
-            <font>비밀번호 확인</font><br>
+            <span class="font">비밀번호 확인</span>
             <input type="password" id="textBox" placeholder="비밀번호 재확인">
         </td></tr>
         <tr><td>
-            <font>이름</font><br>
+            <span class="font">이름</span>
             <input type="text" id="textBox" placeholder="이름 입력">
         </td></tr>
         <tr><td>
-            <font>생년월일</font><br>
+            <span class="font">생년월일</span>
             <input type="text" id="year" placeholder="년(4자)"
                 maxlength="4">
             <select id= "month">
@@ -54,8 +54,8 @@
         </td>
         </tr>
         <tr><td>
-            <font>성별</font><br>
-            <select id= "gender">
+            <span class="font">성별</span>
+            <select class= "gender">
                 <option>--성별선택--</option>
                 <option>남자</option>
                 <option>여자</option>
@@ -63,21 +63,24 @@
         </td>
         </tr>
         <tr><td>
-            <font>이메일</font><br>
+            <span class="font">이메일</span>
             <input type="email" id="textBox" placeholder="이메일 입력">
         </td></tr>
-        <tr><td>
-            <font>휴대전화</font><br>
-            <select id="gender">
-                <option>--통신사선택--</option>
-                <option>010</option>
-                <option>016</option>
-                <option>019</option>
-                <option>017</option>
-            </select><br>
+                <tr><td>
+                    <span class="font">휴대전화</span>
+                    <select class="gender">
+                        <option>--통신사선택--</option>
+                        <option>010</option>
+                        <option>016</option>
+                        <option>019</option>
+                        <option>017</option>
+                    </select>
+                </td></tr>
+            <tr><td>
             <input type="text" id="phoneNum" placeholder="전화번호 입력"
-                maxlength="11">
-            <input type="button" id="numBtn" value="인증번호받기">
+                maxlength="11">                
+            <input type="button" id="numBtn" value="인증번호받기"
+            onclick="btn01();">
         </td></tr>
         <tr><td>
             <a href="login.html">
@@ -85,5 +88,10 @@
             </a>
         </td></tr>
         </table>
+        <script>
+            function btn01(){
+                alert("인증번호가 발송되었습니다.");
+            }
+        </script>
 </body>
 </html>

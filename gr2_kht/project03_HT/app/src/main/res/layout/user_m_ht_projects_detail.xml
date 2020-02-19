@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        app:srcCompat="@drawable/ht_img_04" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cate_pet" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cate_fashion" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ht_img_05" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cate_beauty" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="가전"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="신개념 무릎 보호대"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="이젠정형외과"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="목표 펀딩 금액 : 100,000,000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="현재 달성 금액 : 1,777,700"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="남은 기간 : 15일"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="#무릎보호 #꾀병아님"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="010-2535-6869"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="20dp"
+        android:text="836-85-00750"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="관심 등록" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="신고하기" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/ht_img_02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/project_content_detail04" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지친 일상을 끝내고 집에 돌아오면 해맑게 우리를 맞이하는 존재가 있습니다.
+바로 반려동물이죠! 그 중에서도 강아지는 사람을 좋아하고, 무한한 사랑을 주는 존재로 많은 사람들이 좋아합니다.
+w" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/project_content_detail02" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="그러나, 다양한 이유로 반려동물을 키우지 못하는 사람들이 많습니다.
+            대만의 목공예 핸드메이드 장인 뮤펀은 원래 대만견 시리즈를 기획 하였으나, 저희 폭스아이디어와 아이디어를 공유하며 한국 서포터분들을 위해 더욱 의미있는 프로젝트를 만들기로 했습니다.
+
+
+그래서 특!별!히!
+진돗개의 특징인 말린 꼬리를 추가로 제작한 한국 맞춤형 진돗개 시리즈를 와디즈에서 소개합니다!
+
+* 꼬리 2가지 타입 모두 동봉 (곧게뻗은 꼬리 / 귀엽게 말린 꼬리)
+
+" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="환불 정책 프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 7일 이내 전액 반환 됩니다.
+배송중 용기가 파손되거나 내용물이 흘러 음용이 불가할 경우 서포터님과 커뮤니케이션후 교환 가능합니다.
+물과 원두의 잔류물이외 다른 물질이 첨가되었다면 역시 서포터님과 커뮤니케이션후 교환 가능합니다.
+즉석제조식품의 특성상 단순 교환 및 반환은 불가능하오니 미리 양해를 구합니다.
+이외에 다른사항은 와디즈의 운영 정책 규정에 따릅니다."
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="의견 남기기"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="#@ezen02ht" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:text="Button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="의견 공유"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#@ezen02ht" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이 프로젝트 실현 가능성 전혀 엇ㅂ어 보이는데 어떻게 생각하심???" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="##ezen0005hj" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="님 자꾸 프로젝트마다 돌아다니면서 안될 것 같다고 뭐라하시는데, 왜그러세여?" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</ScrollView>

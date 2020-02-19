@@ -18,7 +18,8 @@ td{
 
 #join{
     text-align: left;
-    margin:auto;
+    margin: 0 auto;
+
 }
 
 #year{
@@ -36,7 +37,7 @@ td{
     height:40px;
 }
 
-#gender{
+.gender{
     width:500px;
     height:40px;
 }
@@ -44,6 +45,7 @@ td{
 #phoneNum{
     width:360px;
     height:40px;
+    margin-top: 5px;
 }
 
 #numBtn{
@@ -51,6 +53,8 @@ td{
     height:40px;
     background-color: #dc7f0d;
     color:white;
+    border:none;
+    font-weight: bold;
 }
 
 #joinBtn{
@@ -61,9 +65,12 @@ td{
     cursor: pointer;
     text-align: center;
     font-size:large;
+    border:none;
+    font-weight: bold;
 }
 
-font{
+.font{
     font-size:  x-large;
     font-family: monospace;
+    display: block;
 }

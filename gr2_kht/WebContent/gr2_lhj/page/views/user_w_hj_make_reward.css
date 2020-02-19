@@ -7,8 +7,7 @@
 .make_reward{
     display:flex;
     width:100%;
-    min-height: 500px;
-    border:solid;
+    height: 1300px;
 }
 
 .make_reward>.column_left{
@@ -16,23 +15,29 @@
     border-right:solid gray 1px;
     display:flex;
     flex-wrap: wrap;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .column_left>.navi_menu{
     width:100%;
     position: relative;
     left:5%;
-    top:20%;
+    top:5%;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 .column_left>.navi_menu>.navi_menu_title{
     font-size:30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .column_left>.navi_menu>.navi_menu_list>li{
     margin-bottom: 10px;
     font-size:20px;
     margin-left:30px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .make_reward>.column_right{
@@ -74,7 +79,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid 2px;
+    border:solid 1px gray;
+    border-radius: 5px;
 }
 
 .thumbnail_drop_box>div.delete{
@@ -103,7 +109,7 @@
 }
 
 .keyword_bar{
-    border:solid;
+    border:solid 1px gray;
     background-color: #f6f9fc;
     display:flex;
     flex-wrap: wrap;
@@ -167,7 +173,8 @@
     background-size: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
-    border:solid;
+    border:solid 1px gray;
+    border-radius:5px;
     margin-right:5px;
     margin-bottom:5px;
 }
@@ -347,15 +354,92 @@
 /* 
  */
 
+ .account_copy{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin-left: 10px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid 1px gray;
+    border-radius: 5px;
+}
+
+.account_copy>div.delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.account_copy img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.account_copy .thumbnail_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
+.business_registration{
+    position: relative;
+    width:200px;
+    height:200px;
+    margin-left: 10px;
+    background-image: url(./add.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border:solid 1px gray;
+    border-radius: 5px;
+}
+
+.business_registration>div.delete{
+    background-color: rgba(0,0,0,0.3);
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.business_registration img.close_icon{
+    cursor: pointer;
+    position:relative;
+    left:83%;
+    top:1%;
+}
+
+.business_registration .thumbnail_file_name{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: snow;
+    cursor: default;
+    top:60%;
+    width:100%;
+}
+
 body{
-    background-color: #f6f9fc;
-    font-family:sans-serif;
+    background-color: #fafafa;
+    font-weight: 700;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .loading_page {
     position: absolute;
     left:50%;
-    top:50%;
+    top:30%;
     margin-top: -30px;
     margin-left: -30px;
     border: 16px solid #f3f3f3;

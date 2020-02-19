@@ -1,6 +1,6 @@
-#agree{
-
-}
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
 
 #access{
 margin: 0px;
@@ -22,4 +22,6 @@ overflow-y: auto;
     text-align: center;
     cursor: pointer;
     margin-right: 20px;
+    border:none;
+    font-weight: bold;
 }
