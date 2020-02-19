@@ -236,7 +236,7 @@
                 android:layout_marginLeft="-40dp"
                 app:srcCompat="@drawable/rewardpicture" />
             <Button
-                android:id="@+id/button"
+                android:id="@+id/nextPage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
