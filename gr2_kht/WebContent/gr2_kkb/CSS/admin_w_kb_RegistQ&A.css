@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap&subset=korean');
+body{
+    margin:0;
+    padding:0;
+    background-color:#f6f9fc;
+}
+#kb_main{
+    padding-left:15%;
+    padding-right:15%;
+}
+#QnA_Title_Div{
+    width:100%;
+    padding-top:0.5%;
+    padding-bottom:0.5%;
+    padding-left:1%;
+    border:solid;
+    margin-top:2%;
+    background-color: #dc7f0d;
+    color:white;
+}
+
+#QnA_Writer_Div{
+    width:100%;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:1%;
+    border:solid;
+}
+
+#QnA_Content_Div{
+    width:100%;
+    height:200px;
+    font-family: 'Jua', sans-serif;
+    font-size:15pt;
+    padding-left:1%;
+    border-bottom:solid;
+}
+
+#QnA_title{
+    font-family: 'Jua', sans-serif;
+}
+
+#Qna_Writer{
+    font-family: 'Jua', sans-serif;
+    width:30%;
+    font-weight: bold;
+}
+
+#QnA_Writer_Date{
+    width:70%;
+    margin-left:85%;
+    font-family: 'Jua', sans-serif;
+    font-weight: bold;
+}
+#QnA_middle_Div{
+    vertical-align: middle;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:2%;
+    margin-top:2%;
+}
+
+#QnA_input_Reply_Div{
+    width:100%;
+    height:300px;
+    margin-top:3%;
+}
+
+#input_Reply{
+    width:100%;
+    height:200px;
+    border:1px solid gray;
+    border-radius: 5px;
+    padding:1%;
+    font-family: 'Jua', sans-serif;
+    font-weight: bold;
+    font-size:12pt;
+}
+
+#Btn_Div{
+    text-align:right;
+}
+
+#Regist_Reply_Btn{
+    width:100px;
+    height:40px;
+    background-color:#dc7f0d;
+    border:0;
+    border-radius: 5px;
+    color:white;
+    margin-top:1%;
+}

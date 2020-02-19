@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="first_spinner">
+        <item>진행중 프로젝트</item>
+        <item>베스트 프로젝트</item>
+        <item>다가올 프로젝트</item>
+        <item>지나간 프로젝트</item>
+    </string-array>
+
+    <string-array name="second_spinner">
+        <item>진행중 프로젝트 전체</item>
+        <item>진행중 프로젝트 베스트</item>
+        <item>베스트 프로젝트 조회순</item>
+        <item>베스트 프로젝트 투자 금액순</item>
+        <item>다가올 프로젝트 전체</item>
+        <item>다가올 프로젝트 추천</item>
+        <item>지나간 프로젝트 전체</item>
+        <item>아깝게 종료된 프로젝트</item>
+    </string-array>
+
+
+</resources>

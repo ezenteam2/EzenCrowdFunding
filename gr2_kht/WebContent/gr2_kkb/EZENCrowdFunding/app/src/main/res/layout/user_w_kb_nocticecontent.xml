@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홈페이지 오픈 안내"
+        android:textSize="16pt"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:background="#dc7f0d"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리자"
+            android:textSize="12pt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2020.02.05"
+            android:gravity="right"
+            android:textSize="12pt"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_border"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="안녕하세요 이젠 FUN딩입니다."
+            android:textSize="10pt"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:paddingLeft="10dp"
+            android:text="이젠 FUN딩 홈페이지 오픈하였습니다."
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:paddingLeft="10dp"
+            android:text="즐거운 투자를 하시길 바랍니다"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:paddingLeft="10dp"
+            android:text="감사합니다"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="#F6F6F6">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지 말머리의 다른 게시글"
+            android:textSize="11pt"
+            android:background="@drawable/bottom_border_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지 홈페이지 점검 안내"
+            android:textSize="09pt"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bottom_border_background"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지 홈페이지 점검 완료 안내"
+            android:textSize="09pt"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bottom_border_background"/>
+
+        <Button
+            android:id="@+id/moveBoard"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#dc7f0d"
+            android:text="목록보기"
+            android:textColor="#FFFFFF"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>

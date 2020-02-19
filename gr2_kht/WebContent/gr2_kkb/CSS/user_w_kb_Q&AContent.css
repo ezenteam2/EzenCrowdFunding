@@ -14,6 +14,9 @@ body{
     padding-bottom:0.5%;
     padding-left:1%;
     border:solid;
+    margin-top:2%;
+    background-color: #dc7f0d;
+    color:white;
 }
 
 #QnA_Writer_Div{
