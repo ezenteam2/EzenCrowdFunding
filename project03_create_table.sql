@@ -315,6 +315,12 @@ ALTER TABLE projects_qna
 		REFERENCES member (
 			mem_id
 		);
+
+		
+
+		
+		
+		
 		
 ALTER TABLE project_funding
 	DROP
@@ -324,11 +330,6 @@ ALTER TABLE project_funding
 ALTER TABLE project_funding
 	DROP
 		CONSTRAINT FK_member_TO_project_funding
-		CASCADE;
-
-ALTER TABLE project_funding
-	DROP
-		CONSTRAINT FK_projects_TO_project_funding
 		CASCADE;
 
 ALTER TABLE project_funding
@@ -387,20 +388,12 @@ ALTER TABLE project_funding
 		)
 		REFERENCES member (
 			mem_id
-		);
-
-ALTER TABLE project_funding
-	ADD
-		CONSTRAINT FK_projects_TO_project_funding
-		FOREIGN KEY (
-			pro_num
-		)
-		REFERENCES projects (
-			pro_num
-		);
-		
+		);		
 
 	
+		
+		
+		
 	
 ALTER TABLE projects_favorite
 	DROP
@@ -621,12 +614,14 @@ DROP TABLE admin
 /* 관리자 */
 CREATE TABLE admin (
 	admin_id VARCHAR2(20) NOT NULL, /* 관리자아이디 */
-	admin_pass VARCHAR2(20) NOT NULL /* 비밀번호 */
+	admin_pass VARCHAR2(20) NOT NULL, /* 비밀번호 */
+	admin_empno VARCHAR2(20) NOT NULL /* 사번 */
 );
 
 COMMENT ON TABLE admin IS '관리자';
 COMMENT ON COLUMN admin.admin_id IS '관리자아이디';
 COMMENT ON COLUMN admin.admin_pass IS '비밀번호';
+COMMENT ON COLUMN admin.empno IS '사번';
 
 CREATE UNIQUE INDEX PK_admin
 	ON admin (
@@ -639,7 +634,6 @@ ALTER TABLE admin
 		PRIMARY KEY (
 			admin_id
 		);	
-	
 	
 	
 	
