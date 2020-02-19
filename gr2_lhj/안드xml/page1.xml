@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -166,12 +172,14 @@
         android:text="키워드" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextPage"
         android:layout_width="match_parent"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginTop="30dp"
         android:layout_height="wrap_content"
         android:text="다음단계" />
+    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
