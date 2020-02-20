@@ -47,15 +47,15 @@ ALTER TABLE member
 		PRIMARY KEY (
 			mem_id
 		);
-		
+
+	
+	
+	
+	
+	
 ALTER TABLE projects
 	DROP
 		CONSTRAINT FK_member_TO_projects
-		CASCADE;
-
-ALTER TABLE projects
-	DROP
-		CONSTRAINT FK_TABLE11_TO_projects
 		CASCADE;
 
 ALTER TABLE projects
@@ -77,7 +77,7 @@ CREATE TABLE projects (
 	mem_company VARCHAR2(50) NOT NULL, /* 업체명 */
 	pro_title VARCHAR2(100) NOT NULL CONSTRAINT UK_projects_pro_title UNIQUE, /* 프로젝트 이름 */
 	cate_name VARCHAR2(50) NOT NULL CONSTRAINT  CK_projects_cate_name CHECK (cate_name IN('IT','가전', '가구', '패션', '뷰티', '음식', '여행', '레저', '반려동물', '음반', '영화')) , /* 카테고리 이름 */
-	pro_type VARCHAR2(10) NOT NULL, /* 프로젝트 종류 */
+	pro_type VARCHAR2(20) NOT NULL, /* 프로젝트 종류 */
 	pro_start_date DATE NOT NULL, /* 프로젝트 시작날짜 */
 	pro_finish_date DATE NOT NULL, /* 프로젝트 종료날짜 */
 	pro_main_image VARCHAR2(100) NOT NULL, /* 프로젝트 대표 이미지 */
@@ -128,10 +128,6 @@ ALTER TABLE projects
 			mem_id
 		);
 
-ALTER TABLE projects_details
-	DROP
-		CONSTRAINT FK_projects_TO_projects_details
-		CASCADE;
 
 ALTER TABLE projects_details
 	DROP
@@ -139,6 +135,10 @@ ALTER TABLE projects_details
 		CASCADE
 		KEEP INDEX;
 
+
+	
+	
+	
 	
 	
 DROP INDEX PK_projects_details;
@@ -152,7 +152,7 @@ CREATE TABLE projects_details (
 	pro_detail_code NUMBER NOT NULL, /* 세부 내용 번호 */
 	pro_num NUMBER NOT NULL, /* 프로젝트 번호 */
 	pro_detail_num NUMBER NOT NULL, /* 순서 */
-	pro_detail_type VARCHAR2(10) NOT NULL  CONSTRAINT CK_projects_details_pro_detail_type CHECK (pro_detail_type IN('detailimg','contentimg', 'contenttext')), /* 구분 */
+	pro_detail_type VARCHAR2(20) NOT NULL  CONSTRAINT CK_pro_detail_type CHECK (pro_detail_type IN('detailimg','contentimg', 'contenttext')), /* 구분 */
 	pro_detail_content VARCHAR2(2000) NOT NULL/* 내용 */
 );
 
@@ -177,7 +177,7 @@ ALTER TABLE projects_details
 
 ALTER TABLE projects_details
 	ADD
-		CONSTRAINT FK_projects_TO_projects_details
+		CONSTRAINT FK_projects_details
 		FOREIGN KEY (
 			pro_num
 		)
@@ -189,7 +189,7 @@ ALTER TABLE projects_details
 	
 	ALTER TABLE projects_rewards
 	DROP
-		CONSTRAINT FK_projects_TO_projects_rewards
+		CONSTRAINT FK_projects_rewards
 		CASCADE;
 
 ALTER TABLE projects_rewards
@@ -232,7 +232,7 @@ ALTER TABLE projects_rewards
 
 ALTER TABLE projects_rewards
 	ADD
-		CONSTRAINT FK_projects_TO_projects_rewards
+		CONSTRAINT FK_projects_rewards
 		FOREIGN KEY (
 			pro_num
 		)
@@ -244,7 +244,7 @@ ALTER TABLE projects_rewards
 
 ALTER TABLE projects_qna
 	DROP
-		CONSTRAINT FK_projects_TO_projects_qna
+		CONSTRAINT FK_projects_qna
 		CASCADE;
 
 ALTER TABLE projects_qna
@@ -324,7 +324,7 @@ ALTER TABLE projects_qna
 		
 ALTER TABLE project_funding
 	DROP
-		CONSTRAINT FK_projects_rewards_TO_project_funding
+		CONSTRAINT FK_project_funding
 		CASCADE;
 
 ALTER TABLE project_funding
@@ -372,7 +372,7 @@ ALTER TABLE project_funding
 
 ALTER TABLE project_funding
 	ADD
-		CONSTRAINT FK_projects_rewards_TO_project_funding
+		CONSTRAINT FK_project_funding
 		FOREIGN KEY (
 			reward_code
 		)
@@ -397,12 +397,12 @@ ALTER TABLE project_funding
 	
 ALTER TABLE projects_favorite
 	DROP
-		CONSTRAINT FK_member_TO_projects_favorite
+		CONSTRAINT FK_projects_favorite
 		CASCADE;
 
 ALTER TABLE projects_favorite
 	DROP
-		CONSTRAINT FK_projects_TO_projects_favorite
+		CONSTRAINT FK_projects_favorite
 		CASCADE;
 
 ALTER TABLE projects_favorite
@@ -453,7 +453,7 @@ ALTER TABLE projects_favorite
 
 ALTER TABLE projects_favorite
 	ADD
-		CONSTRAINT FK_projects_TO_projects_favorite
+		CONSTRAINT FK_projects_favorite
 		FOREIGN KEY (
 			pro_num
 		)
@@ -621,7 +621,7 @@ CREATE TABLE admin (
 COMMENT ON TABLE admin IS '관리자';
 COMMENT ON COLUMN admin.admin_id IS '관리자아이디';
 COMMENT ON COLUMN admin.admin_pass IS '비밀번호';
-COMMENT ON COLUMN admin.empno IS '사번';
+COMMENT ON COLUMN admin.admin_empno IS '사번';
 
 CREATE UNIQUE INDEX PK_admin
 	ON admin (
@@ -666,8 +666,8 @@ CREATE TABLE board_qna (
 	qna_date DATE NOT NULL, /* 등록날짜 */
 	qna_title VARCHAR2(100) NOT NULL, /* 제목 */
 	qna_content VARCHAR2(2000) NOT NULL, /* 내용 */
-	admin_id VARCHAR2(20) NOT NULL, /* 관리자아이디 */
-	qna_answer VARCHAR2(2000) NOT NULL /* 답변내용 */
+	admin_id VARCHAR2(20), /* 관리자아이디 */
+	qna_answer VARCHAR2(2000) /* 답변내용 */
 );
 
 COMMENT ON TABLE board_qna IS 'Q&A';
@@ -829,3 +829,17 @@ ALTER TABLE board_guide_qna
 		REFERENCES admin (
 			admin_id
 		);
+		
+	
+	
+DROP SEQUENCE board_guide_qna_seq01;
+DROP SEQUENCE board_notice_seq01;
+DROP SEQUENCE board_qna_seq01;
+DROP SEQUENCE mem_balance_seq01;
+DROP SEQUENCE mem_report_seq01;
+DROP SEQUENCE projects_seq01;
+DROP SEQUENCE projects_details_seq01;
+DROP SEQUENCE projects_details_num_seq01;
+DROP SEQUENCE projects_qna_seq01;
+DROP SEQUENCE projects_rewards_seq01;
+DROP SEQUENCE projects_funding_seq01;
