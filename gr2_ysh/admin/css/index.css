@@ -44,6 +44,13 @@ body .menu__category:hover {
   transition: 1s;
 }
 
+body .menu .category--button {
+  position: relative;
+  top: 2px;
+  left: 30px;
+  width: 15px;
+}
+
 body .menu__inner {
   padding: 10px 0 10px 70px;
   font-size: 15px;
