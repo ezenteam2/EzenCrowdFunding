@@ -16,7 +16,10 @@
             </a></div><br>
         <table id="join">
             <tr><td><span class="font" >아이디</span>
-            <input type="text" id="textBox" placeholder="아이디입력">
+                <input type="text" id="phoneNum" placeholder="아이디 입력"
+                >                
+            <input type="button" id="numBtn" value="중복확인"
+            onclick="btn02();">
         </td></tr>
         <tr><td>
             <span class="font">비밀번호</span>
@@ -90,6 +93,9 @@
         <script>
             function btn01(){
                 alert("인증번호가 발송되었습니다.");
+            }
+            function btn02(){
+                alert("사용 가능한 아이디 입니다.");
             }
         </script>
 </body>
