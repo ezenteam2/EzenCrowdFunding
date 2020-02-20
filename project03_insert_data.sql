@@ -44,7 +44,7 @@ SELECT * FROM MEMBER;
 INSERT INTO MEMBER VALUES ('ezenht', 'gusxo', 'SUPPORTER', '김현태', '01051519595', '서울시 영등포구', 'ezenht@gmail.com', '', '321585892323', '국민');
 INSERT INTO MEMBER VALUES ('ezenhj', 'gudwns', 'MAKER', '이형준', '01025356869', '서울시 어디지?', 'ezenhj@gmail.com', '', '321589692311', '우리은행');
 INSERT INTO MEMBER VALUES ('ezenys', 'dydtmd', 'MAKER', '김용승', '01074126869', '경기도 안산 멀다 멀어', 'ezenys@gmail.com', '', '7878969241', '하나은행');
-INSERT INTO MEMBER VALUES ('ezensh', 'tjgml', 'SUPPORTER', '유서희', '010611126869', '서울시 어디지?2222', 'ezensh@gmail.com', '', '000678969241', '농협');
+INSERT INTO MEMBER VALUES ('ezensh', 'tjgml', 'SUPPORTER', '유서희', '01061112869', '서울시 어디지?2222', 'ezensh@gmail.com', '', '000678969241', '농협');
 
 
 SELECT * FROM PROJECTS;

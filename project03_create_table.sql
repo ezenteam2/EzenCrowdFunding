@@ -16,7 +16,7 @@ CREATE TABLE member (
 	mem_password VARCHAR2(20) NOT NULL, /* 비밀번호 */
 	mem_type VARCHAR2(20) NOT NULL CONSTRAINT CK_memeber_mem_type CHECK (mem_type IN('SUPPORTER','MAKER')), /* 회원 종류 */
 	mem_name VARCHAR2(20) NOT NULL, /* 이름 */
-	mem_telno NUMBER NOT NULL CONSTRAINT UK_member_mem_telno UNIQUE, /* 전화번호 */
+	mem_telno VARCHAR2(12) NOT NULL CONSTRAINT UK_member_mem_telno UNIQUE, /* 전화번호 */
 	mem_address VARCHAR2(100) NOT NULL, /* 주소 */
 	mem_email VARCHAR2(100) NOT NULL CONSTRAINT UK_member_mem_email UNIQUE, /* 이메일 */
 	mem_businessno NUMBER, /* 사업자 등록번호 */
