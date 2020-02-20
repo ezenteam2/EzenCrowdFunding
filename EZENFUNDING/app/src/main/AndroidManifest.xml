@@ -4,22 +4,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/icon"
+        android:label="Ezen Funding"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".user_w_kb_nocticecontent"></activity>
+        <activity android:name=".user_w_kb_nocticecontent" />
         <activity android:name=".user_w_kb_nocticeboard" />
         <activity android:name=".user_m_ht_projects_list" />
         <activity android:name=".user_m_ht_projects_detail" />
         <activity android:name=".user_m_ht_category_menu" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".splash1"
+            android:theme="@style/splashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity">
+
         </activity>
     </application>
 
