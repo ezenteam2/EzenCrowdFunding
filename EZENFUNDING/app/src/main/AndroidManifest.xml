@@ -8,6 +8,8 @@
         android:label="Ezen Funding"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".mypage"></activity>
+        <activity android:name=".login" />
         <activity android:name=".user_w_kb_nocticecontent" />
         <activity android:name=".user_w_kb_nocticeboard" />
         <activity android:name=".user_m_ht_projects_list" />
@@ -22,10 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

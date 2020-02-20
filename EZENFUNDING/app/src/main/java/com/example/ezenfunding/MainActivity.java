@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-        ImageView ImageView3 = (ImageView)findViewById(R.id.profile);
+        ImageView profile = (ImageView)findViewById(R.id.profile);
 
-        ImageView3.setOnClickListener(new Button.OnClickListener() {
+        profile.setOnClickListener(new Button.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intentImageView3 = new Intent(MainActivity.this,Page1.class);
-                startActivity(intentImageView3);
+                Intent intentprofile = new Intent(MainActivity.this,login.class);
+                startActivity(intentprofile);
             }
         });
     }
