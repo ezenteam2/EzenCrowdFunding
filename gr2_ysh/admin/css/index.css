@@ -48,6 +48,18 @@ body .menu__inner {
   cursor: pointer;
 }
 
+body .menu__inner--main {
+  display: none;
+}
+
+body .menu__inner--comunity {
+  display: none;
+}
+
+body .menu__inner--project {
+  display: none;
+}
+
 body .menu__inner:hover {
   background-color: #0B243B;
   -webkit-transition: 1s;
