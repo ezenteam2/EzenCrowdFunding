@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentrecommend = new Intent(MainActivity.this,user_m_ht_category_menu.class);
                 startActivity(intentrecommend);
-                finish();
             }
 
         });
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentsecurity = new Intent(MainActivity.this,user_m_ht_category_menu.class);
                 startActivity(intentsecurity);
-                finish();
             }
 
         });
@@ -44,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentreward = new Intent(MainActivity.this,user_m_ht_category_menu.class);
                 startActivity(intentreward);
-                finish();
             }
 
         });
@@ -55,9 +53,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentmore = new Intent(MainActivity.this,user_w_kb_nocticeboard.class);
                 startActivity(intentmore);
-                finish();
             }
 
+        });
+        ImageView ImageView3 = (ImageView)findViewById(R.id.profile);
+
+        ImageView3.setOnClickListener(new Button.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intentImageView3 = new Intent(MainActivity.this,Page1.class);
+                startActivity(intentImageView3);
+            }
         });
     }
 }

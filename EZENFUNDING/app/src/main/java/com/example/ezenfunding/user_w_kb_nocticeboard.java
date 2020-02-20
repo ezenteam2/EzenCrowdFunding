@@ -21,7 +21,6 @@ public class user_w_kb_nocticeboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentimageView4 = new Intent(user_w_kb_nocticeboard.this,user_w_kb_nocticecontent.class);
                 startActivity(intentimageView4);
-                finish();
             }
 
         });
