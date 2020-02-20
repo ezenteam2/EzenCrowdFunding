@@ -9,9 +9,10 @@
     <script src="./index.js"></script>
     <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        function QnAs(){
-            document.querySelector(iframe).src="user_w_kb_Q&Aboard.html";
-        }
+            function QnA(){
+                document.querySelector("#ifm").src="user_w_kb_Q&Aboard.html";
+            }
+    
     </script>
 </head>
 <body>
@@ -20,7 +21,7 @@
     <ul class="nav__menu">
         <li class="nav__menu menu__security"><a href="#">투자</a></li>
         <li class="nav__menu menu__reward"><a href="#">리워드</a></li>
-        <li id="QnA" class="nav__menu menu__more" onclick="QnAs();"><a href="#">더보기</a></li>
+        <li id="QnA" class="nav__menu menu__more" onclick="QnA()" ><a href="#">더보기</a></li>
         <li class="nav__menu menu__login"><a href="#">로그인</a></li>
         <li class="nav__menu menu__sign-up"><a href="#">회원가입</a></li>   
     </ul>
