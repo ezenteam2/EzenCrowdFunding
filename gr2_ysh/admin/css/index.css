@@ -34,6 +34,8 @@ body .menu__category {
   padding-left: 50px;
   line-height: 100px;
   cursor: pointer;
+  border: 0.1px solid rgba(4, 13, 23, 0.2);
+  margin-top: -1px;
 }
 
 body .menu__category:hover {
@@ -46,6 +48,18 @@ body .menu__inner {
   padding: 10px 0 10px 70px;
   font-size: 15px;
   cursor: pointer;
+}
+
+body .menu__inner--main {
+  display: none;
+}
+
+body .menu__inner--community {
+  display: none;
+}
+
+body .menu__inner--project {
+  display: none;
 }
 
 body .menu__inner:hover {
