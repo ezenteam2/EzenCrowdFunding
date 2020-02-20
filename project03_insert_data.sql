@@ -127,8 +127,8 @@ INSERT INTO ADMIN VALUES ('admin02', 222222, 'x20110129');
 
 SELECT * FROM BOARD_QNA;
 
-INSERT INTO BOARD_QNA VALUES (board_qna_seq01.nextval, 'ezensh', sysdate, '협박 받고 있습니다', '허위 프로젝트로 신고했는데, 협박 받고 있어요. 손해 배상 청구 가능한가요?', 'admin01', '신고창에서 이미 경고드린 바와 같이, 신고로 인한 피해에는 저희 회사에서 책임지지 않습니다.');
-INSERT INTO BOARD_QNA VALUES (board_qna_seq01.nextval, 'ezenys', sysdate, '저는 억울합니다', '억울합니다 판사님', 'admin02', '뭐가여?');
+INSERT INTO BOARD_QNA VALUES (board_qna_seq01.nextval, 'ezensh', sysdate, '협박 받고 있습니다', '허위 프로젝트로 신고했는데, 협박 받고 있어요. 손해 배상 청구 가능한가요?', 'admin01', sysdate, '신고창에서 이미 경고드린 바와 같이, 신고로 인한 피해에는 저희 회사에서 책임지지 않습니다.');
+INSERT INTO BOARD_QNA VALUES (board_qna_seq01.nextval, 'ezenys', sysdate, '저는 억울합니다', '억울합니다 판사님', 'admin02', sysdate, '뭐가여?');
 
 
 

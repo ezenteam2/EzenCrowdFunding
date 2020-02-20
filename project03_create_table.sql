@@ -637,6 +637,8 @@ ALTER TABLE admin
 	
 	
 	
+	
+	
 ALTER TABLE board_qna
 	DROP
 		CONSTRAINT FK_admin_TO_board_qna
@@ -663,10 +665,11 @@ DROP TABLE board_qna
 CREATE TABLE board_qna (
 	qna_num NUMBER NOT NULL, /* 글번호 */
 	mem_id VARCHAR2(20) NOT NULL, /* 아이디 */
-	qna_date DATE NOT NULL, /* 등록날짜 */
-	qna_title VARCHAR2(100) NOT NULL, /* 제목 */
-	qna_content VARCHAR2(2000) NOT NULL, /* 내용 */
+	qna_date DATE, /* 등록날짜 */
+	qna_title VARCHAR2(100), /* 제목 */
+	qna_content VARCHAR2(2000), /* 내용 */
 	admin_id VARCHAR2(20), /* 관리자아이디 */
+	qna_answer_date DATE, /* 답변날짜 */
 	qna_answer VARCHAR2(2000) /* 답변내용 */
 );
 
@@ -677,6 +680,7 @@ COMMENT ON COLUMN board_qna.qna_date IS '등록날짜';
 COMMENT ON COLUMN board_qna.qna_title IS '제목';
 COMMENT ON COLUMN board_qna.qna_content IS '내용';
 COMMENT ON COLUMN board_qna.admin_id IS '관리자아이디';
+COMMENT ON COLUMN board_qna.qna_answer_date IS '답변날짜';
 COMMENT ON COLUMN board_qna.qna_answer IS '답변내용';
 
 CREATE UNIQUE INDEX PK_board_qna
