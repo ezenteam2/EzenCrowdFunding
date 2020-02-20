@@ -49,7 +49,7 @@ INSERT INTO MEMBER VALUES ('ezensh', 'tjgml', 'SUPPORTER', '유서희', '0106111
 
 SELECT * FROM PROJECTS;
 
-INSERT INTO PROJECTS VALUES (projects_seq01.nextval, 'ezenhj', '이젠정형외과', '신개념 무릎 보호대', '가전', '투자', sysdate, sysdate+15, 'http://www.naver.com/img00001', '무릎보호', 'http://www.youtube.com/xxxx0001', '프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 7일 이내 전액 반환 됩니다', 100000000, 0, 0);
+INSERT INTO PROJECTS VALUES (projects_seq01.nextval, 'ezenhj', '이젠정형외과', '신개념 무릎 보호대', '가전', '투자', sysdate, sysdate+15, 'http://www.naver.com/img00001', '무릎보호', 'http://www.youtube.com/xxxx0001', '프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 7일 이내 전액 반환 됩니다', 100000000, 211120200, 0);
 INSERT INTO PROJECTS VALUES (projects_seq01.nextval, 'ezenys', '용이승천', '획기적 반려동물 먹이 배급기', '반려동물', '리워드', sysdate, sysdate+15, 'http://www.naver.com/img003333', '오고오내새꾸', 'http://www.youtube.com/xyyyy0001', '프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 15일 이내 전액 반환 됩니다', 3000000, 0, 0);
 
 
