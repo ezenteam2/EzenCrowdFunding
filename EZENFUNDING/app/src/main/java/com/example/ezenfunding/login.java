@@ -19,8 +19,8 @@ public class login extends AppCompatActivity {
         loginBtn.setOnClickListener(new Button.OnClickListener() {
 
             public void onClick(View v) {
-                Intent intentprofile = new Intent(login.this,mypage.class);
-                startActivity(intentprofile);
+                Intent intentloginBtn = new Intent(login.this,mypage.class);
+                startActivity(intentloginBtn);
             }
         });
     }
