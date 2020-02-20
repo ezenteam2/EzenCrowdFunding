@@ -33,6 +33,14 @@ body{
                 transition : 1s;
             }
         }
+        .category{
+                &--button{
+                    position: relative;
+                    top : 2px;
+                    left : 30px;
+                    width : 15px;
+                }
+        }
         &__inner{
             padding : 10px 0 10px 70px;
             font-size: 15px;
