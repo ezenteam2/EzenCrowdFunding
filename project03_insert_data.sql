@@ -9,6 +9,7 @@ CREATE SEQUENCE board_qna_seq01
 	START WITH 3300000;
 
 
+
 CREATE SEQUENCE mem_balance_seq01
 	INCREMENT BY 1
 	START WITH 2100000;
@@ -38,7 +39,6 @@ CREATE SEQUENCE projects_funding_seq01
 
 
 
-
 SELECT * FROM MEMBER;
 
 INSERT INTO MEMBER VALUES ('ezenht', 'gusxo', 'SUPPORTER', '김현태', '01051519595', '서울시 영등포구', 'ezenht@gmail.com', '', '321585892323', '국민');
@@ -58,10 +58,10 @@ SELECT * FROM PROJECTS_DETAILS;
 
 
 INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100000, projects_details_num_seq01.nextval, 'detailimg', 'http://www.naver.com/img33333');
-INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100004, projects_details_num_seq01.nextval, 'detailimg', 'http://www.naver.com/img3676733');
-INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100004, projects_details_num_seq01.nextval, 'contentimg', 'http://www.naver.com/img444333');
+INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100001, projects_details_num_seq01.nextval, 'detailimg', 'http://www.naver.com/img3676733');
+INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100001, projects_details_num_seq01.nextval, 'contentimg', 'http://www.naver.com/img444333');
 INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100000, projects_details_num_seq01.nextval, 'contenttext', '튼튼한 다리를 원하십니까앙?');
-INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100004, projects_details_num_seq01.nextval, 'contenttext', '집에 혼자 있는 우리 댕댕이가 배가고프면 어쩌쥐?');
+INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100001, projects_details_num_seq01.nextval, 'contenttext', '집에 혼자 있는 우리 댕댕이가 배가고프면 어쩌쥐?');
 INSERT INTO PROJECTS_DETAILS VALUES (projects_details_seq01.nextval, 1100000, projects_details_num_seq01.nextval, 'contentimg', 'http://www.naver.com/img33333');
 
 
@@ -71,15 +71,15 @@ INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100000, 10
 INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100000, 500000, '수익률의 0.55%를 3개월간 매월 지급');
 INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100000, 1000000, '수익률의 0.6%를 3개월간 매월 지급');
 INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100000, 1500000, '수익률의 0.65%를 3개월간 매월 지급');
-INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100004, 10000, '반려동물 먹이 배급기 1개 배송');
-INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100004, 50000, '반려동물 먹이 배급기 5개 배송');
-INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100004, 100000, '반려동물 먹이 배급기 5개 배송 + 개사료 10kg');
+INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100001, 10000, '반려동물 먹이 배급기 1개 배송');
+INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100001, 50000, '반려동물 먹이 배급기 5개 배송');
+INSERT INTO PROJECTS_REWARDS VALUES (projects_rewards_seq01.nextval, 1100001, 100000, '반려동물 먹이 배급기 5개 배송 + 개사료 10kg');
 
 
 
 SELECT * FROM PROJECTS_QNA;
 
-INSERT INTO PROJECTS_QNA VALUES (projects_qna_seq01.nextval, 1100004, 'ezenht', '이거 혹시 본인이 필요해서 만드려고 하는건가여???', '아니거등여');
+INSERT INTO PROJECTS_QNA VALUES (projects_qna_seq01.nextval, 1100001, 'ezenht', '이거 혹시 본인이 필요해서 만드려고 하는건가여???', '아니거등여');
 INSERT INTO PROJECTS_QNA VALUES (projects_qna_seq01.nextval, 1100000, 'ezenhj', '이거 진짜로 작동 하는거 마즘??????', '백퍼');
 
 
@@ -88,17 +88,17 @@ SELECT * FROM PROJECT_FUNDING;
 INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100000, 'ezenys', 1600001);
 INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100000, 'ezenys', 1600001);
 INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100000, 'ezenys', 1600001);
-INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100004, 'ezenys', 1600005);
-INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100004, 'ezenht', 1600004);
-INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100004, 'ezenhj', 1600006);
+INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100001, 'ezenys', 1600005);
+INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100001, 'ezenht', 1600004);
+INSERT INTO PROJECT_FUNDING VALUES (projects_funding_seq01.nextval, 1100001, 'ezenhj', 1600006);
 
 
 SELECT * FROM PROJECTS_FAVORITE;
 
 INSERT INTO PROJECTS_FAVORITE VALUES ('ezenht', 1100000);
-INSERT INTO PROJECTS_FAVORITE VALUES ('ezenht', 1100004);
+INSERT INTO PROJECTS_FAVORITE VALUES ('ezenht', 1100001);
 INSERT INTO PROJECTS_FAVORITE VALUES ('ezenys', 1100000);
-INSERT INTO PROJECTS_FAVORITE VALUES ('ezenhj', 1100004);
+INSERT INTO PROJECTS_FAVORITE VALUES ('ezenhj', 1100001);
 INSERT INTO PROJECTS_FAVORITE VALUES ('ezenhj', 1100000);
 
 
