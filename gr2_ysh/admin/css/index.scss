@@ -26,6 +26,8 @@ body{
             padding-left : 50px;
             line-height: 100px;
             cursor: pointer;
+            border: 0.1px solid rgba(4, 13, 23, 0.2);
+            margin-top: -1px;
             &:hover{
                 background-color: #0B243B;
                 transition : 1s;
