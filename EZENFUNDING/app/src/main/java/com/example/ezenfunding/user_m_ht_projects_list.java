@@ -21,7 +21,6 @@ public class user_m_ht_projects_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentimageView6 = new Intent(user_m_ht_projects_list.this,user_m_ht_projects_detail.class);
                 startActivity(intentimageView6);
-                finish();
             }
 
         });
@@ -32,7 +31,6 @@ public class user_m_ht_projects_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentimageView3 = new Intent(user_m_ht_projects_list.this,user_m_ht_projects_detail.class);
                 startActivity(intentimageView3);
-                finish();
             }
 
         });
@@ -43,7 +41,6 @@ public class user_m_ht_projects_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentimageView5 = new Intent(user_m_ht_projects_list.this,user_m_ht_projects_detail.class);
                 startActivity(intentimageView5);
-                finish();
             }
 
         });
@@ -54,7 +51,6 @@ public class user_m_ht_projects_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentimageView4 = new Intent(user_m_ht_projects_list.this,user_m_ht_projects_detail.class);
                 startActivity(intentimageView4);
-                finish();
             }
 
         });

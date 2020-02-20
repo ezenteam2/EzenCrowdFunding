@@ -666,7 +666,7 @@ CREATE TABLE board_qna (
 	qna_date DATE NOT NULL, /* 등록날짜 */
 	qna_title VARCHAR2(100) NOT NULL, /* 제목 */
 	qna_content VARCHAR2(2000) NOT NULL, /* 내용 */
-	admin_id VARCHAR2(20) NOT NULL, /* 관리자아이디 */
+	admin_id VARCHAR2(20), /* 관리자아이디 */
 	qna_answer VARCHAR2(2000) /* 답변내용 */
 );
 
