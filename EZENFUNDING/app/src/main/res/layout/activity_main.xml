@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/ScrollView1"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/nanumgothic">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="316dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="EZEN FUNDING"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="89dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:paddingLeft="-15sp"
+
+                android:paddingRight="-15sp"
+                app:srcCompat="@drawable/account" />
+
+        </LinearLayout>
+        "
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="#00FFFFFF"
+                android:text="추천"
+                android:textColor="#575555"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="#00FFFFFF"
+                android:text="투자"
+                android:textColor="#575555"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="#00FFFFFF"
+                android:text="리워드"
+                android:textColor="#575555"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:background="#00FFFFFF"
+                android:text="더보기"
+                android:textColor="#575555"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="800dp"
+                android:layout_height="230dp"
+                android:layout_marginLeft="-170dp"
+                app:srcCompat="@drawable/slide" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="펀딩하게 퍼줄거야"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="괜히 다 주고 싶은 2월"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="15"
+            android:text="추천 프로젝트"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="29dp"
+                app:srcCompat="@drawable/item5" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/item2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:id="@+id/textView335"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="13dp"
+                android:text="[바이커소울 맥핏] 아름답고 강력한 자석거치대 끝판왕!"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="40dp"
+                android:text="의료산업투자ㅣ소아약시 4세이전 치료 95%완치ㅣ일본진출까지"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <TextView
+                android:id="@+id/textView38435"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="1,077%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView39254"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView40875"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:text="85%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView41577"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="13dp"
+                app:srcCompat="@drawable/item3" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/item4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:id="@+id/textView5414"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="13dp"
+                android:text="모빌리티산업 투자ㅣ대한민국 캠핑 카라반이 세계로 진출합니다"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView8415"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="40dp"
+                android:text="반려동물 키우세요? 아이 키우세요? 스위틀 하나로 물 청소 고민 끝!"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="751%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:text="75%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp" />
+
+        <TextView
+            android:id="@+id/textView43123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="-15dp"
+            android:layout_weight="15"
+            android:text="리워드 프로젝트"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/imageView13213"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="29dp"
+                app:srcCompat="@drawable/item5" />
+
+            <ImageView
+                android:id="@+id/imageView8213"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/item2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:id="@+id/textView335213"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="13dp"
+                android:text="[바이커소울 맥핏] 아름답고 강력한 자석거치대 끝판왕!"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView35213"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="40dp"
+                android:text="의료산업투자ㅣ소아약시 4세이전 치료 95%완치ㅣ일본진출까지"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <TextView
+                android:id="@+id/textView3843"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="1,077%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3925"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4087"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:text="85%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4157"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <ImageView
+                android:id="@+id/imageView1123"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="13dp"
+                app:srcCompat="@drawable/item3" />
+
+            <ImageView
+                android:id="@+id/imageView12213"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/item4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:id="@+id/textView541"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="13dp"
+                android:text="모빌리티산업 투자ㅣ대한민국 캠핑 카라반이 세계로 진출합니다"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView841"
+                android:layout_width="160dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="40dp"
+                android:text="반려동물 키우세요? 아이 키우세요? 스위틀 하나로 물 청소 고민 끝!"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp">
+
+            <TextView
+                android:id="@+id/textView38213"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="751%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3923"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4023"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:text="75%"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="리워드"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="30dp"
+            android:background="#A29EA0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="EZEN FUNDING 대표 고객센터"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-5dp">
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="1dp"
+                    android:text="1661-9056"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="1dp"
+                    android:text=" | 카카오톡 채널@EZEN FUNDING"
+                    android:textSize="13sp" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text=" | info@ezenfunding.kr"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="1dp"
+                    android:text="EZEN FUNDING(주)"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="1dp"
+                    android:text="2조"
+                    android:textSize="13sp" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="사업자등록번호 134-456-7894"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="서울 종로구 종로 78 미려빌딩 6층 이젠아카데미컴퓨터학원"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:paddingTop="1dp"
+                android:paddingRight="1dp"
+                android:text="© EZEN Platform Co., Ltd."
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#332F31"
+            android:padding="15dp"
+            android:paddingTop="1dp"
+            android:paddingRight="1dp"
+            android:text="EZEN FUNDING(주)는 크라우드 펀딩 플랫폼을 제공하는 중개자로 자금을 모집하는 당사자가 아니며, 투자손실의 위험을 보전하거나 보상품 제공을 보장해 드리지 못합니다."
+            android:textColor="@android:color/white"
+            android:textColorLink="#00292626"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</ScrollView>
