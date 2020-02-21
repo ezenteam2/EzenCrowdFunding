@@ -1,0 +1,20 @@
+th{
+    height:40px;
+    text-decoration: none;
+}
+td{
+    height:40px;
+    text-align: center;
+    border-top:1px solid black;
+    border-left:-1px;
+    border-right: 1px solid black;
+    border-bottom: -1px;
+}
+
+thead{
+    background-color: rgb(161, 156, 156);
+}
+
+.border:hover{
+    background-color: #dc7f0d;
+}
