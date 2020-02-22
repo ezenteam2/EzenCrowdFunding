@@ -31,7 +31,8 @@
         }
     }
     
-    function handleFiles(files){
+    function handleFiles(event){
+        const files = event.target.files;
         [...files].forEach(file=>{
             previewFile(file);
         })
@@ -64,5 +65,6 @@
     dropArea.addEventListener('mouseenter',handleMouseIn);
     dropArea.addEventListener('mouseleave',handleMouseOut);
     closeIcon.addEventListener('click', clickCloseIcon);
+    _input.addEventListener('change', handleFiles);
     
 }
