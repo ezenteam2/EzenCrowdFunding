@@ -1,0 +1,34 @@
+SELECT * FROM PROJECTS;
+
+
+
+SELECT * FROM (
+	SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+			trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+			trunc(PRO_FINISH_DATE-sysdate) "남은날짜"
+	FROM PROJECTS p
+	WHERE CATE_NAME = 'IT'
+	ORDER BY PRO_START_DATE)
+WHERE ROWNUM <= 4;
+
+
+SELECT * FROM (
+	SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+			trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+			trunc(PRO_FINISH_DATE-sysdate) "남은날짜"
+	FROM PROJECTS p
+	WHERE CATE_NAME = '가전'
+	ORDER BY PRO_START_DATE)
+WHERE ROWNUM <= 4;
+
+
+SELECT * FROM (
+	SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+			trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+			trunc(PRO_FINISH_DATE-sysdate) "남은날짜"
+	FROM PROJECTS p
+	WHERE CATE_NAME = '가구'
+	ORDER BY PRO_START_DATE)
+WHERE ROWNUM <= 4;
+
+
