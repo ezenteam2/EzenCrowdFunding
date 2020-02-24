@@ -29,6 +29,8 @@
         <activity android:name=".Page2"/>
         <activity android:name=".Page3"/>
         <activity android:name=".Page4"/>
+        <activity android:name=".user_m_kb_qnaboard"/>
+        <activity android:name=".user_m_kb_RegistQnA"/>
 
     </application>
 

@@ -15,6 +15,7 @@ public class user_w_kb_nocticeboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_w_kb_nocticeboard);
         TableRow moveContent = (TableRow)findViewById(R.id.moveContent);
+        Button moveQnA = (Button)findViewById(R.id.moveQnA);
 
         moveContent.setOnClickListener(new Button.OnClickListener() {
 
@@ -23,6 +24,14 @@ public class user_w_kb_nocticeboard extends AppCompatActivity {
                 startActivity(intentimageView4);
             }
 
+        });
+
+        moveQnA.setOnClickListener(new Button.OnClickListener(){
+            public void onClick(View v){
+                Intent intentQnA = new Intent(getApplicationContext(), user_m_kb_qnaboard.class);
+                startActivity(intentQnA);
+                finish();
+            }
         });
     }
 }
