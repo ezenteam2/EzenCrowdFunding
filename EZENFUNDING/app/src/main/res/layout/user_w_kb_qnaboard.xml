@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,24 +13,25 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="공지사항"
-            android:background="@drawable/kb_header_clicked"
-
+            android:background="@drawable/kb_header_nonclick"
+            android:id="@+id/moveNoctice"
             />
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Q n A"
-            android:background="@drawable/kb_header_nonclick"
-            android:id="@+id/moveQnA"
+            android:background="@drawable/kb_header_clicked"
             />
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="공지사항"
-        android:textSize="16pt"
+        android:text="Q n A"
+        android:textSize="15pt"
         android:textAlignment="center"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="80dp"/>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +40,8 @@
         <TableRow
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:background="@drawable/table_border">
+            android:background="@drawable/table_border"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,49 +51,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="제목"
-                android:layout_marginLeft="70dp"/>
+                android:layout_marginLeft="60dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="작성자"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변여부"
                 android:layout_marginLeft="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="작성날짜"
-                android:layout_marginLeft="40dp"/>
-
-
-        </TableRow>
-        <TableRow
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:background="@drawable/table_border"
-            android:id="@+id/moveContent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:textSize="08pt"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="홈페이지 오픈 안내"
-                android:layout_marginLeft="10dp"
-                android:textSize="08pt"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="관리자"
-                android:layout_marginLeft="5dp"
-                android:textSize="08pt"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2020.02.05"
-                android:layout_marginLeft="15dp"
-                android:textSize="08pt"/>
         </TableRow>
         <TableRow
             android:paddingTop="10dp"
@@ -99,27 +70,28 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
-                android:textSize="08pt"
+                android:text="3300025"
+                android:textSize="7pt"
                 android:layout_marginLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="홈페이지 점검 안내"
-                android:layout_marginLeft="10dp"
-                android:textSize="08pt"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="관리자"
+                android:text="투자하고 리워드하고..."
                 android:layout_marginLeft="15dp"
-                android:textSize="08pt"/>
+                android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2020.02.06"
-                android:layout_marginLeft="5dp"
-                android:textSize="08pt"/>
+                android:text="EZENSH"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변완료"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+
         </TableRow>
         <TableRow
             android:paddingTop="10dp"
@@ -128,27 +100,70 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"
-                android:textSize="08pt"
+                android:text="3300025"
+                android:textSize="7pt"
                 android:layout_marginLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="홈페이지 점검 완료 안내"
-                android:layout_marginLeft="10dp"
-                android:textSize="08pt"/>
+                android:text="투자하고 리워드하고..."
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="관리자"
-                android:layout_marginLeft="5dp"
-                android:textSize="08pt"/>
+                android:text="EZENSH"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2020.02.06"
-                android:layout_marginLeft="5dp"
-                android:textSize="08pt"/>
+                android:text="답변완료"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/table_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3300025"
+                android:textSize="7pt"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="투자하고 리워드하고..."
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EZENSH"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변완료"
+                android:layout_marginLeft="15dp"
+                android:textSize="7pt"/>
+
         </TableRow>
     </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="등록"
+            android:id="@+id/moveRegistQnA"/>
+    </LinearLayout>
+
 </LinearLayout>
