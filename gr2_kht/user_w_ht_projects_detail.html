@@ -31,7 +31,7 @@ body{
 	width:800px;
 	height:45px;
 	margin:5px;
-	background-color:white;
+/*	background-color:white; */
 	}
 	
 .div009_ht{
@@ -43,9 +43,19 @@ body{
 	margin-left:1210px;
 	position:absolute;
 	width:400px;
-	height:1000px;
-	background-color:yellow;
-	margin-top:10px;}
+/*	background-color:yellow; */
+	margin-top:10px;
+	padding:20px;
+	}
+
+.div011_ht{
+	width:360px;
+	border-radius:5%;
+	margin-top:30px;
+	margin-bottom:30px;
+	border:solid 3px #C3E7FA;
+	padding:15px;
+	}
 
 .btn001_ht{
 	width:300px;
@@ -59,14 +69,6 @@ body{
 	margin-left:10px;
 	margin-top:2px;
 	margin-bottom:2px;
-	}
-
-.img001_ht{
-	width:100px;
-	height:100px;
-	border-radius:50%;
-	margin:10px;
-	vertical-align:bottom;
 	}
 
 .img002_ht{
@@ -90,6 +92,12 @@ body{
 .td002{
 	padding-left:40px;
 	font-size:35px;
+	}
+
+.ptitle{
+	margin:10px;
+	font-size:40px;
+	font-weight:900;
 	}
 
 </style>
@@ -148,12 +156,46 @@ body{
 	</div>
 	
 	<div class="div010_ht">
-	<p style="margin:10px;font-size:40px;">프로젝트 옵션</p>
+	<p class="ptitle">프로젝트 옵션</p>
+
+		<div class="div011_ht">
+			<div style="margin-bottom:10px;font-size:30px;font-weight:bold;">100,000원 펀딩</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">리워드명</div>
+			<div style="margin-bottom:10px;font-size:15px;">2개 10만원</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">예상 배송일</div>
+			<div style="margin-bottom:10px;font-size:15px;">2020-02-03</div>
+			<hr>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">추가 요청사항</div>
+			<input type="text" placeholder="요청사항을 입력해주세요" style="width:330px;height:50px;">
+		</div>
+		
+		<div class="div011_ht">
+			<div style="margin-bottom:10px;font-size:30px;font-weight:bold;">200,000원 펀딩</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">리워드명</div>
+			<div style="margin-bottom:10px;font-size:15px;">5개 20만원</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">예상 배송일</div>
+			<div style="margin-bottom:10px;font-size:15px;">2020-02-03</div>
+			<hr>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">추가 요청사항</div>
+			<input type="text" placeholder="요청사항을 입력해주세요" style="width:330px;height:50px;">
+		</div>
+
+		<div class="div011_ht">
+			<div style="margin-bottom:10px;font-size:30px;font-weight:bold;">300,000원 펀딩</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">리워드명</div>
+			<div style="margin-bottom:10px;font-size:15px;">8개 30만원</div>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">예상 배송일</div>
+			<div style="margin-bottom:10px;font-size:15px;">2020-02-03</div>
+			<hr>
+			<div style="margin-bottom:10px;font-size:20px;font-weight:bold;">추가 요청사항</div>
+			<input type="text" placeholder="요청사항을 입력해주세요" style="width:330px;height:50px;">
+		</div>
+
 	</div>
 
 
-	<div class="div009_ht" style="background-color:green;">
-	<p style="margin:10px;font-size:40px;">프로젝트 스토리</p>
+	<div class="div009_ht">
+	<p class="ptitle">프로젝트 스토리</p>
 	
 	<img class="img003_ht" src="img/project_content_detail01.gif"><br>
 	<img class="img003_ht" src="img/project_content_detail02.png"><br>
@@ -177,8 +219,8 @@ body{
 	</div>
 	
 		
-	<div style="width:1200px;background-color:orange;">
-	<p style="margin:10px;font-size:40px;">프로젝트 동영상</p>
+	<div style="width:1200px;">
+	<p class="ptitle">프로젝트 동영상</p>
 	<p style="text-align:center">
 	<iframe width="1000px" height="600px" src="https://www.youtube.com/embed/k9_XH1YibcY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
 	</iframe>
@@ -186,9 +228,9 @@ body{
 	</div>
 	
 	
-	<div style="width:1200px;font-size:25px;background-color:blue;">
+	<div style="width:1200px;font-size:25px;">
 
-		<p style="margin:10px;font-size:40px;">환불 정책</p>
+		<p class="ptitle">환불 정책</p>
 		<ul>
 			<li>프로젝트가 기한내에 완성되지 않는 경우, 투자 수익 분배일 기준 7일 이내 전액 반환 됩니다.</li>
 			<li>배송중 용기가 파손되거나 내용물이 흘러 음용이 불가할 경우 서포터님과 커뮤니케이션후 교환 가능합니다.</li>
@@ -200,15 +242,65 @@ body{
 	</div>
 	
 
-	<div style="width:1200px;background-color:navy;">
-	<img class="img001_ht" src="ht_img_05.jpg">
-	<input type="Text" style="width:700px;height:100px;border:none;margin:10px;">
-	<input type="submit" style="width:100px;height:100px;border:none;background-color:#dc7f0d;color:white;">
+	<div style="width:1200px;padding:30px;">
+	<p class="ptitle">의견남기기</p>
+	<p style="font-size:30px;margin:0;margin-top:20px;">#ezenht</p>
+	<input type="Text" style="width:700px;height:100px;margin:10px;border:1px solid;" placeholder="의견을 남겨 주세요">
+	<input type="submit" value="등록" style="width:100px;height:100px;border:none;background-color:#dc7f0d;color:white;">
 	</div>
 	
-	<div style="width:1200px;background-color:purple;">
-	등록된 질문 및 답변내용
+	<br>
+	
+	<br>
+	
+	<div style="width:1200px;">
+	<hr>
+	<p class="ptitle">의견남기기</p>
+
+		<div>
+		<p style="font-size:30px;margin:0;margin-top:20px;">#ezenht</p>
+		<div style="margin-left:30px;margin-top:10px;margin-bottom:20px;font-size:20px;">이거 부모님한테 추천해드려도 될까요? 좀 고민되네요
+		</div>
+		<div style="margin-left:60px;background-color:#EBFBFF;">
+		<details>
+		<summary>답변 보기</summary>
+		<p>이게 또 부모님이 쓰시기에 그렇게 편하다고 합니다 걱정하지 말고 저희에게 맡겨 주세요!!!</p>
+		</details>
+		</div>
+		<hr>
+		</div>
+
+		<div>
+		<p style="font-size:30px;margin:0;margin-top:20px;">#ezenys</p>
+		<div style="margin-left:30px;margin-top:10px;margin-bottom:20px;font-size:20px;">이거 완전 기대 됨 생각보다 쩔듯
+		</div>
+		<div style="margin-left:60px;background-color:#EBFBFF;">
+		<details>
+		<summary>답변 보기</summary>
+		<p>안목 탁월 하심!!!! 실망 안하실거임</p>
+		</details>
+		</div>
+		<hr>
+		</div>
+
+		<div>
+		<p style="font-size:30px;margin:0;margin-top:20px;">#ezenkb</p>
+		<div style="margin-left:30px;margin-top:10px;margin-bottom:20px;font-size:20px;">괜찮다 하는 사람들 안목 안 달고 사심? 알바인가
+		</div>
+		<div style="margin-left:60px;background-color:#EBFBFF;">
+		<details>
+		<summary>답변 보기</summary>
+		<p>왜그러시죠 고갱님</p>
+		</details>
+		</div>
+		<hr>
+		</div>
+
 	</div>
+	
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </div>	
 </body>
 <script type = "text/javascript">
