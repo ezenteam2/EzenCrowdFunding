@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-    <h1 align="center">제작프로젝트 관리</h1>
+    <h1 align="center">나의 관심 펀딩</h1>
     <table 
         align="center">
         <thead>
@@ -18,7 +18,7 @@
                 <th width="80px">카테고리</th>
                 <th width="350px">제목</th>
                 <th width="80px">조회수</th>
-                <th width="150px">펀딩금액(%)</th>
+                <th width="150px">삭제하기</th>
             <th width="150px">마감일</th></tr>
         </thead>
 
@@ -27,7 +27,9 @@
                 <td>IT</td>
                 <td>Primeum Sound 돌비 5.1채널 스피커</td>
                 <td>40,294회</td>
-                <td>19,374,900원(98%)</td>
+                <td><input type="button"
+                    id="delBtn" value="삭제"
+                    onclick="deleteBtn()"></td>
                 <td>2020-06-12</td>
             </tr>
 
@@ -35,7 +37,9 @@
                 <td>뷰티</td>
                 <td>수분촉촉 천연엠플</td>
                 <td>3,567회</td>
-                <td>3,492,900원(51%)</td>
+                <td><input type="button"
+                    id="delBtn" value="삭제"
+                    onclick="deleteBtn()"></td>
                 <td>2020-04-21</td>
             </tr>
 
@@ -43,7 +47,9 @@
                 <td>패션</td>
                 <td>마스크도 패션이다 패션연예인 마스크</td>
                 <td>404회</td>
-                <td>1,324,000원(30%)</td>
+                <td><input type="button"
+                    id="delBtn" value="삭제"
+                    onclick="deleteBtn()"></td>
                 <td>2020-07-01</td>
             </tr>
 
@@ -74,5 +80,10 @@
         </tbody>
     </table>
 </div>
+    <script>
+        function deleteBtn(){
+            alert('삭제되었습니다.')
+        }
+    </script>
 </body>
 </html>
