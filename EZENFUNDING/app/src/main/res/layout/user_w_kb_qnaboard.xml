@@ -66,7 +66,8 @@
         <TableRow
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:background="@drawable/table_border">
+            android:background="@drawable/table_border"
+            android:id="@+id/moveQnAContent">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,25 +101,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3300025"
+                android:text="3300026"
                 android:textSize="7pt"
                 android:layout_marginLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="투자하고 리워드하고..."
+                android:text="예치금 조회가 안돼요"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EZENSH"
+                android:text="EZENYS"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="답변완료"
+                android:text="미답변"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
 
@@ -130,25 +131,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3300025"
+                android:text="3300027"
                 android:textSize="7pt"
                 android:layout_marginLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="투자하고 리워드하고..."
+                android:text="결제가 안돼요"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EZENSH"
+                android:text="EZENHJ"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="답변완료"
+                android:text="미답변"
                 android:layout_marginLeft="15dp"
                 android:textSize="7pt"/>
 
@@ -158,12 +159,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="right">
+        android:gravity="right"
+        android:layout_marginTop="30dp">
         <Button
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:text="등록"
-            android:id="@+id/moveRegistQnA"/>
+            android:id="@+id/moveRegistQnA"
+            android:background="#dc7f0d"
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
 
 </LinearLayout>
