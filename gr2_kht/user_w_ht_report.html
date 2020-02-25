@@ -3,33 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <title>잠이 오냐 지금?</title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <style>
 
-#select02_ht{
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:700;
+  	}
+
+.select02_ht{
 	width:200px;
-	height:50px;
-	border:solid;
+	height:40px;
 	margin:10px;
 	margin-right:10px;
-	margin-top:20px;
 	margin-bottom:10px;
 	}
 
-#table001_ht{
+.table001_ht{
 	border-collapse:collapse;
-	width:700px;
+	width:500px;
+	border-top:3px solid #dc7f0d; 
+	border-bottom:3px solid #dc7f0d; 
+	border-left:3px solid #dc7f0d; 
+	border-right:3px solid #dc7f0d; 
+	
 	}
 	
-#textbox001_ht{
+.textbox001_ht{
 	width:90%;
-	height:50px;
+	height:30px;
 	margin:10px;
 	}
 	
-#textbox002_ht{
-	width:90%;
+.textbox002_ht{
+	width:91%;
 	height:300px;
 	margin:10px;
+	}
+
+.td001{
+	font-size:20px;
+	color:#14148C;
+	text-align:right;
+	height:60px;
+	padding-right:20px;
+	}
+	
+.td002{text-align:center;
+	font-size:40px;
+	font-color:#dc7f0d;
+	font-weight:bold;"
+	margin-top:10px;
+	margin-bottom:10px;
 	}
 
 [type=button]{
@@ -58,12 +83,17 @@
 
 <body>
 
-	<table id="table001_ht" border>
+	<table class="table001_ht">
 		<tr>
-			<td width="30%">신고분류
+			<td colspan=2 class="td002" style="padding:10px;">프로젝트 신고하기
+			</td>
+		</tr>
+		
+		<tr>
+			<td width="30%" class="td001">신고분류
 			</td>
 			<td>
-				<select id="select02_ht" name = "신고분류">
+				<select class="select02_ht" name = "신고분류">
 					<option value = "reporttype01">허위 프로젝트</option>
 					<option value = "reporttype01">과대 광고 프로젝트</option>
 					<option value = "reporttype01">현실화 불가</option>
@@ -73,25 +103,25 @@
 			</td>
 		</tr>
 		<tr>
-			<td>제목
+			<td class="td001">제목
 			</td>
-			<td><input type="text" placeholder="제목을 입력하세요" id="textbox001_ht"/>
-			</td>
-		</tr>
-		<tr>
-			<td colspan = 2><input type="text" placeholder="내용을 입력하세요" id="textbox002_ht"/>
+			<td><input type="text" placeholder="제목을 입력하세요" class="textbox001_ht"/>
 			</td>
 		</tr>
 		<tr>
-			<td colspan = 2><input type="button" value="스샷을 등록하세요">
+			<td colspan = 2 style="text-align:center;"><input type="text" placeholder="내용을 입력하세요" class="textbox002_ht"/>
 			</td>
 		</tr>
 		<tr>
-			<td colspan = 2><input type="submit" value="등록하기">
+			<td colspan = 2 style="text-align:center;"><input type="button" value="스샷을 등록하세요">
 			</td>
 		</tr>
 		<tr>
-			<td colspan = 2>허위 신고로 인한 피해가 발생할 경우 민사 또는 형사상의 책임이 발생할 수 있습니다.
+			<td colspan = 2 style="text-align:center;"><input type="submit" value="등록하기">
+			</td>
+		</tr>
+		<tr>
+			<td colspan = 2 style="padding:20px;">허위 신고로 인한 피해가 발생할 경우 민사 또는 형사상의 책임이 발생할 수 있습니다.
 			</td>
 		</tr>
 	</table>
