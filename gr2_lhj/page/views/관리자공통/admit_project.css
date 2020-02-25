@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+  font-weight: 600;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main h1 {
+  padding: 0 0 0 20px;
+  margin: 0 0 20px 0;
+}
+
+main .section_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px 0 10px;
+  width: 700px;
+  height: 40px;
+  border-radius: 30px;
+  border: #4287f5 solid 2px;
+}
+
+main .section_head .type {
+  display: block;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  border-right: 2px #4287f5 solid;
+}
+
+main .section_head .category {
+  background-color: transparent;
+  border: none;
+  border-right: 2px #4287f5 solid;
+  width: 110px;
+}
+
+main .section_head input {
+  margin: 0 10px 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+}
+
+main .section_head a {
+  text-decoration: none;
+  margin-left: auto;
+  display: block;
+  padding: 5px 0 0 0;
+}
+
+main .section_head a i {
+  display: block;
+  background: url("./img/검색아이콘.PNG");
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  overflow: hidden;
+  color: transparent;
+}
+
+main .section_content {
+  margin: 30px 0 0 10px;
+}
+
+main .section_content ul {
+  border: solid 1px;
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+main .section_content ul .first div {
+  padding: 5px 0 0 0;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  background-color: #dc7d0d;
+  color: white;
+  border: solid orange 1px;
+}
+
+main .section_content ul .first div:last-child {
+  color: transparent;
+}
+
+main .section_content ul li {
+  border-bottom: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+
+main .section_content ul li div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
+
+main .section_content ul li div:last-child {
+  padding: 5px 0 5px 0;
+}
+
+main .section_content ul li div:last-child button {
+  cursor: pointer;
+  height: 20px;
+  border: solid 1px;
+  background-color: white;
+}
+
+main .pagenation {
+  padding: 30px 0 0 0;
+}
+
+main .pagenation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 210px;
+  margin: 0;
+  padding: -1px 20px -1px 20px;
+  margin: auto;
+}
+
+main .pagenation ul li {
+  cursor: pointer;
+  padding: 3px;
+  text-align: center;
+  margin: 0 0 0 -1px;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  background-color: white;
+  color: #4287f5;
+}
+
+main .pagenation ul li:first-child {
+  border-radius: 5px 0 0 5px;
+  padding: 1px;
+}
+
+main .pagenation ul li:last-child {
+  border-radius: 0 5px 5px 0;
+  padding: 1px;
+}
+
+main .pagenation ul li:hover {
+  background-color: #d5d5d5;
+}
+/*# sourceMappingURL=admit_project.css.map */
