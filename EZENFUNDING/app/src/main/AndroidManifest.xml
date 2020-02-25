@@ -31,7 +31,7 @@
         <activity android:name=".Page4"/>
         <activity android:name=".user_m_kb_qnaboard"/>
         <activity android:name=".user_m_kb_RegistQnA"/>
-
+        <activity android:name=".user_w_kb_QnAContent"/>
     </application>
 
 </manifest>

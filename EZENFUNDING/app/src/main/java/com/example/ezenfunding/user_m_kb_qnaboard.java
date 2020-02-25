@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TableRow;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ public class user_m_kb_qnaboard extends AppCompatActivity {
 
         Button moveNoctice = (Button)findViewById(R.id.moveNoctice);
         Button moveRegistQna = (Button)findViewById(R.id.moveRegistQnA);
+        TableRow moveQnAContent = (TableRow)findViewById(R.id.moveQnAContent);
 
         moveNoctice.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +30,15 @@ public class user_m_kb_qnaboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent moveRegistQnAintent = new Intent(getApplicationContext(), user_m_kb_RegistQnA.class);
                 startActivity(moveRegistQnAintent);
+                finish();
+            }
+        });
+
+        moveQnAContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent moveQnAContentIntent = new Intent(getApplicationContext(), user_w_kb_QnAContent.class);
+                startActivity(moveQnAContentIntent);
                 finish();
             }
         });
