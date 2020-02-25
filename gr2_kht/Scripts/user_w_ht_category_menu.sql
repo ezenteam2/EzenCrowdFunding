@@ -1,0 +1,112 @@
+SELECT * FROM PROJECTS;
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = 'IT'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '가전'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '가구'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '패션'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '뷰티'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '음식'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '여행'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '레저'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '반려동물'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '음반'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+
+SELECT PRO_MAIN_IMAGE "대표이미지", PRO_TITLE "프로젝트제목", PRO_GET_FUND "현재모금액",
+		trunc(PRO_GET_FUND/PRO_TARGET_FUND, 2)*100||'%' "달성률",
+		trunc(PRO_FINISH_DATE-sysdate) "남은날짜", PRO_HITS "조회수"
+FROM PROJECTS
+WHERE 	CATE_NAME = '영화'
+		AND PRO_START_DATE <= sysdate 
+		AND sysdate <= PRO_FINISH_DATE
+ORDER BY PRO_START_DATE DESC;
+
+

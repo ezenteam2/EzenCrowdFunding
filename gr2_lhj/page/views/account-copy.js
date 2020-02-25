@@ -4,7 +4,6 @@
     const deleteDiv=document.querySelector('.account_copy .delete');
     const thumbnailImage=document.querySelector('.account_copy .account_copy_thumbnail');
     const _input = document.querySelector('.account_copy input[type=file]');
-    
     function preventDefaults(event){
         event.preventDefault();
         event.stopPropagation();
@@ -31,7 +30,8 @@
         }
     }
     
-    function handleFiles(files){
+    function handleFiles(event){
+        const files = event.target.files;
         [...files].forEach(file=>{
             previewFile(file);
         })
@@ -64,5 +64,5 @@
     dropArea.addEventListener('mouseenter',handleMouseIn);
     dropArea.addEventListener('mouseleave',handleMouseOut);
     closeIcon.addEventListener('click', clickCloseIcon);
-    
+    _input.addEventListener('change', handleFiles);
     }
