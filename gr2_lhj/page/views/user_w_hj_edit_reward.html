@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>등록페이지</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./user_w_hj_make_reward.css">
+</head>
+<body>
+    <div class="make_reward">
+        <div class="column_left">
+            <div class="navi_menu">
+                <div class="navi_menu_title" style="cursor:default; font-weight: bold;">
+                    프로젝트 만들기
+                </div>
+                <ol class="navi_menu_list" style="font-weight: 700;">
+                    <li onclick="pageTo1()" style="cursor:pointer; color:red;">기본정보</li>
+                    <li onclick="pageTo2()" style="cursor:pointer;">스토리</li>
+                    <li onclick="pageTo3()" style="cursor:pointer;">리워드</li>
+                    <li onclick="pageTo4()" style="cursor:pointer;">제작자/부가정보</li>
+                </ol>
+            </div>
+        </div>
+        <div class="column_right">
+            <form class="basic_form">
+                <div class="basic_information">
+                    <label style="width:100%" for="project_title"><h1>프로젝트의 제목을 적어주세요</h1>
+                    <p>프로젝트의 핵심 내용을 담을 수 있고 간결한 제목을 정해주세요</p></label>
+                    <span style="font-weight:bold; width:5%; padding-top: 12px;">제목</span><input type="text" name="project_title" id="project_title" maxlength="40" required>
+                    <div style="font-weight:bold; width:5%; padding-top: 10px;" class="title_length_indicator">0/40</div>
+                    <label for="project_target_fund" style="width:100%;"><h1>목표 금액을 적어주세요</h1>
+                        <p>최소 100,000원 이상이어야 합니다.</p></label>
+                        <span style="font-weight:bold; width:8%; padding-top: 12px;">목표 금액</span><input type="text" name="project_target_fund" id="project_target_fund" required
+                        style="width:40% !important;">
+                    <div style="margin-left:10px;
+                    padding-top:8px;
+                    font-size:20px;">원</div>
+                    <div class="right_price_indicator" style="width:100%; margin-top:-20px;
+                    color:red; font-weight: bold;"> </div>
+                    <label for="project_target_data" style="width:100%;"><h1>프로젝트의 진행 기간을 적어주세요</h1></label>
+                    <input type="text" id="dateDiffIndicator"  disabled style="width:20% !important;
+                     text-align: right; font-size:20px; padding-right:10px;">
+                    <span style="padding-top:12px; margin-left: 5px;">일 남음</span>
+                    <input type="text" id="datePicker" style="padding-left:10px;
+                    width:20% !important; margin-left:3%;
+                    background: url(./calendar.png) no-repeat;
+                    background-position: 95%;
+                    font-size:20px;
+                    padding-right:10px;
+                    cursor:default;">
+
+
+                    <label for="project_thumbnail" style="width:100%;"><h1>프로젝트의 대표 이미지를 등록해주세요</h1></label>
+                    <div class="thumbnail_drop_box">
+                        <img class="none" style="position:absolute;" id="thumbnail" src="" alt="이미지">
+                        <input type="file" accept="image/*" 
+                        style="opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;">
+                        <div class="delete none">
+                            <img class="close_icon" width="30" height="30" src="./cross.png" alt="x이미지">
+                            <div class="thumbnail_file_name"></div>
+                        </div>
+                    </div>
+
+
+                    <label for="project_key_words" style="width:100%;"><h1>프로젝트 키워드를 적어주세요</h1></label>
+                    <span style="font-weight:bold; width:8%; padding-top: 9px; margin-right:-20px;">키워드</span>
+                    <div class="keyword_bar" style="background-color:white;width:70% !important; margin-bottom: 30px;">
+                        <input type="text" name="project_key_words" id="project_key_words">
+                    </div>
+
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo2()">다음단계</span>
+                    </div>
+                </div>
+                <div class="story_information none">
+                    <label style="width:100%;" for=""><h1>프로젝트 소개영상과 이미지를 등록해주세요</h1>
+                    <p>영상과 이미지를 함께 등록할 경우, 영상이 먼저 보여집니다.</p></label>
+
+                    <label style="width:100%;" for=""><h2>동영상 주소를 적어주세요</h2>
+                    <p>Youtube주소를 적어주세요</p></label>
+                    <input type="text" name="insert_video" id="insert_video">
+                    <div class="video_wrap">
+                       
+                    </div>
+                    
+                    <label style="width:100%;" for=""><h2>이미지를 등록해주세요</h2></label>
+                    <div class="image_wrap">
+                        <div class="image_box">
+                            <img class="detail_img none" src="" alt="세부이미지">
+                            <input type="file" id="detail_img_input">
+                            <div class="detail_img_delete none">
+                                <img class="close_icon" width="30" height="30" src="./cross.png" alt="x이미지">
+                                <div class="detail_img_file_name"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label style="width:100%;" for="project_story"><h1>프로젝트 스토리를 적어주세요</h1>
+                    <p>프로젝트를 시작하기 위해 필요한 내용이 없다면 승인이 되지 않습니다.</p></label>
+                    <textarea name="프로젝트_스토리" id="project_stroy" cols="200" rows="10"></textarea>
+                    <label style="width:100%;" for=""><h1>환불 및 교환 정책을 적어주세요</h1>
+                    <p>스토리 맨 아래에 노출됩니다.</p></label>
+                    <textarea name="프로젝트_환불및교환정책" id="project_refund_policy" cols="200" rows="10"></textarea>
+
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo3()">다음단계</span>
+                    </div>
+                </div>
+
+                <div class="reward_information none">
+                    <label style="width:100%;" for=""><h1>프로젝트 리워드를 구성해주세요</h1>
+                    <p>프로젝트 시작을 위해서는 최소 1개 이상의 리워드가 있어야 합니다. 배송이 필요한 리워드는 배송비가 포함된 가격을
+                        적어주세요</p>
+                    </label>
+
+                    <div class="reward_table" style="width:100%; display:flex; flex-wrap:wrap;">
+                        <span style="font-weight:bold; width:20%; padding-top: 9px;">리워드 금액</span> <input  type="text" name="" id="reward_price">
+                        <span style="font-weight:bold; width:20%; padding-top: 9px;">리워드 제목</span> <input type="text" id="reward_title">
+                        <span style="font-weight:bold; width:20%; padding-top: 9px;">리워드 내용</span> <textarea style="width:70%; margin-bottom:20px;" name="" id="reward_content" cols="60" rows="20"></textarea>
+                        <span style="font-weight:bold; width:20%; padding-top: 9px;">배송지 필요여부</span>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-warning">
+                                <input type="radio" id="radio1"> 필요
+                            </label>
+                            <label class="btn btn-warning">
+                                <input type="radio" id="radio2" > 불필요
+                            </label>
+                        </div>
+                    </div>
+                    <div style="position:relative; margin-top: 40px; width:100%;">
+                        <button id="register_reward" style="position:relative; left:40%;" type="button" class="btn-lg btn-success">등록하기</button></div>
+                    
+                    <label style="width:100%;"><h2>등록된 리워드 미리보기</h2></label>
+                    <div class="preview_container" style="width:100%;"></div>
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;" onclick="pageTo4()">다음단계</span>
+                    </div>
+                </div>
+
+                <div class="maker_information none">
+                    <label style="width:100%;" for=""><h1>계좌 정보를 입력해주세요</h1>
+                    <p>프로젝트 종료 후 입금받으실 계좌를 입력해주세요</p></label>
+
+                    <label style="width:100%;" for=""><h2>거래은행을 선택해주세요</h2></label>
+                    <div class="custom-select" style="width:30%;">
+                        <select>
+                          <option value="0">은행을 선택해주세요</option>
+                          <option value="1">국민은행</option>
+                          <option value="2">신한은행</option>
+                          <option value="3">농협</option>
+                          <option value="4">기업은행</option>
+                          <option value="5">산업은행</option>
+                          <option value="6">우리은행</option>
+                        </select>
+                      </div>
+                    <label style="width:100%;" for=""><h2>계좌번호를 적어주세요</h2></label>
+                    <span style="font-weight:bold; width:8%; padding-top: 12px;">계좌번호</span>
+                    <input style="width:68%;" type="text" name="계좌번호" id="bank_account_number">
+                    <label style="width:100%;" for=""><h2>예금주명을 적어주세요</h2></label>
+                    <span style="font-weight:bold; width:8%; padding-top: 12px;">예금주명</span>
+                    <input style="width:200px;" type="text" name="예금주명" id="bank_account_owner">
+                    <label style="width:100%;" for=""><h2>통장 사본 이미지를 올려주세요</h2></label>
+                    <div class="account_copy">
+                        <img class="account_copy_thumbnail none" style="position:absolute;" id="account_copy_thumbnail" src="" alt="이미지">
+                        <input type="file" accept="image/*" 
+                        style="opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;">
+                        <div class="delete none">
+                            <img class="close_icon" width="30" height="30" src="./cross.png" alt="x이미지">
+                            <div class="thumbnail_file_name"></div>
+                        </div>
+                    </div>
+                    <label style="width:100%;" for=""><h1>세금계산서 정보를 입력해주세요</h1>
+                        <h2>전자세금계산서 이메일을 적어주세요</h2></label>
+                        <span style="font-weight:bold; width:15%; padding-top: 12px;">전자세금계산서 이메일</span>
+                    <input style="width:60%;" type="text" name="전자세금계산서" id="tax_bill">
+                    <label style="width:100%;" for=""><h1>사업자등록증 사본 이미지를 올려주세요</h1></label>
+                    <div class="business_registration">
+                        <img class="business_registartion_thumbnail none" style="position:absolute;" id="business_registartion_thumbnail" src="" alt="이미지">
+                        <input type="file" accept="image/*" 
+                        style="opacity: 0.0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height:100%;">
+                        <div class="delete none">
+                            <img class="close_icon" width="30" height="30" src="./cross.png" alt="x이미지">
+                            <div class="thumbnail_file_name"></div>
+                        </div>
+                    </div>
+                    <div class="next_page_button_wrap" style="width:100%; margin-top: 50px; margin-bottom: 30px;">
+                        <span class="next_page_button" style="background-color: #dc7f0d; padding:15px; color:white;
+                        border-radius: 5px; cursor:pointer;">저장하기</span>
+                    </div>
+                </div>
+                <div class="loading_page none"></div>
+
+            </form>
+        </div>
+    </div>
+    <!-- jquery-->
+    <script src="./jquery1-12-4.js"></script>
+    <script src="./jquery-ui.js"></script>
+    <!-- -->
+    <script src="./indicator.js"></script>
+    <script src="./date-picker.js"></script>
+    <script src="./thumbnail.js"></script>
+    <script src="./keyword-hashtag.js"></script>
+    <script src="./page-move.js"></script>
+    <script src="./insert-video.js"></script>
+    <script src="./insert-detail-image.js"></script>
+    <script src="./preview-reward.js"></script>
+    <script src="./select-bank.js"></script>
+    <script src="./account-copy.js"></script>
+    <script src="./business-registration.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
