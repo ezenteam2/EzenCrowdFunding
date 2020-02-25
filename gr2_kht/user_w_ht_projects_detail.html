@@ -108,7 +108,7 @@ body{
 
 <div style="padding-left:150px;">
 	<div class="div006_ht">
-	<img src="ht_img_03.jpg" width="100%">
+	<img src="../img/ht_img_03.jpg" width="100%">
 		<div>
 		<img class="img002_ht" src="img/project_detail01.jpg">
 		<img class="img002_ht" src="img/project_detail02.jpg">
@@ -149,7 +149,7 @@ body{
 		</tr>
 		<tr><td colspan="2" style="text-align:center;height:90px;">
 		<input type="button" class="btn001_ht" value="관심프로젝트 등록 버튼">
-		<input type="button" class="btn001_ht" value="프로젝트 신고하기 버튼" onclick="window.open('user_w_ht_report.html')"></td></tr>
+		<input type="button" class="btn001_ht" value="프로젝트 신고하기 버튼" onclick="window.open('user_w_ht_report.html', '', 'width=530,height=780')"></td></tr>
 		</table>
 
 	
@@ -236,7 +236,7 @@ body{
 			<li>배송중 용기가 파손되거나 내용물이 흘러 음용이 불가할 경우 서포터님과 커뮤니케이션후 교환 가능합니다.</li>
 			<li>물과 원두의 잔류물이외 다른 물질이 첨가되었다면 역시 서포터님과 커뮤니케이션후 교환 가능합니다.</li>
 			<li>즉석제조식품의 특성상 단순 교환 및 반환은 불가능하오니 미리 양해를 구합니다.</li>
-			<li>이외에 다른사항은 와디즈의 운영 정책 규정에 따릅니다.</li>
+			<li>이외에 다른사항은 이젠크라우드펀딩의 운영 정책 규정에 따릅니다.</li>
 		</ul>
 
 	</div>
@@ -255,7 +255,6 @@ body{
 	
 	<div style="width:1200px;">
 	<hr>
-	<p class="ptitle">의견남기기</p>
 
 		<div>
 		<p style="font-size:30px;margin:0;margin-top:20px;">#ezenht</p>
@@ -304,6 +303,14 @@ body{
 </div>	
 </body>
 <script type = "text/javascript">
+
+	btnObj.onclick = function() {
+		var win01 = window.open("user_w_ht_report.html", "", "width=500, height=300");
+	}
+	
+	  document.body.scrollIntoView(true);
+      parent.document.all.aaa.height = document.body.scrollHeight;
+
 
 </script>
 </html>
