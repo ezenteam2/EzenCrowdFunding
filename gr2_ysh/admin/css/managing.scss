@@ -1,0 +1,83 @@
+@mixin controlbutton{
+        height : 25px;
+        width : 60px;
+        background-color: orange;
+        border-radius: 4px;
+        border : none;
+        margin-bottom : 5px;
+        color : white;
+        font-weight: bold;
+        cursor : pointer;
+        font-size: 14px;
+}
+$defaltColor : gray;
+.control{
+    &__delete{
+        @include controlbutton();
+    }
+    &__title{
+        font-size : 25px;
+        margin : -10px 0 50px 0;
+    }
+    &__visual-num{
+        height : 25px;
+        width : 100px;
+        margin : 0 5px 0 1100px;
+        cursor : pointer;
+    }
+    &__upload{
+        @include controlbutton();
+
+    }
+    &__down{
+        @include controlbutton();
+    }
+}
+.content{
+    width : 1400px;
+    height : 450px;
+    border-collapse: collapse;
+    border: 1px solid $defaltColor;
+    background-color : white;
+    tr{
+        border : 1px solid $defaltColor;
+    }
+    td{
+        border : 1px solid $defaltColor;
+        text-align : center;
+    }
+    td:nth-child(4n){
+        width : 300px;
+    }
+    td:nth-child(5n){
+        width : 100px;
+    }
+    &__choice{
+            &--checkbox{
+                display : none;
+            }
+            &--div{
+                height : 15px;
+                width : 15px;
+                position : relative;
+                left : 15px;
+                border : 1px solid gray;
+                border-radius: 8px;
+                cursor : pointer;
+            }
+            &--img{
+                height : 16px;
+                width : 16px;
+                position : absolute;
+                top : 119px;
+                left : 16px;
+                display: none;
+            }
+    }
+    tr:nth-child(1){
+        height : 50px;
+    }
+    &__thumbnail{
+        width : 400px;
+    }
+}

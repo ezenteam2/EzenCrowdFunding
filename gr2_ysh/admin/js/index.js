@@ -11,9 +11,6 @@ button.addEventListener('click',function(event){
         admin_info.style.transition = '0.5s'
         admin_info.style.marginRight = '-280px';
         admin_info.style.transform = 'translateX(-280px)'
-        article.style.width = '1820px'
-        article.style.transform = 'translateX(-260px)'
-        article.style.transition = '0.5s'
         i = 0;
     }else{
         menu.style.transform = 'translateX(0px)'
@@ -21,9 +18,6 @@ button.addEventListener('click',function(event){
         admin_info.style.transform = 'translateX(10px)'
         admin_info.style.transition = '0.5s'
         admin_info.style.marginRight = '10px';
-        article.style.width = '1560px'
-        article.style.transform = 'translateX(0px)'
-        article.style.transition = '0.5s'
         i = 1;
     }
 })
