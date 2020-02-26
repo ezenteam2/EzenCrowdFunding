@@ -57,6 +57,7 @@ main{
     height:200px;
     margin-left:10%;
     border:2px solid black;
+    padding-top: 5px;
 }
 
 #kb_Regist_div{
