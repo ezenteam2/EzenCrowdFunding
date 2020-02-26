@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/ScrollView1"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -40,8 +53,8 @@
             android:layout_weight="1"
             android:paddingLeft="-15sp"
 
-            android:paddingRight="-15sp"
-            app:srcCompat="@/drawable/account" />
+            android:paddingRight="-15sp"/>
+            //app:srcCompat="@/drawable/account" />
 
     </LinearLayout>
     "
@@ -144,7 +157,9 @@
         <Button
             android:layout_width="90dp"
             android:layout_height="50dp"
-            android:text="계좌변경"            />
+            android:text="계좌변경"
+            android:background="#ff6600"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 
     <LinearLayout
@@ -174,7 +189,9 @@
         <Button
         android:layout_width="90dp"
         android:layout_height="50dp"
-        android:text="예치금충전"            />
+        android:text="예치금충전"
+        android:background="#ff6600"
+        android:textColor="#ffffff"/>
     </LinearLayout>
 
     <LinearLayout
@@ -247,3 +264,4 @@
 
 
 </LinearLayout>
+    </ScrollView>
