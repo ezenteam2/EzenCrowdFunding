@@ -1,0 +1,140 @@
+$m_color:#dc7d0d;
+$b_color:#4287f5;
+
+body{
+    font-weight: 600;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+main{
+    position: absolute;
+    top:0;
+    left:0;
+    h1{
+        padding: 0 0 0 20px;
+        margin:0 0 20px 0;
+    }
+    .section_head{
+        display:flex;
+        padding:0 10px 0 10px;
+        width:700px;
+        height:40px;
+        border-radius: 30px;
+        border: $b_color solid 2px;
+        
+        .type{
+            display: block;
+            width:100px;
+            background-color: transparent;
+            border:none;
+            border-right:2px $b_color solid;
+        }
+        
+        .category{
+            background-color: transparent;
+            border:none;
+            border-right:2px $b_color solid;
+            width:110px;
+        }
+        input{
+            margin:0 10px 0 10px;
+            flex:1;
+            border:none;
+        }
+        a{
+            text-decoration: none;
+            margin-left: auto;
+            display: block;
+            padding:5px 0 0 0;
+            i{
+                display: block;
+                background: url('./img/검색아이콘.PNG');
+                width:30px;
+                height:30px;
+                background-size: 30px 30px;
+                overflow: hidden;
+                color:transparent;
+            }
+        }
+    }
+    .section_content{
+        margin: 30px 0 0 10px;
+        ul{
+            border:solid 1px;
+            list-style: none;
+            display: block;
+            margin:0;
+            padding:0;
+            .first{
+                div{
+                    padding: 5px 0 0 0;
+                    text-align: center;
+                    flex:1 0 0;
+                    background-color: $m_color;
+                    color:white;
+                    border:solid orange 1px;
+                }
+                div:last-child{
+                    color:transparent;
+                }
+            }
+            li{
+                border-bottom: solid 1px;
+                display:flex;
+                height:30px;
+                div{
+                    flex:1 0 0;
+                    font-size:13px;
+                    text-align: center;
+                    padding: 5px 0 0 0;
+                }
+                div:last-child{
+                    padding: 5px 0 5px 0;
+                    button{
+                        cursor: pointer;
+                        height:20px;
+                        border:solid 1px;
+                        background-color: white;
+                    }
+                }
+            }
+
+        }
+    }
+    .pagenation{
+        padding: 30px 0 0 0;
+        ul{
+            list-style-type: none;
+            display:flex;
+            height:30px;
+            width:210px;
+            margin:0;
+            padding:-1px 20px -1px 20px;
+            margin:auto;
+            li{
+                cursor: pointer;
+                padding:3px;
+                text-align: center;
+                margin:0 0 0 -1px;
+                display:block;
+                flex: 1 1 0;
+                border-top: 1px solid #d0d0d0;
+                border-bottom: 1px solid #d0d0d0;
+                border-left:1px solid #d0d0d0;
+                border-right: 1px solid #d0d0d0;
+                background-color: white;
+                color:$b_color;
+            }
+            li:first-child{
+                border-radius: 5px 0 0 5px;
+                padding: 1px;
+            }
+            li:last-child{
+                border-radius: 0 5px 5px 0;
+                padding: 1px;
+            }
+            li:hover{
+                background-color: #d5d5d5;
+            }
+        }
+    }
+}
