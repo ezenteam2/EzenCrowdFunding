@@ -62,3 +62,12 @@ category_project.addEventListener('click',function(event){
         inner_project.style.display ='none'
     }
 })
+
+// 커뮤니티 이벤트
+function moveNoctice(){
+    document.querySelector("iframe").src="../../gr2_kkb/admin_w_kb_NocticeBoard.html";
+}
+
+function moveQnA(){
+    document.querySelector("iframe").src="../../gr2_kkb/admin_w_kb_Q&ABoard.html";
+}
