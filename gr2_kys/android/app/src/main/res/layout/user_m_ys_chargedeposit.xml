@@ -190,6 +190,12 @@
             android:text="12,156,210원" />
     </LinearLayout>
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -266,7 +272,7 @@
             android:layout_marginLeft="100dp"
             android:text="100,000원" />
     </LinearLayout>
-
+    </RadioGroup>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

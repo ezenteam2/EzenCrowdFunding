@@ -58,6 +58,8 @@
             android:layout_gravity="center"
             android:background="#ff6600"
             android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
             android:text="로그인" />
 
     </LinearLayout>
