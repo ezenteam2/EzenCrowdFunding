@@ -61,17 +61,24 @@ function updateList(){
         let tr = document.createElement('tr');
         let firstTd=document.createElement('td');
         let secondTd=document.createElement('td');
+        let thirdTd=document.createElement('td');
         let lastTd=document.createElement('td');
         let btn=document.createElement('button');
+        let btnImg=document.createElement('button');
         firstTd.innerHTML=el.priority;
         secondTd.innerHTML=el.name;
         btn.innerHTML='삭제';
         btn.classList.add('btn');
         btn.classList.add('btn-primary');
         btn.onclick=clickDeleteBtn;
+        btnImg.innerHTML='이미지등록';
+        btnImg.classList.add('btn');
+        btnImg.classList.add('btn-success');
+        thirdTd.appendChild(btnImg);
         lastTd.appendChild(btn);
         tr.appendChild(firstTd);
         tr.appendChild(secondTd);
+        tr.appendChild(thirdTd);
         tr.appendChild(lastTd);
         listTable.appendChild(tr);
     })
