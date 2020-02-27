@@ -20,8 +20,24 @@ function target($category,$property){
     }
     });
 };
-target('.reward','translateX(-200px)');
-target('.recommend','translateX(200px)');
-target('.security','translateX(200px)');
+target('.reward','translateX(-100px)');
+target('.recommend','translateX(100px)');
+target('.security','translateX(100px)');
+
+// var reward = document.querySelector('.reward')
+// var recommend = document.querySelector('.recommend')
+// var security = document.querySelector('.security')
+// window.addEventListener('scroll',function(event){
+    
+//     if(window.scrollY>=420){
+//         reward.style.transform = 'translateX(-100px)'
+//     }
+//     if(window.scrollY>=920){
+//         recommend.style.transform = 'translateX(100px)'
+//     }
+//     if(window.scrollY>=1520){
+//         security.style.transform = 'translateX(-100px)'
+//     }
+// })
 
 
