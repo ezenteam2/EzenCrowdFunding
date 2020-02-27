@@ -5,7 +5,6 @@
     const thumbnailImage=document.querySelector('.business_registration #business_registartion_thumbnail');
     const _input = document.querySelector('.business_registration input[type=file]');
     
-    console.log(deleteDiv);
     function preventDefaults(event){
         event.preventDefault();
         event.stopPropagation();
