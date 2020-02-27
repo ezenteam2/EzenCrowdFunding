@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="user_w_ys_chargeaccount.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="root">
+
+    <div id="left">
+        <table>
+            <tr><td colspan="2">
+                내 계좌정보
+            </td></tr>
+            <tr><td>
+                <span class="font">
+                신한은행
+                </span>
+            </td></tr><tr><td>
+                <span class="font">
+                110-334-720418
+                </span>
+            </td></tr>
+            <tr><td colspan="2">
+                <input type="button"
+                value="계좌정보수정"
+                id="accountBtn">
+            </td></tr>
+        </table>
+    </div>
+
+    <div id="right">
+        <table>
+            <tr><td colspan="2">
+                예치금 관리
+            </td></tr>
+            <tr><td>
+                <span class="font">
+                예치금 잔액
+                </span>
+            </td><td>
+                <span class="font">
+                1,405,000원
+                </span>
+            </td></tr>
+            <tr><td>
+                <span class="font">
+                나의 투자액
+                </span>
+            </td>
+            <td>
+                <span class="font">
+                590,000원
+                </span>
+            </td></tr>
+            <tr><td colspan="2">
+                <input type="button" value="예치금 충전"
+                id="accountBtn">
+            </td></tr>
+        </table>
+    </div>
+    <div id="bottom">
+        <input type="radio"
+        name="radio1" checked="checked"
+        style="margin-left: -60px;"><span>나의 투자내역</span>
+        <input type="radio"
+        name="radio1" style="margin-left: 200px;"><span>나의 입/출금내역</span>
+        <br>
+        <input type="text" style="width: 800px; height: 300px;
+        margin-top:50px;" readonly>
+    </div>
+</div>
+
+</body>
+</html>
