@@ -9,20 +9,20 @@
 
 
 <body>
-    <div id="root">
-        
-        <div id="side">
-            <ul class="menu">
-                <li class="list"><a href="mypage.html">개인정보수정</a></li>
-                <li class="list"><a href>예치금관리</a></li>
-                <li class="list"><a href="user_w_ys_wishfunding.html">관심프로젝트</a></li>
-                <li class="list"><a href="myfunding.html">프로젝트 확인</a></li>
-                <li class="list"><a href="project_list.html">프로젝트 관리</a></li>
-            </ul>
+   <div id="root">
+       
+      <div id="side">
+        <ul class="menu">
+            <li class="list"><a href>개인정보수정</a></li>
+            <li class="list"><a href="chargeaccount.html">예치금관리</a></li>
+            <li class="list"><a href="wishfunding.html">관심프로젝트</a></li>
+            <li class="list"><a href="myfunding.html">프로젝트 확인</a></li>
+            <li class="list"><a href="project_list.html">프로젝트 관리</a></li>
+        </ul>
         </div>
-    </div>
+      </div>
         <div id="main">
-            <table>
+            <table >
                 <tbody>
                     <tr><td><sapn id="font">아이디</sapn>
                     <input type="text" id="nonmod" value="perpreme" readonly></td></tr>
@@ -33,27 +33,27 @@
                     <tr><td><sapn id="font">전화번호</sapn>
                     <input type="text" id="modify" value="01067605784" readonly
                     text-align="center"> 
-                    <input type="button" class="modBtn" value="수정하기"></td></tr>
+                    <input type="button" id="modBtn" value="수정하기"></td></tr>
                     <tr><td><sapn id="font">주소</sapn>
                     <input type="text" id="address" value="경기도 안산시 상록구 본오동" readonly><br>
                 <input type="text" id="modify" value="889-4번지 301호" readonly>
-            <input type="button" class="modBtn" value="수정하기"></td></tr>
+            <input type="button" id="modBtn" value="수정하기"></td></tr>
                     <tr><td><sapn id="font">이메일</sapn>
                     <input type="email" id="modify" value="perpreme@naver.com" readonly>
-                    <input type="button" class="modBtn" value="수정하기"></td></tr>
+                    <input type="button" id="modBtn" value="수정하기"></td></tr>
                     <tr><td><sapn id="font">계좌</sapn>
                         <input type="text" id="bank" value="신한은행" readonly>
-                        <input type="text" id="modify" value="110-334-720418" readonly><br>
-                        <input type="button" class="modBtn" value="수정하기"></td></tr>
+                        <input type="text" id="modify" value="110-334-720418" readonly>
+                        <input type="button" id="modBtn" value="수정하기"></td></tr>
                         <tr><td><sapn id="font">관심 카테고리</sapn>
-                            <select id="category">
-                                <option>IT</option>
-                                <option>뷰티</option>
-                                <option>생활</option>
-                                <option>패션</option>
-                                <option>가전</option>
-                            </select>
-                            <select id="category">
+                           <select id="category">
+                               <option>IT</option>
+                               <option>뷰티</option>
+                               <option>생활</option>
+                               <option>패션</option>
+                               <option>가전</option>
+                           </select>
+                           <select id="category">
                             <option>뷰티</option>
                             <option>IT</option>
                             <option>생활</option>
@@ -68,8 +68,7 @@
                             <option>IT</option>
                         </select>
                         <tr><td>
-                            <input type="button" id="finBtn" value="정보수정"
-                            >
+                            <input type="button" id="finBtn" value="정보수정">
                         </td></tr>
                 </tbody>
             </table>

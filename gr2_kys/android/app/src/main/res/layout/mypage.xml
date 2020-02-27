@@ -137,7 +137,7 @@
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/depositBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -166,8 +166,8 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp">
-        //android:background="@drawable/boardborder2">
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boardborder2">
 
         <TableRow
             android:layout_width="match_parent"
@@ -224,8 +224,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="IT" />
 
             <TextView
@@ -233,8 +233,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="프리미엄 사운드바" />
 
             <TextView
@@ -242,8 +242,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="35,685회" />
 
             <TextView
@@ -251,8 +251,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="15,953,510원" />
 
             <TextView
@@ -260,8 +260,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="06-12" />
 
         </TableRow>
@@ -275,8 +275,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="뷰티" />
 
             <TextView
@@ -284,8 +284,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="수분촉촉 엠플" />
 
             <TextView
@@ -293,8 +293,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="13.265회" />
 
             <TextView
@@ -302,8 +302,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="6,595,000원" />
 
             <TextView
@@ -311,8 +311,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"
-                android:textAlignment="center"/>
-                //android:background="@drawable/boardborder2"
+                android:textAlignment="center"
+                android:background="@drawable/boardborder2"
                 android:text="04-20" />
         </TableRow>
 
@@ -327,6 +327,5 @@
 
 
 </LinearLayout>
-
 
 </ScrollView>
