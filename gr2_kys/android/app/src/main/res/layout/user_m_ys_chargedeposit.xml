@@ -50,9 +50,8 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:paddingLeft="-15sp"
-
-            android:paddingRight="-15sp"/>
-            //app:srcCompat="@drawable/account"
+            android:paddingRight="-15sp"
+            app:srcCompat="@drawable/account"
             />
 
     </LinearLayout>
