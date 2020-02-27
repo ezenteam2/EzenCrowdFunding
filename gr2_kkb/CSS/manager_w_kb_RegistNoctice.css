@@ -69,6 +69,9 @@ main{
     height:60px;
     padding:1%;
     background-color: #dc7f0d;
+    border:0;
+    color:white;
+    border-radius: 5px;
 }
 
 #inputContent:hover{
