@@ -13,17 +13,17 @@ window.onkeydown = function(event){
       modal.style.display='none'
     }
 }
-var reader = new FileReader();
-var fileInput = document.querySelector(".modal__image--display-none");
-var img = document.querySelector(".modal__image--after");
-var imgbefore = document.querySelector(".modal__image--before");
-var text = document.querySelector(".modal__image--before-text");
+const reader = new FileReader();
+const fileInput = document.querySelector(".modal__image--display-none");
+const img = document.querySelector(".modal__image--after");
+const imgbefore = document.querySelector(".modal__image--before");
+const text = document.querySelector(".modal__image--before-text");
 
 reader.onload = e => {
   img.src = e.target.result;
 }
 fileInput.addEventListener('change', e => {
-  var f = e.target.files[0];
+  const f = e.target.files[0];
   reader.readAsDataURL(f);
   imgbefore.style.display='none'
   text.style.display='none'

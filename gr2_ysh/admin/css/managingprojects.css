@@ -51,51 +51,35 @@
 }
 
 .content {
-  width: 1300px;
-  height: 450px;
-  border-collapse: collapse;
-  border: 1px solid #D8D8D8;
-  background-color: white;
-  color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 250px;
+  border: 1px solid #A4A4A4;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  left: 40px;
+  bottom: 18px;
+}
+
+.content__checkbox {
+  display: inline;
+}
+
+.content__img {
+  width: 250px;
+  border: 1px solid #A4A4A4;
+  size: 150px;
+  position: relative;
+  right: 1px;
+  bottom: 1px;
+}
+
+.content__text {
   font-size: 15px;
-}
-
-.content tr {
-  border: 1px solid #D8D8D8;
-}
-
-.content tr:nth-child(2n) {
-  background-color: #F2F2F2;
-}
-
-.content td {
-  border: 1px solid #D8D8D8;
-  text-align: center;
-}
-
-.content td:nth-child(4n) {
-  width: 300px;
-}
-
-.content td:nth-child(5n) {
-  width: 100px;
-}
-
-.content__choice--checkbox {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.content tr:nth-child(1) {
-  height: 50px;
-  background-color: #585858;
-  color: white;
-  font-weight: bold;
-}
-
-.content__thumbnail {
-  width: 400px;
+  color: black;
+  text-align: justify;
+  padding: 8px;
 }
 
 .modal {
@@ -236,4 +220,4 @@
   border: none;
   color: white;
 }
-/*# sourceMappingURL=managing.css.map */
+/*# sourceMappingURL=managingprojects.css.map */
