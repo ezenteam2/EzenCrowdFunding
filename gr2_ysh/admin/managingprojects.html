@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/managingprojects.css">
+    <title>관리자페이지</title>
+</head>
+<body>
+    <div class="menu--sub"></div>
+    <div class = "menu">
+        <div class = "menu__title">관리자 페이지</div>
+        <div class = "menu__category">통계</div>
+        <div class = "menu__category">회원 관리</div>
+        <div class = "menu__category category__project">프로젝트 관리<img class="category--button" src="./bottom.svg" alt=""></div>
+        <div class = "menu__inner--project">
+            <p class = "menu__inner">등록 신청 프로젝트 관리</p>
+            <p class = "menu__inner">프로젝트 현황 관리</p>
+            <p class = "menu__inner">카테고리 관리</p>
+            <p class = "menu__inner">신고 프로젝트 관리</p>
+        </div>
+        <div class = "menu__category">결제 관리</div>
+        <div class = "menu__category category__community">커뮤니티 관리<img class="category--button" src="./bottom.svg" alt=""></div>
+            <div class = "menu__inner--community">    
+                <p class = "menu__inner">공지사항 관리</p>
+                <p class = "menu__inner">Q&amp;A 관리</p>
+                <p class = "menu__inner">FAQ 관리</p>
+            </div>    
+        <div class = "menu__category category__main">메인화면 관리<img class="category--button" src="./bottom.svg" alt=""></div>
+            <div class = "menu__inner--main">
+                <p class = "menu__inner">팝업 관리</p>
+                <p class = "menu__inner">슬라이드 배너 관리</p>
+                <p class = "menu__inner">추천 프로젝트</p>
+            </div>
+    </div>
+    <div class="admin-info">
+        <img src="./menu.svg" class="admin-info__toggle">
+        <img class="admin-info__profile" src="account.svg" alt="">
+        <p class="admin-info__admin-name">홍길동</p>
+    </div>
+    <div class="article">
+        <div class="control">
+            <p class="control__title">메인화면 관리 > 추천 프로젝트 관리</p>
+            <button class="control__delete">삭제</button>
+            <select class="control__visual-num" name="selectbox" id="">
+                <option class="control__visual-num--option" value="seven">7개씩보기</option>
+                <option class="control__visual-num--option" value="twenty">20개씩보기</option>
+                <option class="control__visual-num--option" value="fifty">50개씩보기</option>
+            </select>
+            <button class="control__upload">저장</button>
+        </div>
+        <table>
+        <tr>
+        <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20200206/CROWDY_202002061039430733_DVZO7.png/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+        </td>
+        <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20200212/CROWDY_202002121528440833_GU2vN.png/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+        </td>
+        <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20200214/CROWDY_202002141037510826_YsfOW.png/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+        </td>
+        <td>
+            <input class="content__checkbox" type="checkbox">
+            <div class="content">
+                <img class="content__img" src="http://image-se.ycrowdy.com/20181224/CROWDY_201812241750000413_Zyt5s.jpg/ycrowdy/resize/!340x!226" alt="">
+                <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+                </p>
+            </div>
+            </td>
+        </tr>
+        <tr>
+        <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20190222/CROWDY_201902221130370534_Sa6sA.png/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+        </td>
+        <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20191011/CROWDY_201910111045170143_Te2V0.jpg/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+         </td>
+         <td>
+        <input class="content__checkbox" type="checkbox">
+        <div class="content">
+            <img class="content__img" src="http://image-se.ycrowdy.com/20190404/CROWDY_201904041615460705_AI6GE.png/ycrowdy/resize/!340x!226" alt="">
+            <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+            </p>
+        </div>
+         </td>
+         <td>
+            <input class="content__checkbox" type="checkbox">
+            <div class="content">
+                <img class="content__img" src="http://image-cr.ycrowdy.com/IF_0_0_201711171008250894_1000031644.jpg/ycrowdy/resize/!340x!226" alt="">
+                <p class="content__text">가격은 낮추고 품질은 높이다! 블루투스 스피커 가성비 완결판
+                </p>
+            </div>
+            </td>
+        </tr>
+        </table>
+    <script src="./js/managingprojects.js"></script>
+    <script src = "./js/index.js"></script>
+</body>
+
+</html>

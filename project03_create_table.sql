@@ -492,6 +492,7 @@ CREATE TABLE mem_report (
 	report_code NUMBER NOT NULL, /* 신고 번호 */
 	mem_id VARCHAR2(20) NOT NULL, /* 아이디 */
 	pro_num NUMBER NOT NULL, /* 프로젝트 번호 */
+	report_date DATE NOT NULL, /*신고 날짜*/
 	report_type VARCHAR2(30) NOT NULL CONSTRAINT CK_mem_report_report_type CHECK (report_type IN ('허위 프로젝트', '과대 광고 프로젝트', '실현 불가', '불순한 내용 포함')), /* 신고 분류 */
 	report_title VARCHAR2(50) NOT NULL, /* 신고 제목 */
 	report_content VARCHAR2(2000) NOT NULL, /* 신고 내용 */
@@ -502,6 +503,7 @@ COMMENT ON TABLE mem_report IS '프로젝트 신고';
 COMMENT ON COLUMN mem_report.report_code IS '신고 번호';
 COMMENT ON COLUMN mem_report.mem_id IS '아이디';
 COMMENT ON COLUMN mem_report.pro_num IS '프로젝트 번호';
+COMMENT ON COLUMN mem_report.report_date IS '신고 날짜';
 COMMENT ON COLUMN mem_report.report_type IS '신고 분류';
 COMMENT ON COLUMN mem_report.report_title IS '신고 제목';
 COMMENT ON COLUMN mem_report.report_content IS '신고 내용';
@@ -834,6 +836,132 @@ ALTER TABLE board_guide_qna
 			admin_id
 		);
 		
+
+	
+	
+	
+	
+
+	
+ALTER TABLE recommend_pro
+	DROP
+		CONSTRAINT FK_projects_TO_recommend_pro
+		CASCADE;
+
+/* 추천 프로젝트 */
+DROP TABLE recommend_pro 
+	CASCADE CONSTRAINTS;
+
+/* 추천 프로젝트 */
+CREATE TABLE recommend_pro (
+	pro_num NUMBER /* 프로젝트 번호 */
+);
+
+COMMENT ON TABLE recommend_pro IS '추천 프로젝트';
+COMMENT ON COLUMN recommend_pro.pro_num IS '프로젝트 번호';
+
+ALTER TABLE recommend_pro
+	ADD
+		CONSTRAINT FK_projects_TO_recommend_pro
+		FOREIGN KEY (
+			pro_num
+		)
+		REFERENCES projects (
+			pro_num
+		);	
+	
+	
+
+	
+	
+	
+	
+ALTER TABLE slide_banner
+	DROP
+		PRIMARY KEY
+		CASCADE
+		KEEP INDEX;
+
+DROP INDEX PK_slide_banner;
+
+/* 슬라이드 배너 관리 */
+DROP TABLE slide_banner 
+	CASCADE CONSTRAINTS;
+
+/* 슬라이드 배너 관리 */
+CREATE TABLE slide_banner (
+	slide_num NUMBER NOT NULL, /* 슬라이드 코드 */
+	slide_title VARCHAR2(100), /* 슬라이드 타이틀 */
+	slide_img VARCHAR2(100), /* 슬라이드 이미지 */
+	slide_date DATE /* 등록일 */
+);
+
+COMMENT ON TABLE slide_banner IS '슬라이드 배너 관리';
+COMMENT ON COLUMN slide_banner.slide_num IS '슬라이드 코드';
+COMMENT ON COLUMN slide_banner.slide_title IS '슬라이드 타이틀';
+COMMENT ON COLUMN slide_banner.slide_img IS '슬라이드 이미지';
+COMMENT ON COLUMN slide_banner.slide_date IS '등록일';
+
+CREATE UNIQUE INDEX PK_slide_banner
+	ON slide_banner (
+		slide_num ASC
+	);
+
+ALTER TABLE slide_banner
+	ADD
+		CONSTRAINT PK_slide_banner
+		PRIMARY KEY (
+			slide_num
+		);	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ALTER TABLE popup_admin
+	DROP
+		PRIMARY KEY
+		CASCADE
+		KEEP INDEX;
+
+DROP INDEX PK_popup_admin;
+
+/* 팝업 관리 */
+DROP TABLE popup_admin 
+	CASCADE CONSTRAINTS;
+
+/* 팝업 관리 */
+CREATE TABLE popup_admin (
+	popup_num NUMBER NOT NULL, /* 팝업 코드 */
+	popup_title VARCHAR2(100), /* 팝업 타이틀 */
+	popup_img VARCHAR2(100), /* 팝업 이미지 */
+	popup_date DATE /* 등록일 */
+);
+
+COMMENT ON TABLE popup_admin IS '팝업 관리';
+COMMENT ON COLUMN popup_admin.popup_num IS '팝업 코드';
+COMMENT ON COLUMN popup_admin.popup_title IS '팝업 타이틀';
+COMMENT ON COLUMN popup_admin.popup_img IS '팝업 이미지';
+COMMENT ON COLUMN popup_admin.popup_date IS '등록일';
+
+CREATE UNIQUE INDEX PK_popup_admin
+	ON popup_admin (
+		popup_num ASC
+	);
+
+ALTER TABLE popup_admin
+	ADD
+		CONSTRAINT PK_popup_admin
+		PRIMARY KEY (
+			popup_num
+		);	
+	
+	
 	
 	
 DROP SEQUENCE board_guide_qna_seq01;
@@ -847,3 +975,7 @@ DROP SEQUENCE projects_details_num_seq01;
 DROP SEQUENCE projects_qna_seq01;
 DROP SEQUENCE projects_rewards_seq01;
 DROP SEQUENCE projects_funding_seq01;
+DROP SEQUENCE slide_banner_seq01;
+DROP SEQUENCE popup_admin_seq01;
+
+

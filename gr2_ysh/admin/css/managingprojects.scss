@@ -1,0 +1,73 @@
+@mixin controlbutton{
+        height : 25px;
+        width : 60px;
+        background-color: orange;
+        border-radius: 4px;
+        border : none;
+        margin-bottom : 5px;
+        color : white;
+        font-weight: bold;
+        cursor : pointer;
+        font-size: 14px;
+}
+$defaltColor : #D8D8D8;
+$positionmanage : 80px;
+.control{
+    &__delete{
+        @include controlbutton();
+    }
+    &__title{
+        font-size : 25px;
+        margin : -10px 0 40px 0;
+        color : black;
+    }
+    &__visual-num{
+        height : 25px;
+        width : 100px;
+        margin : 0 5px 0 1075px;
+        cursor : pointer;
+    }
+    &__upload{
+        @include controlbutton();
+    }
+    &__down{
+        @include controlbutton();
+    }
+}
+table{
+    margin : 20px 0 0 0;
+    td{
+        padding : 15px 125px 35px 0;
+    }
+}
+.content{
+    width : 200px;
+    border : 1px solid white;
+    box-sizing: content-box;
+    position : relative;
+    left : 40px;
+    bottom : 18px;
+    padding : 10px;
+    cursor: pointer;
+    background-color: #E6E6E6;
+    text-align: center;
+    &__checkbox{
+        height : 15px;
+        width : 15px;
+        cursor: pointer;
+    }
+    &__img{
+        width : 200px;
+        border : 1px solid white;
+        size : 150px;
+        position : relative;
+        right : 1px;
+        bottom : 1px;
+    }
+    &__text{
+        font-size : 13px;
+        color : #585858;
+        text-align: justify;
+        padding : 8px;
+    }
+}

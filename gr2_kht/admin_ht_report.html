@@ -3,39 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <title>잠이 오냐 지금?</title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <style>
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:700;
+  	}
+.td001_ht{
+	border-bottom:solid;
+	padding:10px;
+	font-size:22px;
+	text-align:center;
+	}
+.td002_ht{
+	padding:10px;
+	}
+.select01_ht{
+	margin-left:10px;
+	margin-right:10px;
+	width:200px;
+	height:40px;
+	}
+.submit001_ht{
+	width:80px;
+	height:40px;
+	margin:30px;
+	}
 
+tr:nth-child(2n-1){
+	background-color:#FDF5DC;}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+summary{
+	font-size:25px;
+	font-weight:bold;}
+	
 </style>
 
 </head>
 
 <body>
 
-	<span>신고 관리</span>
-	<hr>
-	<table>
-		<tr>
-			<td><input type="checkbox"></td>
-			<td>등록일자</td>
-			<td>신고분류</td>
-			<td>신고자</td>
-			<td>제목</td>
-			<td>첨부파일</td>
-			<td>처리방법</td>
+	<div style="margin-top:20px;margin-bottom:20px;font-size:30px;font-weight:bold;padding:30px;">
+	신고 관리
+	</div>
+
+	<table style="border-collapse:collapse;">
+		<tr style="border-bottom:solid;background-color:#fafafa;">
+			<td class="td001_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td001_ht">등록일자</td>
+			<td class="td001_ht">신고분류</td>
+			<td class="td001_ht">신고자</td>
+			<td class="td001_ht">프로젝트 번호</td>
+			<td class="td001_ht">신고 제목 / 내용</td>
+			<td class="td001_ht">첨부파일</td>
+			<td class="td001_ht">처리방법</td>
 		</tr>
+
 		<tr>
-			<td><input type="checkbox"></td>
-			<td>20200204</td>
-			<td>허위 프로젝트</td>
-			<td>ezenSH</td>
-			<td>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
 				<details>
 					<summary>허위 프로젝트 신고합니다</summary>
 					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
 				</details>
 			</td>
-			<td>없음</td>
-			<td><select>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
 					<option>------------</option>
 					<option value="">반려</option>
 					<option value="">프로젝트 삭제</option>
@@ -45,17 +86,135 @@
 			</td>
 		</tr>
 	
+		<tr>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
+				<details>
+					<summary>허위 프로젝트 신고합니다</summary>
+					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
+				</details>
+			</td>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
+					<option>------------</option>
+					<option value="">반려</option>
+					<option value="">프로젝트 삭제</option>
+					<option value="">프로젝트 일시 정지</option>
+					<option value="">프로젝트 펀딩 중지</option>
+				</select>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
+				<details>
+					<summary>허위 프로젝트 신고합니다</summary>
+					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
+				</details>
+			</td>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
+					<option>------------</option>
+					<option value="">반려</option>
+					<option value="">프로젝트 삭제</option>
+					<option value="">프로젝트 일시 정지</option>
+					<option value="">프로젝트 펀딩 중지</option>
+				</select>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
+				<details>
+					<summary>허위 프로젝트 신고합니다</summary>
+					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
+				</details>
+			</td>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
+					<option>------------</option>
+					<option value="">반려</option>
+					<option value="">프로젝트 삭제</option>
+					<option value="">프로젝트 일시 정지</option>
+					<option value="">프로젝트 펀딩 중지</option>
+				</select>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
+				<details>
+					<summary>허위 프로젝트 신고합니다</summary>
+					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
+				</details>
+			</td>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
+					<option>------------</option>
+					<option value="">반려</option>
+					<option value="">프로젝트 삭제</option>
+					<option value="">프로젝트 일시 정지</option>
+					<option value="">프로젝트 펀딩 중지</option>
+				</select>
+			</td>
+		</tr>
+	
+		<tr>
+			<td class="td002_ht" style="text-align:center"><input type="checkbox"></td>
+			<td class="td002_ht">20200204</td>
+			<td class="td002_ht">허위 프로젝트</td>
+			<td class="td002_ht">ezenSH</td>
+			<td class="td002_ht">1100000</td>
+			<td  class="td002_ht" style="width:500px;">
+				<details>
+					<summary>허위 프로젝트 신고합니다</summary>
+					<p>제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여</p>
+				</details>
+			</td>
+			<td class="td002_ht">없음</td>
+			<td class="td002_ht"><select class="select01_ht">
+					<option>------------</option>
+					<option value="">반려</option>
+					<option value="">프로젝트 삭제</option>
+					<option value="">프로젝트 일시 정지</option>
+					<option value="">프로젝트 펀딩 중지</option>
+				</select>
+			</td>
+		</tr>
+	
+	<tr>
+	<td colspan="8" style="text-align:right;padding:10px;background-color:#fafafa;">
+	<select class="select01_ht">
+			<option>------------</option>
+			<option value="">반려</option>
+			<option value="">프로젝트 삭제</option>
+			<option value="">프로젝트 일시 정지</option>
+			<option value="">프로젝트 펀딩 중지</option>
+		</select>
+		<input type="submit" class="submit001_ht" value="처리하기">
+	</td>
+	</tr>
+	
 	</table>
-
-	<hr>
-	<select>
-		<option>------------</option>
-		<option value="">반려</option>
-		<option value="">프로젝트 삭제</option>
-		<option value="">프로젝트 일시 정지</option>
-		<option value="">프로젝트 펀딩 중지</option>
-	</select>
-	<input type="submit" value="처리하기">
 
 </body>
 
