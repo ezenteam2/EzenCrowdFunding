@@ -38,6 +38,16 @@ CREATE SEQUENCE projects_funding_seq01
 	START WITH 1700000;
 
 
+CREATE SEQUENCE slide_banner_seq01
+	INCREMENT BY 1
+	START WITH 4100000;
+
+CREATE SEQUENCE popup_admin_seq01
+	INCREMENT BY 1
+	START WITH 4200000;
+
+
+
 
 SELECT * FROM MEMBER;
 
@@ -105,7 +115,8 @@ INSERT INTO PROJECTS_FAVORITE VALUES ('ezenhj', 1100000);
 
 SELECT * FROM MEM_REPORT;
 
-INSERT INTO MEM_REPORT  VALUES (mem_report_seq01.nextval, 'ezensh', 1100000, '허위 프로젝트', '허위 프로젝트 신고합니다', '제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여', '');
+INSERT INTO MEM_REPORT  VALUES (mem_report_seq01.nextval, 'ezensh', 1100000, sysdate, '허위 프로젝트', '허위 프로젝트 신고합니다', '제가 지인한테 알아봤는데, 이 회사 유령회사라고 합니다. 사기당한사람 많아여', '');
+INSERT INTO MEM_REPORT  VALUES (mem_report_seq01.nextval, 'ezenht', 1100000, sysdate, '실현 불가', '상식적으로 이게 말이 되나요', '그냥 딱 봐도 말도 안되는 이야기를 하고 있어요 이런 프로젝트라도 여과 없이 등록 되는건가요?', '');
 
 
 
@@ -144,3 +155,28 @@ SELECT * FROM BOARD_GUIDE_QNA;
 
 INSERT INTO board_guide_qna VALUES (board_guide_qna_seq01.nextval, 'admin01', 'FUNDING 방법', '일단 펀딩을 하려면');
 INSERT INTO board_guide_qna VALUES (board_guide_qna_seq01.nextval, 'admin01', '프로젝트 만드는 방법', '일단 프로젝트를 등록 하려면');
+
+
+
+SELECT * FROM recommend_pro;
+
+INSERT INTO RECOMMEND_PRO VALUES (1100000);
+INSERT INTO RECOMMEND_PRO VALUES (1100001);
+
+SELECT * FROM slide_banner;
+
+INSERT INTO SLIDE_BANNER VALUES (slide_banner_seq01.nextval, '주식회사 메탈로 이미지', 'www.ezenfunding.com/imgserver/0dfdf01.jpg', sysdate);
+INSERT INTO SLIDE_BANNER VALUES (slide_banner_seq01.nextval, '<체인파트너스> 이미지 + 카피', 'www.ezenfunding.com/imgserver/dsss002.jpg', sysdate);
+INSERT INTO SLIDE_BANNER VALUES (slide_banner_seq01.nextval, '삼성전자 이미지', 'www.ezenfunding.com/imgserver/ddf003.jpg', sysdate);
+INSERT INTO SLIDE_BANNER VALUES (slide_banner_seq01.nextval, '<이젠컴퓨터아카데미> 이미지 + 카피', 'www.ezenfunding.com/idsddmgserver/004.jpg', sysdate);
+
+
+
+SELECT * FROM popup_admin;
+
+INSERT INTO POPUP_ADMIN VALUES (popup_admin_seq01.nextval, '코로나 관련 공지 사항', 'www.ezenfunding.com/imgserver/sx8786.jpg', sysdate)
+
+
+
+
+
